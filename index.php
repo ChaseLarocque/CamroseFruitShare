@@ -9,7 +9,7 @@ index.php is the basic page that will be displayed when the website is called in
 This is the very first web page that will be displayed when a user is trying to access the
 website. This will display information about the project and have some basic information that
 will be available to all users. 
-
+hello
 
 
 -->
