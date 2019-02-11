@@ -38,9 +38,9 @@ will be available to all users.
 		</h1>
 	</div>
 
-	<div>
-    <p> It's yo boy </p> 
-  </div>
+	    <div>
+         <p> It's yo boy </p> 
+      </div>
 
 
 
