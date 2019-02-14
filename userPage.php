@@ -29,28 +29,46 @@ will be available to all users.
 
 
 
-    <title>Login Fruit Pickers</title>
+    <title>Fruit Picker's User Page</title>
   </head>
 <body>
-    <div class="header row">
+  <div class="header row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h1>
+      <a>Hidden Harvests of Camrose</a>
+    </h1>
+  </div>
+  <div class="col-3">
+    <h4>
+      <a href="index.php">Logout</a>
+
+    </h4>
+  </div>    
+  </div>
+
+  <div class="container">
+    <div class="row">
       <div class="col">
-        <h1>
-        <a href="index.php">Hidden Harvests of Camrose</a>
-      </h1>
+        Button 1
+      </div>
+      <div class="col">
+        Button 2
+      </div>
+      <div class="col">
+        Button 3
+      </div>
+      <div class="col">
+        Button 4
+      </div>
+      
     </div>
   </div>
 
   <div class="body container">
     <div class="row">
-      <div class="col"> <h2> This will hold the login Info (USERNAME & Password) </h2> </div>
+      <div class="col"> <h2> This is the Body... </h2> </div>
       </div>
-    <div class="row">   
-      <div class="row">
-        <h4>
-          <a href="userPage.php">Login</a>
-        </h4>
-      </div>   
-    </div>
     </div>
 
   <div class="footer">
