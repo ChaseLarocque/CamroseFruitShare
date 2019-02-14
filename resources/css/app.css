@@ -37,7 +37,7 @@ div.footer {
 	height: 10%; 
 	background-color: #9c37d6;
 	color: #fff;
-	text-align: right;*/
+	text-align: left;
 	padding-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -78,7 +78,7 @@ div.footerSpace{
 	padding-top: 10px;
 }
 
-h3.underline{
+h6.underline{
 	text-decoration: underline;
 }
 
