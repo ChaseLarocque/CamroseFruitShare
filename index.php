@@ -32,19 +32,19 @@ will be available to all users.
  </head>
  
  <body>
-  	<div class="header row">
-  		<div class="col-3"></div>
-  		<div class="col-6">
-		    <h1>
-		    <a href="index.php">Hidden Harvests of Camrose</a>
-			</h1>
-		</div>
-		<div class="col-3">
-			<h4>
-				<a href="login.php">Login</a>
+	<div class="header row">
+		<div class="col-3"></div>
+		<div class="col-6">
+	    <h1>
+	    <a href="index.php">Hidden Harvests of Camrose</a>
+		</h1>
+	</div>
+	<div class="col-3">
+		<h4>
+			<a href="login.php">Login</a>
 
-			</h4>
-		</div>		
+		</h4>
+	</div>		
 	</div>
 
 	<div class="body container">
