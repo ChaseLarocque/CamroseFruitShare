@@ -32,33 +32,41 @@ will be available to all users.
  </head>
  
  <body>
-  	<div class="header">
+	<div class="header row">
+		<div class="col-3"></div>
+		<div class="col-6">
 	    <h1>
 	    <a href="index.php">Hidden Harvests of Camrose</a>
 		</h1>
 	</div>
+	<div class="col-3">
+		<h4>
+			<a href="login.php">Login</a>
 
-	<div class="body">
-		<div class="login">
-			<h1>
-				<a href="login.php">Login</a>
-
-			</h1>
-		</div>
+		</h4>
+	</div>		
 	</div>
 
+	<div class="body container">
+		<div class="row">
+			<div class="col"> <h2> This is the Body... </h2> </div>
+			</div>
+		</div>
+
 	<div class="footer">
-	    <div class="row footerSpace">
-	      <div class="large-3 medium-3 small-3 columns picture">Photo</div>
-	      <div class="large-3 medium-3 small-3 columns dev">
+		<div class="row">
+	      <div class="col">
+	      	Photo
+	      </div>
+	      <div class="col">  
 	        <p>
 	          Designed February 01,2019<br>
 	          by Alex Ho, Chase Larocque, Justin Ikenouye.
 	        </p>
-	        </div>
-	        <div class="large-3 medium-3 small-3 columns contactInfo">
-	          <h3 class="underline">Contact Information</h3>
-	        </div>
+	      </div>
+	      <div class="col">
+	          <h6>Contact Information</h6>
+	      </div>
 	    </div>
 	</div>
 </body>
