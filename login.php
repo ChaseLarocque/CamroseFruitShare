@@ -64,14 +64,15 @@ will be available to all users.
                                     <input type="password" id="password" class="form-control" name="password" required>
                                 </div>
                             </div>
-
-
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
                                 <a href="#" class="btn btn-link">
                                     Forgot Your Password?
+                                </a>
+                                <a href="register.php" class="btn btn-link">
+                                    Need An Account?
                                 </a>
                             </div>
                     </div>
