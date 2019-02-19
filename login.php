@@ -31,31 +31,46 @@ will be available to all users.
 
     <title>Login Fruit Pickers</title>
   </head>
-  <body>
-  	<div class="header">
-	    <h1>
-	    <a href="index.php">Hidden Harvests of Camrose</a>
-		</h1>
-	</div>
 
-	
+<body>
+    <div class="header row">
+      <div class="col">
+        <h1>
+        <a href="index.php">Hidden Harvests of Camrose</a>
+      </h1>
+    </div>
+  </div>
 
-
+  <div class="body container">
+    <div class="row">
+      <div class="col"> <h2> This will hold the login Info (USERNAME & Password) </h2> </div>
+      </div>
+    <div class="row">   
+      <div class="row">
+        <h4>
+          <a href="userPage.php">Login</a>
+        </h4>
+      </div>   
+    </div>
+    </div>
 
   <div class="footer">
-      <div class="row footerSpace">
-        <div class="large-4 medium-4 small-4 columns picture">Photo</div>
-        <div class="large-4 medium-4 small-4 columns dev">
+    <div class="row">
+        <div class="col">
+          Photo
+        </div>
+        <div class="col">  
           <p>
             Designed February 01,2019<br>
             by Alex Ho, Chase Larocque, Justin Ikenouye.
           </p>
-          </div>
-          <div class="large-4 medium-4 small-4 columns contactInfo">
-            <h3 class="underline">Contact Information</h3>
-          </div>
+        </div>
+        <div class="col">
+            <h6>Contact Information</h6>
+        </div>
       </div>
-	</div>
+  </div>
+</body>
 
 
     <!-- Optional JavaScript -->
