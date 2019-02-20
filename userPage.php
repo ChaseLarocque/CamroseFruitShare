@@ -42,7 +42,6 @@ will be available to all users.
   <div class="col-3">
     <h4>
       <a href="index.php">Logout</a>
-
     </h4>
   </div>    
   </div>
@@ -80,7 +79,7 @@ will be available to all users.
           </p>
         </div>
         <div class="col">
-            <h6>Contact Information</h6>
+            <p>Contact Information</p>
         </div>
       </div>
   </div>
