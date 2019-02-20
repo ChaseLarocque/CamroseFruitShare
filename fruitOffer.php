@@ -29,7 +29,7 @@ will be available to all users.
 
 
 
-    <title>Fruit Picker's User Page</title>
+    <title>Fruit Picker's Offering Page</title>
   </head>
 <body>
   <div class="header row">
@@ -50,13 +50,13 @@ will be available to all users.
   <div class="container">
     <div class="row">
       <div class="col">
-        <a class="btn btn-primary btn-lg btn-block disabled" href="fruitOffer.php" role="button">Offer Fruit</a>
+        <a class="btn btn-primary btn-lg btn-block" href="userPage.php" role="button">User Page</a>
+      </div>
+      <div class="col">
+        <a class="btn btn-primary btn-lg btn-block" href="fruitOffer.php" role="button">Offer Fruit</a>
       </div>
       <div class="col">
         <a class="btn btn-primary btn-lg btn-block" href="fruitSearch.php" role="button">Search Fruit</a>
-      </div>
-      <div class="col">
-        <a class="btn btn-primary btn-lg btn-block" href="userPage.php" role="button">User Page</a>
       </div>
       <div class="col">
         Button 4
