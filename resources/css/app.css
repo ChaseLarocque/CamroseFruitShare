@@ -17,6 +17,7 @@ body{
 /* Header for Pages */
 div.header {
 	width: 100%;
+	margin: 0;
 	height: 10%;
 	background-color: #b07846  ;
 	padding-left: 15px;

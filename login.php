@@ -25,7 +25,6 @@ will be available to all users.
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/index.css">
     <link rel="stylesheet" href="resources/css/login.css">
 
 
@@ -41,7 +40,7 @@ will be available to all users.
        </h1>
       </div>
     </div>
-  </div>
+
 
 <div class="vertical-align brown">
     <div class="container">
