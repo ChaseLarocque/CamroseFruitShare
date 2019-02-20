@@ -53,22 +53,22 @@ hello
 			</div>
 		</div>
 
-	<div class="footer">
-		<div class="row">
-	      <div class="col">
-	      	Photo
-	      </div>
-	      <div class="col">  
-	        <p>
-	          Designed February 01,2019<br>
-	          by Alex Ho, Chase Larocque, Justin Ikenouye.
-	        </p>
-	      </div>
-	      <div class="col">
-	          <h6>Contact Information</h6>
-	      </div>
-	    </div>
-	</div>
+  <div class="footer">
+    <div class="row">
+        <div class="col text-left">
+          Photo
+        </div>
+        <div class="col">  
+          <p>
+            Designed February 01,2019<br>
+            Alex Ho, Chase Larocque, Justin Ikenouye.
+          </p>
+        </div>
+        <div class="col text-center">
+            <h6>Contact Information</h6>
+        </div>
+      </div>
+  </div>
 </body>
 
     <!-- Optional JavaScript -->
