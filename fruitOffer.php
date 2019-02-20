@@ -53,7 +53,7 @@ will be available to all users.
         <a class="btn btn-primary btn-lg btn-block" href="userPage.php" role="button">User Page</a>
       </div>
       <div class="col">
-        <a class="btn btn-primary btn-lg btn-block" href="fruitOffer.php" role="button">Offer Fruit</a>
+        <a class="btn btn-primary btn-lg btn-block disabled" href="fruitOffer.php" role="button">Offer Fruit</a>
       </div>
       <div class="col">
         <a class="btn btn-primary btn-lg btn-block" href="fruitSearch.php" role="button">Search Fruit</a>
