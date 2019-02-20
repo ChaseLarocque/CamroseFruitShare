@@ -26,6 +26,7 @@ will be available to all users.
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
     <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/login.css">
 
 
 
@@ -37,35 +38,66 @@ will be available to all users.
       <div class="col">
         <h1>
         <a href="index.php">Hidden Harvests of Camrose</a>
-      </h1>
+       </h1>
+      </div>
     </div>
   </div>
 
-  <div class="body container">
-    <div class="row">
-      <div class="col"> <h2> This will hold the login Info (USERNAME & Password) </h2> </div>
-      </div>
-    <div class="row">   
-      <div class="row">
-        <h4>
-          <a href="userPage.php">Login</a>
-        </h4>
-      </div>   
+<div class="vertical-align brown">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header ">Login to Hidden Harvests of Camrose</div>
+                    <div class="card-body">
+                        <form action="" method="">
+                            <div class="form-group row">
+                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                <div class="col-md-6">
+                                    <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="col-md-6">
+                                    <input type="password" id="password" class="form-control" name="password" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
+                                <a href="#" class="btn btn-link">
+                                    Forgot Your Password?
+                                </a>
+                                <a href="register.php" class="btn btn-link">
+                                    Need An Account?
+                                </a>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
+  </div>
+</div>
+
+
 
   <div class="footer">
     <div class="row">
-        <div class="col">
+        <div class="col text-left">
           Photo
         </div>
         <div class="col">  
           <p>
             Designed February 01,2019<br>
-            by Alex Ho, Chase Larocque, Justin Ikenouye.
+            Alex Ho, Chase Larocque, Justin Ikenouye.
           </p>
         </div>
-        <div class="col">
+        <div class="col text-center">
             <h6>Contact Information</h6>
         </div>
       </div>
