@@ -25,7 +25,7 @@ will be available to all users.
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/userPage.css">
 
 
 
@@ -35,35 +35,31 @@ will be available to all users.
   <div class="header row">
     <div class="col-3"></div>
     <div class="col-6">
-      <h1>
+      <h1 style="font-size:3vw;">
       <a>Hidden Harvests of Camrose</a>
     </h1>
   </div>
   <div class="col-3">
     <h4>
       <a href="index.php">Logout</a>
-
     </h4>
   </div>    
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        Button 1
-      </div>
-      <div class="col">
-        Button 2
-      </div>
-      <div class="col">
-        Button 3
-      </div>
-      <div class="col">
-        Button 4
-      </div>
-      
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a>Navigation</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
+      <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
+      <a class="nav-item nav-link disabled" href="">Button 4</a>
     </div>
   </div>
+</nav>
 
   <div class="body container">
     <div class="row">
@@ -83,7 +79,7 @@ will be available to all users.
           </p>
         </div>
         <div class="col">
-            <h6>Contact Information</h6>
+            <p>Contact Information</p>
         </div>
       </div>
   </div>
