@@ -36,9 +36,9 @@ hello
 		<div class="col-3"></div>
 		<div class="col-6">
 	    <h1 style="font-size:3vw;">
-	    <a href="index.php">Hidden Harvests of Camrose</a>
-		</h1>
-	</div>
+	      <a>Hidden Harvests of Camrose</a>
+		  </h1>
+	  </div>
 	<div class="col-3">
 		<h4>
 			<a href="login.php">Login</a>
