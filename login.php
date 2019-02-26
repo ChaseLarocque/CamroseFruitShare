@@ -25,7 +25,6 @@ will be available to all users.
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/login.css">
 
 
 
@@ -35,50 +34,50 @@ will be available to all users.
 <body>
     <div class="header row">
       <div class="col">
-        <h1 style="font-size:3vw;">
-        <a href="index.php">Hidden Harvests of Camrose</a>
+        <h1 id = "title">
+        Hidden Harvests of Camrose
        </h1>
       </div>
     </div>
 
 
-<div class="vertical-align brown">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
-                        <div class="card-body">
-                            <form action="userPage.php" method="POST">
-                               <div class="form-group row">
-                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                                     <div class="col-md-6">
-                                         <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
-                                     </div>
-                                </div>
+<div class="vertical-align">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
 
-                            <div class="form-group row">
-                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                                <div class="col-md-6">
-                                    <input type="password" id="password" class="form-control" name="password" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-                                <a href="#" class="btn btn-link">
-                                    Forgot Your Password?
-                                </a>
-                                <a href="register.php" class="btn btn-link">
-                                    Need An Account?
-                                </a>
-                            </div>
-                       </div>
-                    </form>
+        <div class="card">
+          <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
+
+            <div class="card-body">
+              <form action="userPage.php" method="POST">
+                <div class="form-group row">
+                  <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                  <div class="col-6">
+                    <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
+                  </div>
                 </div>
+
+                <div class="form-group row">
+                  <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                  <div class="col-6">
+                    <input type="password" id="password" class="form-control" name="password" required>
+                  </div>
+                </div>
+                            
+                <div class="col-6 offset-md-4">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                  <a href="#" class="btn btn-link">Forgot Your Password?</a>
+                </div>
+                <div class="form-group row">
+                  <div class="col-6 offset-md-5">
+                    <a href="register.php" class="btn btn-link">Need An Account?</a>
+                  </div>
+                </div>       
+              </form>
             </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
