@@ -36,9 +36,15 @@ hello
 		<div class="col-3"></div>
 		<div class="col-6">
 	    <h1 style="font-size:3vw;">
-	    <a href="index.php">Hidden Harvests of Camrose</a>
+<<<<<<< HEAD
+	    <a href=>Hidden Harvests of Camrose</a>
 		</h1>
 	</div>
+=======
+	      <a>Hidden Harvests of Camrose</a>
+		  </h1>
+	  </div>
+>>>>>>> 17dd5054c1603e7102e1b6054cc0d15f75d78168
 	<div class="col-3">
 		<h4>
 			<a href="login.php">Login</a>

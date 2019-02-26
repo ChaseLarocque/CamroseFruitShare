@@ -36,7 +36,7 @@ will be available to all users.
     <div class="header row">
       <div class="col">
         <h1 style="font-size:3vw;">
-        <a href="index.php">Hidden Harvests of Camrose</a>
+        <a>Hidden Harvests of Camrose</a>
        </h1>
       </div>
     </div>
