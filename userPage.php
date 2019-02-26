@@ -3,15 +3,10 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-index.php is the basic page that will be displayed when the website is called in the browser
+userPage.php
 
-
-This is the very first web page that will be displayed when a user is trying to access the
-website. This will display information about the project and have some basic information that
-will be available to all users. 
-
-
-
+This page users navigate to after they have logged in. It contains what fruit they are looking for
+and current offerings for that fruit.
 -->
 
 <!doctype html>
@@ -31,58 +26,61 @@ will be available to all users.
 
     <title>Fruit Picker's User Page</title>
   </head>
-<body>
-  <div class="header row">
-    <div class="col-3"></div>
-    <div class="col-6">
-      <h1 id = "title" > <!--Change this to ID and put in CSS -->
-      <a>Hidden Harvests of Camrose</a>
-    </h1>
-  </div>
-  <div class="col-3">
-    <h4>
-      <a href="index.php">Logout</a>
-    </h4>
-  </div>    
-  </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a>Navigation</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
-      <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
-      <a class="nav-item nav-link disabled" href="">Button 4</a>
-    </div>
-  </div>
-</nav>
-
-  <div class="body container">
-    <div class="row">
-      <div class="col"> <h2> This is the Body... </h2> </div>
-      </div>
+  <body>
+    <div class="header row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 id = "title" > <!--Change this to ID and put in CSS -->
+                <a>Hidden Harvests of Camrose</a>
+            </h1>
+        </div>
+        <div class="col-3">
+            <h4>
+                <a href="index.php">Logout</a>
+            </h4>
+        </div>    
     </div>
 
-  <div class="footer">
-    <div class="row">
-        <div class="col">
-          Photo
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a>Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
+                <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
+                <a class="nav-item nav-link disabled" href="">Button 4</a>
+            </div>
         </div>
-        <div class="col">  
-          <p>
-            Designed February 01,2019<br>
-            by Alex Ho, Chase Larocque, Justin Ikenouye.
-          </p>
+    </nav>
+
+    <div class="body container">
+        <div class="row">
+            <div class="col"> 
+                <h2> This is the Body... </h2> 
+            </div>
         </div>
-        <div class="col">
-            <p>Contact Information</p>
+    </div>
+
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                Photo
+            </div>
+            <div class="col">  
+                <p>
+                    Designed February 01,2019<br>
+                    by Alex Ho, Chase Larocque, Justin Ikenouye.
+                </p>
+            </div>
+            <div class="col">
+                <p>Contact Information</p>
+            </div>
         </div>
-      </div>
-  </div>
+    </div>
 </body>
 
 
