@@ -4,10 +4,10 @@
 	that are being used on multiple pages.
 */
 
-
 /* Header for Pages */
-div.header {
+.header {
 	width: 100%;
+	margin: 0;
 	height: 10%;
 	background-color: rgb(157, 95, 56);
 	padding-left: 15px;
@@ -17,12 +17,12 @@ div.header {
 	border-bottom: 3px solid #000000;
 }
 
-div.header a{
+.header a{
 	color: #fff;
 }
 
 /* Footer for Pages */
-div.footer {
+.footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
