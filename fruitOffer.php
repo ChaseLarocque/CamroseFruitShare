@@ -28,6 +28,8 @@ It allows them to enter details like what kind of fruit they have and how to con
 </head>
 
 <body>
+    <div class="main-container">
+
     <div class="header row">
         <div class="col-3"></div>
         <div class="col-6">
@@ -123,6 +125,7 @@ It allows them to enter details like what kind of fruit they have and how to con
             </div>
         </div>
     </div>
+</div>
 </body>
 
 
