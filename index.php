@@ -8,10 +8,7 @@ index.php is the basic page that will be displayed when the website is called in
 
 This is the very first web page that will be displayed when a user is trying to access the
 website. This will display information about the project and have some basic information that
-will be available to all users. 
-hello
-
-
+will be available to all users.
 -->
 
 <!doctype html>
@@ -35,39 +32,42 @@ hello
 	<div class="header row">
 		<div class="col-3"></div>
 		<div class="col-6">
-	    <h1 style="font-size:3vw;">
-	      <a>Hidden Harvests of Camrose</a>
-		  </h1>
-	  </div>
-	<div class="col-3">
-		<h4>
-			<a href="login.php">Login</a>
-		</h4>
-	</div>		
-	</div>
+	    	<h1 id = "title">
+	        Hidden Harvests of Camrose
+	     	</h1>
+	    </div>
+		<div class="col-3">
+			<h4>
+				<a href="login.php">Login</a>
+			</h4>
+		</div>	
+  	</div>	
+
 
 	<div class="body container">
 		<div class="row">
-			<div class="col"> <h2> This is the Body... </h2> </div>
+			<div class="col"> 
+				<h2> This is the Body... </h2> 
 			</div>
 		</div>
+	</div>
 
-  <div class="footer">
-    <div class="row">
-        <div class="col text-left">
-          Photo
+	<div class="footer">
+    	<div class="row">
+        	<div class="col text-left">
+          		Photo
+        	</div>
+        	<div class="col">  
+        		<p>
+            		Designed February 01,2019<br>
+            		Alex Ho, Chase Larocque, Justin Ikenouye.
+          		</p>
+        	</div>
+        	<div class="col text-center">
+            	<h6>Contact Information</h6>
+        	</div>
         </div>
-        <div class="col">  
-          <p>
-            Designed February 01,2019<br>
-            Alex Ho, Chase Larocque, Justin Ikenouye.
-          </p>
-        </div>
-        <div class="col text-center">
-            <h6>Contact Information</h6>
-        </div>
-      </div>
-  </div>
+  	</div>
 </body>
 
     <!-- Optional JavaScript -->
