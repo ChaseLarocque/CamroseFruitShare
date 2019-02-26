@@ -28,6 +28,8 @@ It allows them to enter details like what kind of fruit they have and how to con
 </head>
 
 <body>
+    <div class="main-container">
+
     <div class="header row">
         <div class="col-3"></div>
         <div class="col-6">
@@ -60,11 +62,51 @@ It allows them to enter details like what kind of fruit they have and how to con
     </div>
 
     <div class="body container">
-        <div class="row">
-            <div class="col">
-                <h2> This is the Body... </h2> 
+
+        <h2> Offer Fruit </h2>
+        <p>Fill out and submit this form to offer your fruit to other users</p>
+        <hr>
+
+        <form>
+            <div class="form-group col-md-4">
+                <label>Fruit</label>
+                <select id="inputFruit" class="form-control">
+                   <option selected>Choose...</option>
+                    <option value="apples">Apples</option>
+                    <option value="crabapples">Crab Apples</option>
+                    <option value="evans">Evans (Sour Cherries)</option>
+                    <option value="pears">Pears</option>
+                    <option value="saskatoons">Saskatoon Berries</option>
+                    <option value="plums">Plums</option>
+                    <option value="amurs">Amur (Choke Cherries)</option>
+                    <option value="schuberts">Schubert (Choke Cherries)</option>
+                    <option value="gojis">Goji Berries</option>
+                </select>
             </div>
-        </div>
+
+            <div class="form-group col-md-4">
+                <label>Estimated Best Before</label>
+                <input type="date" name="bestBeforeDate" class="form-control">
+            </div>
+
+            <div class="form-group col-md-3">
+                    <label>Contact Email</label>
+                    <input type="email" name="fruitDescription" class="form-control">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Description</label>
+                <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300"> </textarea>
+            </div>
+
+            <hr>
+
+            <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>    
+                   
+          
     </div>
 
     <div class="footer">
@@ -75,7 +117,7 @@ It allows them to enter details like what kind of fruit they have and how to con
             <div class="col">  
                 <p>
                     Designed February 01,2019<br>
-                    by Alex Ho, Chase Larocque, Justin Ikenouye.
+                    Alex Ho, Chase Larocque, Justin Ikenouye
                 </p>
             </div>
             <div class="col">
@@ -83,6 +125,7 @@ It allows them to enter details like what kind of fruit they have and how to con
             </div>
         </div>
     </div>
+</div>
 </body>
 
 
