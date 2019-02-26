@@ -94,7 +94,7 @@ It allows them to enter details like what kind of fruit they have and how to con
 
             <div class="form-group col-md-6">
                 <label>Description</label>
-                <textarea type="text" name="fruitDescription" class="form-control" rows="5">
+                <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300">
                     
                 </textarea>
             </div>
