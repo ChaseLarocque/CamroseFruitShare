@@ -47,15 +47,15 @@ will be available to all users.
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header ">Login to Hidden Harvests of Camrose</div>
-                    <div class="card-body">
-                        <form action="userPage.php" method="">
-                            <div class="form-group row">
-                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                                <div class="col-md-6">
-                                    <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
+                    <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
+                        <div class="card-body">
+                            <form action="" method="">
+                               <div class="form-group row">
+                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                     <div class="col-md-6">
+                                         <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
+                                     </div>
                                 </div>
-                            </div>
 
                             <div class="form-group row">
                                 <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
@@ -74,7 +74,7 @@ will be available to all users.
                                     Need An Account?
                                 </a>
                             </div>
-                    </div>
+                       </div>
                     </form>
                 </div>
             </div>
