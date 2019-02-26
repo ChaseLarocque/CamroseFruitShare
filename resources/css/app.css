@@ -51,6 +51,10 @@ h6.underline{
 #login-head{
 	background-color: rgb(107,132,35,.8);
 }
+
+#title{
+	 font-size:3vw;
+}
 body{
     margin: 0;
     font-size: .9rem;

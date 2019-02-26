@@ -35,8 +35,8 @@ will be available to all users.
   <div class="header row">
     <div class="col-3"></div>
     <div class="col-6">
-      <h1 style="font-size:3vw;"> <!--Change this to ID and put in CSS -->
-      <a href="index.php">Hidden Harvests of Camrose</a>
+      <h1 id = "title" > <!--Change this to ID and put in CSS -->
+      <a>Hidden Harvests of Camrose</a>
     </h1>
   </div>
   <div class="col-3">
