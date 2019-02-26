@@ -55,6 +55,10 @@ h6.underline{
 #title{
 	 font-size:3vw;
 }
+
+.vertical-align{
+	padding-top: 100px;
+}
 body{
     margin: 0;
     font-size: .9rem;
