@@ -48,7 +48,7 @@ will be available to all users.
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-white" style="background-color: rgb(107,132,35,.8);">Login to Hidden Harvests of Camrose</div>
+                    <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
                         <div class="card-body">
                             <form action="" method="">
                                <div class="form-group row">
