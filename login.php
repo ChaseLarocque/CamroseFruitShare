@@ -25,7 +25,7 @@ will be available to all users.
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/login.css">
+
 
 
 
@@ -42,8 +42,10 @@ will be available to all users.
     </div>
 
 
-<div class="vertical-align container row justify-content-center">
-      <div class="col-md-8">
+<div class="vertical-align">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
 
         <div class="card">
           <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
@@ -52,19 +54,19 @@ will be available to all users.
               <form action="userPage.php" method="POST">
                 <div class="form-group row">
                   <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
                   </div>
                 </div>
 
                 <div class="form-group row">
                   <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <input type="password" id="password" class="form-control" name="password" required>
                   </div>
                 </div>
                             
-                <div class="col-md-6 offset-md-4">
+                <div class="col-6 offset-md-4">
                   <button type="submit" class="btn btn-primary">Login</button>
                   <a href="#" class="btn btn-link">Forgot Your Password?</a>
                   <a href="register.php" class="btn btn-link">Need An Account?</a>
@@ -74,7 +76,8 @@ will be available to all users.
         </div>
       </div>
     </div>
-
+  </div>
+</div>
 
 
 
