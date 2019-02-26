@@ -37,9 +37,12 @@ hello
 		<div class="col-6">
 	    <h1 style="font-size:3vw;">
 <<<<<<< HEAD
+<<<<<<< HEAD
 	    <a href=>Hidden Harvests of Camrose</a>
 		</h1>
 	</div>
+=======
+>>>>>>> 17dd5054c1603e7102e1b6054cc0d15f75d78168
 =======
 	      <a>Hidden Harvests of Camrose</a>
 		  </h1>
