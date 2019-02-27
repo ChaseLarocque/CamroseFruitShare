@@ -106,5 +106,8 @@ body{
     text-align: left;
     background-color: rgba(248,248,248);
 }
+#indexText{
+	line-height: 3;
+}
 
 
