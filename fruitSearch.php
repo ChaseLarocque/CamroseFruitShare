@@ -20,9 +20,8 @@ and contact information for getting a hold of the owners.
 
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-
-
     <title>Hidden Harvest Requesting Page</title>
+
 </head>
 
 <body>
