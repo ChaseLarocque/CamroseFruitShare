@@ -3,11 +3,9 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-login.php
+register.php
 
-This is the page for logging in to the website by clicking on 'login' from index.php
-It authenticates current users so that they may access their account on userPage.php 
-and directs new users to an account creation page register.php   
+This is the page for registering to the website by clicking on 'register' from login.php  
 -->
 
 <!doctype html>
@@ -44,7 +42,7 @@ and directs new users to an account creation page register.php
       <div class="col-8">
 
         <div class="card">
-          <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
+          <div class="card-header text-white" id = "login-head">Register to Hidden Harvests of Camrose</div>
 
             <div class="card-body">
               <form action="userPage.php" method="POST">
@@ -63,15 +61,9 @@ and directs new users to an account creation page register.php
                 </div>
                             
                 <div class="col-6 offset-md-4">
-                  <button type="submit" class="btn btn-primary">Login</button>
-                  <a href="#" class="btn btn-link">Forgot Your Password?</a>
+                  <button type="submit" class="btn btn-primary">Register</button>
                 </div>
-
-                <div class="form-group row">
-                  <div class="col-6 offset-md-5">
-                    <a href="register.php" class="btn btn-link">Need An Account?</a>
-                  </div>
-                </div>       
+      
               </form>
             </div>
         </div>
