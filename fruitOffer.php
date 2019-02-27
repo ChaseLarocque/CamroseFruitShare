@@ -89,7 +89,11 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </div>
           </div>
         <div class = "row">
+            <div class = "col-2">
+        </div>
+        <div class = "col">
             <strong>Either a Phone Number or E-mail Address Is Required</strong>
+        </div>
         </div>
             <div class = "row">
             <div class="form-group col-4">
