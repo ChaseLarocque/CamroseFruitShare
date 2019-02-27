@@ -48,7 +48,7 @@ will be available to all users.
 		<div class="row">
 			<div class="col"> 
 				<h2> Who We Are </h2> 
-                <p>
+                <h6>
                     Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
                     <br><br>
 
@@ -59,7 +59,7 @@ will be available to all users.
 
                     Our sustainable food project is focused on supporting one potential pillar of a more sustainable local food network in Camrose, and we need your help to build connections and grow community. If you are interested, please sign up as a fruit grower/picker. If you have any questions, please send them to Dr. Greg King.
                     <br><br>
-                </p>
+                </h6>
 			</div>
 		</div>
 	</div>
