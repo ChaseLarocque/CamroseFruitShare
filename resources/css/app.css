@@ -62,8 +62,13 @@ h6.underline{
 	text-decoration: underline;
 }
 
-.navBG{
-	background-color: #D0D0D0 !important;
+.onPage{
+	font-weight: 1000 !important;
+}
+
+.navSet{
+	background-color: #F0F0F0 !important;
+	font-size: 20px;
 }
 
 #login-head{
