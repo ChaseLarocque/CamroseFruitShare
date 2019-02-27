@@ -29,6 +29,7 @@ and contact information for getting a hold of the owners.
 </head>
 
 <body>
+   <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
         <div class="col-6">
@@ -60,12 +61,74 @@ and contact information for getting a hold of the owners.
         </div>
     </div>
 
-    <div class="body container">
-        <div class="row">
-            <div class="col"> 
-                <h2> This is the Body... </h2> 
+     <div class="body container">
+
+        <h2> Search For Fruit </h2>
+        <p>Fill out and submit this form to request fruit from other users</p>
+        <hr>
+
+        <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+            <div class="form-group col-md-4">
+                <label>Fruit #1</label>
+                <select required id="inputSearchFruit1" class="form-control">
+                   <option selected disabled hidden>Choose...</option>
+                    <option value="apples">Apples</option>
+                    <option value="crabapples">Crab Apples</option>
+                    <option value="evans">Evans (Sour Cherries)</option>
+                    <option value="pears">Pears</option>
+                    <option value="saskatoons">Saskatoon Berries</option>
+                    <option value="plums">Plums</option>
+                    <option value="amurs">Amur (Choke Cherries)</option>
+                    <option value="schuberts">Schubert (Choke Cherries)</option>
+                    <option value="gojis">Goji Berries</option>
+                </select>
             </div>
-        </div>
+
+            <div class="form-group col-md-4">
+                <label>Fruit #2</label>
+                <select  id="inputSearchFruit2" class="form-control">
+                   <option selected disabled hidden>Choose...</option>
+                    <option value="apples">Apples</option>
+                    <option value="crabapples">Crab Apples</option>
+                    <option value="evans">Evans (Sour Cherries)</option>
+                    <option value="pears">Pears</option>
+                    <option value="saskatoons">Saskatoon Berries</option>
+                    <option value="plums">Plums</option>
+                    <option value="amurs">Amur (Choke Cherries)</option>
+                    <option value="schuberts">Schubert (Choke Cherries)</option>
+                    <option value="gojis">Goji Berries</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Fruit #3</label>
+                <select  id="inputSearchFruit3" class="form-control">
+                   <option selected disabled hidden>Choose...</option>
+                    <option value="apples">Apples</option>
+                    <option value="crabapples">Crab Apples</option>
+                    <option value="evans">Evans (Sour Cherries)</option>
+                    <option value="pears">Pears</option>
+                    <option value="saskatoons">Saskatoon Berries</option>
+                    <option value="plums">Plums</option>
+                    <option value="amurs">Amur (Choke Cherries)</option>
+                    <option value="schuberts">Schubert (Choke Cherries)</option>
+                    <option value="gojis">Goji Berries</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Enter a Date To Remove Request</label>
+                <input required type="date" name="removeRequestDate" class="form-control">
+            </div>
+
+            <hr>
+
+            <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>    
+                   
+          
     </div>
 
     <div class="footer">
@@ -84,6 +147,7 @@ and contact information for getting a hold of the owners.
             </div>
         </div>
     </div>
+</div>
 </body>
 
 

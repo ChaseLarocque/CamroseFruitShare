@@ -67,11 +67,11 @@ It allows them to enter details like what kind of fruit they have and how to con
         <p>Fill out and submit this form to offer your fruit to other users</p>
         <hr>
 
-        <form>
+        <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
             <div class="form-group col-md-4">
                 <label>Fruit</label>
-                <select id="inputFruit" class="form-control">
-                   <option selected>Choose...</option>
+                <select required id="inputOfferFruit" class="form-control">
+                   <option selected disabled hidden>Choose...</option>
                     <option value="apples">Apples</option>
                     <option value="crabapples">Crab Apples</option>
                     <option value="evans">Evans (Sour Cherries)</option>
@@ -85,13 +85,13 @@ It allows them to enter details like what kind of fruit they have and how to con
             </div>
 
             <div class="form-group col-md-4">
-                <label>Estimated Best Before</label>
-                <input type="date" name="bestBeforeDate" class="form-control">
+                <label>Offer Until When?</label>
+                <input type="date" name="offerUntilDate" class="form-control">
             </div>
 
             <div class="form-group col-md-3">
-                    <label>Contact Email</label>
-                    <input type="email" name="fruitDescription" class="form-control">
+                <label>Contact Email</label>
+                <input type="email" name="fruitDescription" class="form-control">
             </div>
 
             <div class="form-group col-md-6">
