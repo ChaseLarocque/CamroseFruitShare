@@ -22,6 +22,7 @@ and current offerings for that fruit.
     <title>Fruit Picker's User Page</title>
   </head>
 <body>
+    <div class = "main-container">
   <div class="header row">
     <div class="col-3"></div>
     <div class="col-6">
@@ -71,6 +72,7 @@ and current offerings for that fruit.
             </div>
         </div>
     </div>
+</div>
 </body>
 
 
