@@ -38,16 +38,22 @@ and current offerings for that fruit.
         </h4>
       </div>    
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <a>Navigation</a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
-          <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
-          <a class="nav-item nav-link disabled" href="">Button 4</a>
-        </div>
-      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="userPage.php">User Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Community Resources</a>
+        </li>
+      </ul>
     </nav>
     <div class="body container">
         <div class="row">
