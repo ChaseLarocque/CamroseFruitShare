@@ -39,7 +39,6 @@ and current offerings for that fruit.
       </div>
 
       <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-        <a>Navigation</a>
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
