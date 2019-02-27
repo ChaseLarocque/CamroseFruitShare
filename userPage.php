@@ -47,7 +47,7 @@ and current offerings for that fruit.
             <div class="navbar-nav">
                 <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
-                <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
+                <a class="nav-item nav-link" href="fruitSearch.php">Request Fruit</a>
                 <a class="nav-item nav-link disabled" href="">Button 4</a>
             </div>
         </div>

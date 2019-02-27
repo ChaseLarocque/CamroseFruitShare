@@ -48,7 +48,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <a class="btn btn-primary btn-lg btn-block disabled" href="fruitOffer.php" role="button">Offer Fruit</a>
             </div>
             <div class="col">
-                <a class="btn btn-primary btn-lg btn-block" href="fruitSearch.php" role="button">Search Fruit</a>
+                <a class="btn btn-primary btn-lg btn-block" href="fruitSearch.php" role="button">Request Fruit</a>
             </div>
             <div class="col">
                 Button 4
