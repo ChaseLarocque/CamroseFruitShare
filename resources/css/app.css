@@ -68,6 +68,15 @@ h6.underline{
 	text-decoration: underline;
 }
 
+.onPage{
+	font-weight: 1000 !important;
+}
+
+.navSet{
+	background-color: #F0F0F0 !important;
+	font-size: 20px;
+}
+
 #login-head{
 	background-color: rgb(107,132,35,.8);
 }
@@ -104,6 +113,9 @@ body{
     line-height: 1.6;
     text-align: left;
     background-color: rgba(248,248,248);
+}
+#indexText{
+	line-height: 3;
 }
 
 
