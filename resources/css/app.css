@@ -62,6 +62,10 @@ h6.underline{
 	text-decoration: underline;
 }
 
+.navBG{
+	background-color: #D0D0D0 !important;
+}
+
 #login-head{
 	background-color: rgb(107,132,35,.8);
 }

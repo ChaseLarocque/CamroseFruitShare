@@ -38,10 +38,10 @@ and current offerings for that fruit.
         </h4>
       </div>    
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light navBG">
       <a>Navigation</a>
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link disabled" href="userPage.php">User Page</a>
         </li>
         <li class="nav-item">
