@@ -28,6 +28,7 @@ will be available to all users.
  </head>
  
  <body>
+   <div class = "main-container">
 	<div class="header row">
 		<div class="col-3"></div>
 		<div class="col-6">
@@ -67,6 +68,7 @@ will be available to all users.
         	</div>
         </div>
   	</div>
+  </div>
 </body>
 
     <!-- Optional JavaScript -->

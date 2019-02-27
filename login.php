@@ -3,8 +3,7 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-login.php is the basic page that will be displayed when the website is called in the browser
-
+login.php
 
 This is the page for logging in to the website by clicking on 'login' from index.php
 It authenticates current users so that they may access their account on userPage.php 
@@ -66,7 +65,7 @@ and directs new users to an account creation page register.php
                   <button type="submit" class="btn btn-primary">Login</button>
                   <a href="#" class="btn btn-link">Forgot Your Password?</a>
                 </div>
-                
+
                 <div class="form-group row">
                   <div class="col-6 offset-md-5">
                     <a href="register.php" class="btn btn-link">Need An Account?</a>
