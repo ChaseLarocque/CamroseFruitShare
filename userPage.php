@@ -23,7 +23,6 @@ and current offerings for that fruit.
   </head>
 
 <body>
-
   <div class="main-container">
 
     <div class="header row">
@@ -39,7 +38,6 @@ and current offerings for that fruit.
         </h4>
       </div>    
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a>Navigation</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -51,7 +49,6 @@ and current offerings for that fruit.
         </div>
       </div>
     </nav>
-
     <div class="body container">
         <div class="row">
             <div class="col"> 
