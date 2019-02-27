@@ -23,29 +23,35 @@ and current offerings for that fruit.
   </head>
 
 <body>
-  <div class="header row">
-    <div class="col-3"></div>
-    <div class="col-6">
-      <h1 id="title">Hidden Harvests of Camrose</h1>
-    </div>
-  <div class="col-3">
-    <h4>
-      <a href="index.php">Logout</a>
-    </h4>
-  </div>    
-  </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a>Navigation</a>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
-      <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
-      <a class="nav-item nav-link disabled" href="">Button 4</a>
+  <div class="main-container">
+
+    <div class="header row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <h1 id = "title">
+          Hidden Harvests of Camrose
+        </h1>
+      </div>
+      <div class="col-3">
+        <h4>
+          <a href="index.php">Logout</a>
+        </h4>
+      </div>    
     </div>
-  </div>
-</nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a>Navigation</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="fruitOffer.php">Offer Fruit</a>
+          <a class="nav-item nav-link" href="fruitSearch.php">Search Fruit</a>
+          <a class="nav-item nav-link disabled" href="">Button 4</a>
+        </div>
+      </div>
+    </nav>
+
     <div class="body container">
         <div class="row">
             <div class="col"> 
@@ -70,6 +76,7 @@ and current offerings for that fruit.
             </div>
         </div>
     </div>
+  </div>
 </body>
 
 

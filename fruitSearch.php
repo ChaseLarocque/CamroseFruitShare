@@ -29,7 +29,7 @@ and contact information for getting a hold of the owners.
         <div class="col-3"></div>
         <div class="col-6">
             <h1 id = "title">
-                <a>Hidden Harvests of Camrose</a>
+                Hidden Harvests of Camrose
             </h1>
         </div>
         <div class="col-3">

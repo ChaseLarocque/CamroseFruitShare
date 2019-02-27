@@ -31,7 +31,7 @@ and directs new users to an account creation page register.php
     <div class="header row">
       <div class="col">
         <h1 id = "title">
-        Hidden Harvests of Camrose
+          Hidden Harvests of Camrose
        </h1>
       </div>
     </div>

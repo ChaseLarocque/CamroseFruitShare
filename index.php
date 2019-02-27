@@ -33,7 +33,7 @@ will be available to all users.
 		<div class="col-3"></div>
 		<div class="col-6">
 	    	<h1 id = "title">
-	        Hidden Harvests of Camrose
+	           Hidden Harvests of Camrose
 	     	</h1>
 	    </div>
 		<div class="col-3">
