@@ -18,10 +18,6 @@ It allows them to enter details like what kind of fruit they have and how to con
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
 
-
-
-
-
     <title>Fruit Picker's Offering Page</title>
 </head>
 
@@ -88,9 +84,6 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
           </div>
-        <div class = "row">
-            <strong>Either a Phone Number or E-mail Address Is Required</strong>
-        </div>
             <div class = "row">
             <div class="form-group col-4">
                 <label>Contact Email</label>
@@ -102,6 +95,14 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <input required type="number" name="fruitNumber" class="form-control">
             </div>
             </div>
+        <div class = "row" style = "margin-bottom: 20px;">
+            <div class = "col-1">
+        </div>
+        <div class = "col">
+            <h5>Either a Phone Number or an E-mail Address Is Required</h5>
+        </div>
+        </div>
+
             <div class="row">
             <div class="form-group col-8">
                 <label>Description</label>
