@@ -12,28 +12,27 @@ and current offerings for that fruit.
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="resources/css/app.css">
-
-
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
+  <link rel="stylesheet" href="resources/css/app.css">
 
 
-    <title>Fruit Picker's User Page</title>
-  </head>
+
+
+  <title>Fruit Picker's User Page</title>
+</head>
+
 <body>
   <div class="header row">
     <div class="col-3"></div>
     <div class="col-6">
-      <h1 style="font-size:3vw;"> <!--Change this to ID and put in CSS -->
-      <a>Hidden Harvests of Camrose</a>
-    </h1>
-  </div>
+      <h1 id="title">Hidden Harvests of Camrose</h1>
+    </div>
   <div class="col-3">
     <h4>
       <a href="index.php">Logout</a>
