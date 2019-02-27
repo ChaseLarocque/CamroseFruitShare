@@ -15,9 +15,12 @@ It allows them to enter details like what kind of fruit they have and how to con
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+
+
+
+
 
     <title>Fruit Picker's Offering Page</title>
 </head>
@@ -62,7 +65,8 @@ It allows them to enter details like what kind of fruit they have and how to con
         <hr>
 
         <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
-            <div class="form-group col-md-4">
+          <div class = "row">
+            <div class="form-group col-4">
                 <label>Fruit (Required)</label>
                 <select required id="inputOfferFruit" class="form-control">
                    <option selected disabled hidden>Choose...</option>
@@ -78,21 +82,32 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </select>
             </div>
 
-            <div class="form-group col-md-4">
-                <label>Offer Until When? (Required) </label>
-                <input required type="date" name="offerUntilDate" class="form-control">
-                <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                <div class="form-group col-4">
+                    <label>Offer Until When? (Required) </label>
+                    <input required type="date" name="offerUntilDate" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
+          </div>
+        <div class = "row">
+            <strong>Either a Phone Number or E-mail Address Is Required</strong>
+        </div>
+            <div class = "row">
+            <div class="form-group col-4">
+                <label>Contact Email</label>
+                <input required type="email" name="fruitEmail" class="form-control">
             </div>
 
-            <div class="form-group col-md-3">
-                <label>Contact Email (Required)</label>
-                <input required type="email" name="fruitDescription" class="form-control">
+            <div class="form-group col-4">
+                <label>Contact Phone Number</label>
+                <input required type="number" name="fruitNumber" class="form-control">
             </div>
-
-            <div class="form-group col-md-6">
+            </div>
+            <div class="row">
+            <div class="form-group col-8">
                 <label>Description</label>
                 <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300"> </textarea>
             </div>
+        </div>
 
             <hr>
 
@@ -126,8 +141,13 @@ It allows them to enter details like what kind of fruit they have and how to con
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="resources/js/limitDate.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="resources/js/limitDateOffer.js"></script> 
+    
+    <script
+              src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+              <script src="resources/js/require1of2.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </html>
