@@ -64,7 +64,7 @@ It allows them to enter details like what kind of fruit they have and how to con
         <p>Fill out and submit this form to offer your fruit to other users</p>
         <hr>
 
-        <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+        <form method="post" action="userPage.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
           <div class = "row">
             <div class="form-group col-4">
                 <label>Fruit (Required)</label>
