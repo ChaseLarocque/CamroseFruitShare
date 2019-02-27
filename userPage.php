@@ -3,15 +3,10 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-index.php is the basic page that will be displayed when the website is called in the browser
+userPage.php
 
-
-This is the very first web page that will be displayed when a user is trying to access the
-website. This will display information about the project and have some basic information that
-will be available to all users. 
-
-
-
+This page users navigate to after they have logged in. It contains what fruit they are looking for
+and current offerings for that fruit.
 -->
 
 <!doctype html>
@@ -57,29 +52,30 @@ will be available to all users.
     </div>
   </div>
 </nav>
-
-  <div class="body container">
-    <div class="row">
-      <div class="col"> <h2> This is the Body... </h2> </div>
-      </div>
+    <div class="body container">
+        <div class="row">
+            <div class="col"> 
+                <h2> This is the Body... </h2> 
+            </div>
+        </div>
     </div>
 
-  <div class="footer">
-    <div class="row">
-        <div class="col">
-          Photo
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                Photo
+            </div>
+            <div class="col">  
+                <p>
+                    Designed February 01,2019<br>
+                    by Alex Ho, Chase Larocque, Justin Ikenouye.
+                </p>
+            </div>
+            <div class="col">
+                <p>Contact Information</p>
+            </div>
         </div>
-        <div class="col">  
-          <p>
-            Designed February 01,2019<br>
-            by Alex Ho, Chase Larocque, Justin Ikenouye.
-          </p>
-        </div>
-        <div class="col">
-            <p>Contact Information</p>
-        </div>
-      </div>
-  </div>
+    </div>
 </body>
 
 
