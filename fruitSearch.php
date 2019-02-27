@@ -63,7 +63,7 @@ and contact information for getting a hold of the owners.
         <p>Fill out and submit this form to request fruit from other users</p>
         <hr>
 
-        <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+        <form method="post" action="userPage.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
             <div class="form-group col-md-4">
                 <label>Fruit #1 (Required) </label>
                 <select required id="inputSearchFruit1" class="form-control">
