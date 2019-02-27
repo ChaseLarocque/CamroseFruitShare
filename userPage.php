@@ -46,7 +46,7 @@ and current offerings for that fruit.
       <a class="nav-item nav-link disabled" href="">Button 4</a>
     </div>
   </div>
-</nav>
+  </nav>
     <div class="body container">
         <div class="row">
             <div class="col"> 

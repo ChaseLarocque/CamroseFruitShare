@@ -20,7 +20,8 @@ and contact information for getting a hold of the owners.
 
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <title>Fruit Picker's Searching Page</title>
+    <title>Hidden Harvest Requesting Page</title>
+
 </head>
 
 <body>
@@ -48,7 +49,7 @@ and contact information for getting a hold of the owners.
                 <a class="btn btn-primary btn-lg btn-block" href="fruitOffer.php" role="button">Offer Fruit</a>
             </div>
             <div class="col">
-                <a class="btn btn-primary btn-lg btn-block disabled" href="fruitSearch.php" role="button">Search Fruit</a>
+                <a class="btn btn-primary btn-lg btn-block disabled" href="fruitSearch.php" role="button">Request Fruit</a>
             </div>
             <div class="col">
                 Button 4
@@ -58,7 +59,7 @@ and contact information for getting a hold of the owners.
 
      <div class="body container">
 
-        <h2> Search For Fruit </h2>
+        <h2> Request Fruit </h2>
         <p>Fill out and submit this form to request fruit from other users</p>
         <hr>
 
