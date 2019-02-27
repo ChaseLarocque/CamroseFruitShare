@@ -28,6 +28,7 @@ and directs new users to an account creation page register.php
   </head>
 
 <body>
+  <div class="main-container">
     <div class="header row">
       <div class="col">
         <h1 id = "title">
@@ -97,6 +98,7 @@ and directs new users to an account creation page register.php
         </div>
       </div>
   </div>
+</div>
 </body>
 
 

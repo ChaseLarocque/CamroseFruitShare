@@ -23,13 +23,12 @@ It allows them to enter details like what kind of fruit they have and how to con
 </head>
 
 <body>
-    <div class="main-container">
-
+  <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
         <div class="col-6">
             <h1 id = "title">
-                <a>Hidden Harvests of Camrose</a>
+                Hidden Harvests of Camrose
             </h1>
         </div>
         <div class="col-3">
