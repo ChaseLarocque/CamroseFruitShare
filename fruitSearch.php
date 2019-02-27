@@ -69,7 +69,7 @@ and contact information for getting a hold of the owners.
 
         <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
             <div class="form-group col-md-4">
-                <label>Fruit #1</label>
+                <label>Fruit #1 (Required) </label>
                 <select required id="inputSearchFruit1" class="form-control">
                    <option selected disabled hidden>Choose...</option>
                     <option value="apples">Apples</option>
@@ -117,8 +117,10 @@ and contact information for getting a hold of the owners.
             </div>
 
             <div class="form-group col-md-4">
-                <label>Enter a Date To Remove Request</label>
+                <label>Enter a Date To Remove Request (Required) </label>
                 <input required type="date" name="removeRequestDate" class="form-control">
+                <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+
             </div>
 
             <hr>
@@ -153,6 +155,7 @@ and contact information for getting a hold of the owners.
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="resources/js/limitDate.js"></script> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
