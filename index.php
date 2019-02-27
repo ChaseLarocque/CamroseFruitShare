@@ -25,7 +25,6 @@ hello
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/index.css">
 
 
     <title>Hidden Harvest of Camrose</title>

@@ -25,7 +25,6 @@ will be available to all users.
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/login.css">
 
 
 

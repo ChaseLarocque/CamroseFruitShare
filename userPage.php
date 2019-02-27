@@ -25,7 +25,7 @@ will be available to all users.
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/userPage.css">
+
 
 
 
@@ -48,9 +48,6 @@ will be available to all users.
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a>Navigation</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link disabled" href="userPage.php">User Page <span class="sr-only">(current)</span></a>
