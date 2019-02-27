@@ -47,7 +47,19 @@ will be available to all users.
 	<div class="body container">
 		<div class="row">
 			<div class="col"> 
-				<h2> This is the Body... </h2> 
+				<h2> Who We Are </h2> 
+                <h6>
+                    Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
+                    <br><br>
+
+                    This website has been designed to connect local fruit tree growers with local fruit pickers in an effort to increase awareness around locally grown food, while connecting people to build community around the theme of urban food.
+                    <br><br>
+
+                    Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br><br>
+
+                    Our sustainable food project is focused on supporting one potential pillar of a more sustainable local food network in Camrose, and we need your help to build connections and grow community. If you are interested, please sign up as a fruit grower/picker. If you have any questions, please send them to Dr. Greg King.
+                    <br><br>
+                </h6>
 			</div>
 		</div>
 	</div>

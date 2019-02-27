@@ -23,6 +23,7 @@ and current offerings for that fruit.
   </head>
 
 <body>
+    <div class = "main-container">
   <div class="header row">
     <div class="col-3"></div>
     <div class="col-6">
@@ -45,7 +46,7 @@ and current offerings for that fruit.
       <a class="nav-item nav-link disabled" href="">Button 4</a>
     </div>
   </div>
-</nav>
+  </nav>
     <div class="body container">
         <div class="row">
             <div class="col"> 
@@ -70,6 +71,7 @@ and current offerings for that fruit.
             </div>
         </div>
     </div>
+</div>
 </body>
 
 

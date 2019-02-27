@@ -23,13 +23,12 @@ It allows them to enter details like what kind of fruit they have and how to con
 </head>
 
 <body>
-    <div class="main-container">
-
+  <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
         <div class="col-6">
             <h1 id = "title">
-                <a>Hidden Harvests of Camrose</a>
+                Hidden Harvests of Camrose
             </h1>
         </div>
         <div class="col-3">
@@ -48,7 +47,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <a class="btn btn-primary btn-lg btn-block disabled" href="fruitOffer.php" role="button">Offer Fruit</a>
             </div>
             <div class="col">
-                <a class="btn btn-primary btn-lg btn-block" href="fruitSearch.php" role="button">Search Fruit</a>
+                <a class="btn btn-primary btn-lg btn-block" href="fruitSearch.php" role="button">Request Fruit</a>
             </div>
             <div class="col">
                 Button 4
