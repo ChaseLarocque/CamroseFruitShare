@@ -4,7 +4,16 @@
 	that are being used on multiple pages.
 */
 
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after{
+	box-sizing: border-box;
+}
 /* Header for Pages */
+
 .header {
 	width: 100%;
 	margin: 0;
@@ -17,6 +26,11 @@
 	border-bottom: 3px solid #000000;
 }
 
+
+.title{
+	text-align: center;
+	padding-top: 20px;
+}
 
 /* Footer for Pages */
 .footer {
@@ -56,7 +70,23 @@ h6.underline{
 .vertical-align{
 	padding-top: 100px;
 }
+.vertical-align-fruitOS{
+	padding-top :30px;
+}
+.center{
+	text-align: center;
+}
+.main-container{
+	min-height: 100vh;
+	overflow: hidden;
+	display:block;
+	position: relative;
+	padding-bottom: 100px;
+}
+html,
 body{
+	height:100%;
+	position:relative;
     margin: 0;
     font-size: .9rem;
     font-weight: 400;
@@ -64,3 +94,5 @@ body{
     text-align: left;
     background-color: rgba(248,248,248);
 }
+
+
