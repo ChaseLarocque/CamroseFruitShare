@@ -14,15 +14,12 @@ and contact information for getting a hold of the owners.
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/userPage.css">
-
 
 
     <title>Fruit Picker's Searching Page</title>

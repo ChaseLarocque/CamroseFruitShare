@@ -13,17 +13,11 @@ It allows them to enter details like what kind of fruit they have and how to con
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <link rel="stylesheet" href="resources/css/userPage.css">
-
-
-
 
     <title>Fruit Picker's Offering Page</title>
 </head>
