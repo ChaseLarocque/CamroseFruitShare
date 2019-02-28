@@ -19,6 +19,7 @@ This is the page for registering to the website by clicking on 'register' from l
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+    <link rel="stylesheet" href="resources/css/register.css">
 
 
 
@@ -59,11 +60,17 @@ This is the page for registering to the website by clicking on 'register' from l
                     <input type="password" id="password" class="form-control" name="password" required>
                   </div>
                 </div>
-                            
-                <div class="col-6 offset-md-4">
-                  <button type="submit" class="btn btn-primary">Register</button>
+                
+                <div class = "form-group row">
+                  <div class ="col-6 offset-4">
+                    <input type="checkbox" name="ettiquette"> I have read the <a href = "#popup1">Etiquette Guidelines</a>
+                  </div>
                 </div>
-      
+
+                <div class="form-group row">            
+                  <div class="col-6 offset-4">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                  </div>
               </form>
             </div>
         </div>
@@ -71,7 +78,23 @@ This is the page for registering to the website by clicking on 'register' from l
     </div>
   </div>
 </div>
-
+    
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Etiquette Guidelines</h2>
+        <hr>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            1. Respect Other People</br>
+            2. Respect Other People's Homes/Businesses</br>
+            3. Respect Other People's Communication Wishes</br>
+            4. ......</br>
+            5. ......</br>
+            6. ......</br>
+            7. ......</br>
+        </div>
+    </div>
+</div>
 
 
   <div class="footer">

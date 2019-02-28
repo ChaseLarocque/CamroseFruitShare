@@ -17,6 +17,7 @@ It allows them to enter details like what kind of fruit they have and how to con
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+
     <title>Fruit Picker's Offering Page</title>
 </head>
 
@@ -55,95 +56,95 @@ It allows them to enter details like what kind of fruit they have and how to con
                     Button 4
                 </div>
             </div>
-    </div>
+        </div>
 
-    <div class="body container">
+        <div class="body container">
 
-        <h2> Offer Fruit </h2>
-        <p>Fill out and submit this form to offer your fruit to other users</p>
-        <hr>
-
-        <form method="post" action="userPage.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
-            <div class = "row">
-                <div class="form-group col-4">
-                    <label>Fruit (Required)</label>
-                    <select required id="inputOfferFruit" class="form-control">
-                        <option selected disabled hidden>Choose...</option>
-                        <option value="apples">Apples</option>
-                        <option value="crabapples">Crab Apples</option>
-                        <option value="evans">Evans (Sour Cherries)</option>
-                        <option value="pears">Pears</option>
-                        <option value="saskatoons">Saskatoon Berries</option>
-                        <option value="plums">Plums</option>
-                        <option value="amurs">Amur (Choke Cherries)</option>
-                        <option value="schuberts">Schubert (Choke Cherries)</option>
-                        <option value="gojis">Goji Berries</option>
-                    </select>
-                 </div>
-
-                <div class="form-group col-4">
-                    <label>Offer Until When? (Required) </label>
-                    <input required type="date" name="offerUntilDate" class="form-control">
-                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
-                </div>
-            </div>
-
-            <div class = "row">
-                <div class="form-group col-4">
-                    <label>Contact Email</label>
-                    <input required type="email" name="fruitEmail" class="form-control">
-                </div>
-
-                <div class="form-group col-4">
-                    <label>Contact Phone Number</label>
-                    <input required type="number" name="fruitNumber" class="form-control">
-                </div>
-            </div>
-
-            <div class = "row" style = "margin-bottom: 20px;">
-                <div class = "col-1"> <!--FOR SPACING-->
-                </div>
-
-                <div class = "col">
-                    <h5>Either a Phone Number or an E-mail Address Is Required</h5>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col-8">
-                    <label>Description</label>
-                    <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300"> </textarea>
-                </div>
-            </div>
-
+            <h2> Offer Fruit </h2>
+            <p>Fill out and submit this form to offer your fruit to other users</p>
             <hr>
 
-            <div class="form-group col-md-2">
-                <button type="submit" class="btn btn-primary">Submit</button>
+            <form method="post" action="userPage.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+                <div class = "row">
+                    <div class="form-group col-4">
+                        <label>Fruit (Required)</label>
+                        <select required id="inputOfferFruit" class="form-control">
+                            <option selected disabled hidden>Choose...</option>
+                            <option value="apples">Apples</option>
+                            <option value="crabapples">Crab Apples</option>
+                            <option value="evans">Evans (Sour Cherries)</option>
+                            <option value="pears">Pears</option>
+                            <option value="saskatoons">Saskatoon Berries</option>
+                            <option value="plums">Plums</option>
+                            <option value="amurs">Amur (Choke Cherries)</option>
+                            <option value="schuberts">Schubert (Choke Cherries)</option>
+                            <option value="gojis">Goji Berries</option>
+                        </select>
+                     </div>
+
+                    <div class="form-group col-4">
+                        <label>Offer Until When? (Required) </label>
+                        <input required type="date" name="offerUntilDate" class="form-control">
+                        <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class="form-group col-4">
+                        <label>Contact Email</label>
+                        <input required type="email" name="fruitEmail" class="form-control">
+                    </div>
+
+                    <div class="form-group col-4">
+                        <label>Contact Phone Number</label>
+                        <input required type="number" name="fruitNumber" class="form-control">
+                    </div>
+                </div>
+
+                <div class = "row" style = "margin-bottom: 20px;">
+                    <div class = "col-1"> <!--FOR SPACING-->
+                    </div>
+
+                    <div class = "col">
+                        <h5>Either a Phone Number or an E-mail Address Is Required</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-8">
+                        <label>Description</label>
+                        <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300"> </textarea>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group col-md-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>    
+
+
+        </div><!--BODY CONTAINER-->
+
+        <div class="footer">
+            <div class="row">
+                <div class="col">
+                    Photo
+                </div>
+
+                <div class="col">  
+                    <p> Designed February 01,2019<br>
+                        Alex Ho, Chase Larocque, Justin Ikenouye
+                    </p>
+                </div>
+
+                <div class="col">
+                    <h6>Contact Information</h6>
+                </div>
             </div>
-
-        </form>    
-
-
-    </div><!--BODY CONTAINER-->
-
-    <div class="footer">
-        <div class="row">
-            <div class="col">
-                Photo
-            </div>
-
-            <div class="col">  
-                <p> Designed February 01,2019<br>
-                    Alex Ho, Chase Larocque, Justin Ikenouye
-                </p>
-            </div>
-
-            <div class="col">
-                <h6>Contact Information</h6>
-            </div>
-        </div>
-    </div> <!--BODY CONTAINER-->
+        </div> <!--FOOTER CONTAINER-->
     </div> <!--MAIN CONTAINER-->
 </body>
 
