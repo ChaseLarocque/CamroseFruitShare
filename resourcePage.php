@@ -40,8 +40,8 @@ and current offerings for that fruit.
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="userPage.php">User Page</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
@@ -52,69 +52,17 @@ and current offerings for that fruit.
                     <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
                 </li>
                 <a>|</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                <li class="nav-item active">
+                    <a class="nav-link onPage disabled" href="resourcePage.php">Community Resources</a>
                 </li>
             </ul>
         </nav>
 
       <div class="body container">
-        <div class = "row">
-        <div class = "col-6 columnForUP">
-          <h2 class = "center padding20"> Current Fruit Being Offered </h2>
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Fruit</th>
-              <th scope="col">Until This Date</th>
-              <th scope="col">Remove?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Apples</td>
-              <td>03-12-2019</td>
-              <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Choke Cherries</td>
-              <td>03-13-2019</td>
-              <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-        <div class = "col-6 padding30">
-          <h2 class = "center padding20"> Current Fruit Being Requested </h2>
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Fruit</th>
-              <th scope="col">Until This Date</th>
-              <th scope="col">Remove?</th>
-
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pear</td>
-              <td>02-28-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Goji Berries</td>
-              <td>03-28-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Crab Apples</td>
-              <td>03-19-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
+        <h1>
+          This is where the community resources will be placed in hopes to help<br>
+          others connect with environmental resources in the future. 
+        </h1>
       </div>
 
       <div class="footer">

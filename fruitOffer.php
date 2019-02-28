@@ -41,25 +41,25 @@ It allows them to enter details like what kind of fruit they have and how to con
             </div>    
         </div>
 
-          <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
+        <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="userPage.php">User Page</a>
-              </li>
-              <a>|</a>
-              <li class="nav-item active">
-                <a class="nav-link onPage disabled" href="fruitOffer.php">Offer Fruit</a>
-              </li>
-              <a>|</a>
-              <li class="nav-item">
-                <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
-              </li>
-              <a>|</a>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Community Resources</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="userPage.php">User Page</a>
+                </li>
+                <a>|</a>
+                <li class="nav-item active">
+                    <a class="nav-link onPage disabled" href="fruitOffer.php">Offer Fruit</a>
+                </li>
+                <a>|</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
+                </li>
+                <a>|</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                </li>
             </ul>
-          </nav>
+        </nav>
 
         <div class="body container">
 

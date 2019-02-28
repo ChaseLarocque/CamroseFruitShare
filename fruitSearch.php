@@ -55,7 +55,7 @@ and contact information for getting a hold of the owners.
             </li>
             <a>|</a>
             <li class="nav-item">
-                <a class="nav-link" href="#">Community Resources</a>
+                <a class="nav-link" href="resourcePage.php">Community Resources</a>
             </li>
         </ul>
     </nav>
