@@ -43,12 +43,15 @@ and current offerings for that fruit.
           <li class="nav-item active">
             <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
           </li>
+          <a>|</a>
           <li class="nav-item">
             <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
           </li>
+          <a>|</a>
           <li class="nav-item">
             <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
           </li>
+          <a>|</a>
           <li class="nav-item">
             <a class="nav-link" href="#">Community Resources</a>
           </li>
