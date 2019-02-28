@@ -49,6 +49,9 @@
 	padding-right: 15px;
 	border-top: 3px solid #000000;
 }
+.logButton{
+	padding-top: 10px
+}
 
 .form-control {
     -webkit-box-sizing: border-box;
