@@ -50,6 +50,12 @@
 	border-top: 3px solid #000000;
 }
 
+.form-control {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .fullsizerow{
 	width: 100%;
 }
@@ -95,6 +101,17 @@ h6.underline{
 	position: relative;
 	padding-bottom: 100px;
 }
+
+td{
+	font-size: 20px;
+	text-align: center;
+}
+
+th{
+	font-size:20px;
+	text-align: center;
+}
+
 html,
 body{
 	height:100%;
@@ -105,6 +122,26 @@ body{
     line-height: 1.6;
     text-align: left;
     background-color: rgba(248,248,248);
+}
+
+.columnForUP{
+	padding-top: 30px; 
+	border-right: 2px solid #F0F0F0;
+}
+
+.padding20{
+	padding-bottom : 20px;
+}
+
+.padding30{
+	padding-top : 30px;
+}
+#indexText{
+	line-height: 3;
+}
+img{
+	height: 300px;
+	width: 500px;
 }
 
 
