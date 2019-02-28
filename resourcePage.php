@@ -60,7 +60,7 @@ and current offerings for that fruit.
 
       <div class="body container">
         <h1>
-          This is where the community resources will be placed in hopes to help<br>
+          This is where the community resources will be placed in hopes to help
           others connect with environmental resources in the future. 
         </h1>
       </div>
