@@ -20,7 +20,8 @@ and contact information for getting a hold of the owners.
 
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
-    <title>Fruit Picker's Searching Page</title>
+    <title>Hidden Harvest Requesting Page</title>
+
 </head>
 
 <body>
@@ -29,7 +30,7 @@ and contact information for getting a hold of the owners.
         <div class="col-3"></div>
         <div class="col-6">
             <h1 id = "title">
-                <a>Hidden Harvests of Camrose</a>
+                Hidden Harvests of Camrose
             </h1>
         </div>
         <div class="col-3">
@@ -39,30 +40,33 @@ and contact information for getting a hold of the owners.
         </div>    
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                    <a class="btn btn-primary btn-lg btn-block" href="userPage.php" role="button">User Page</a>
-            </div>
-            <div class="col">
-                <a class="btn btn-primary btn-lg btn-block" href="fruitOffer.php" role="button">Offer Fruit</a>
-            </div>
-            <div class="col">
-                <a class="btn btn-primary btn-lg btn-block disabled" href="fruitSearch.php" role="button">Search Fruit</a>
-            </div>
-            <div class="col">
-                Button 4
-            </div>
-        </div>
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="userPage.php">User Page</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item active">
+                <a class="nav-link onPage disabled" href="fruitSearch.php">Search Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link" href="resourcePage.php">Community Resources</a>
+            </li>
+        </ul>
+    </nav>
 
      <div class="body container">
 
-        <h2> Search For Fruit </h2>
+        <h2> Request Fruit </h2>
         <p>Fill out and submit this form to request fruit from other users</p>
         <hr>
 
-        <form method="post" action="userPage.php"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+        <form method="post" action="userPage.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
             <div class="form-group col-md-4">
                 <label>Fruit #1 (Required) </label>
                 <select required id="inputSearchFruit1" class="form-control">
@@ -151,6 +155,8 @@ and contact information for getting a hold of the owners.
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="resources/js/limitDate.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

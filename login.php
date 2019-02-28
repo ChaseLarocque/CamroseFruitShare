@@ -28,10 +28,11 @@ and directs new users to an account creation page register.php
   </head>
 
 <body>
+  <div class="main-container">
     <div class="header row">
       <div class="col">
         <h1 id = "title">
-        Hidden Harvests of Camrose
+          Hidden Harvests of Camrose
        </h1>
       </div>
     </div>
@@ -50,7 +51,7 @@ and directs new users to an account creation page register.php
                 <div class="form-group row">
                   <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
                   <div class="col-6">
-                    <input type="email_address" id="email_address" class="form-control" name="email-address" required autofocus>
+                    <input type="email" id="email_address" class="form-control" name="email-address" required autofocus>
                   </div>
                 </div>
 
@@ -97,6 +98,7 @@ and directs new users to an account creation page register.php
         </div>
       </div>
   </div>
+</div>
 </body>
 
 

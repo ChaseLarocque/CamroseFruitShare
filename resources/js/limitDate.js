@@ -7,5 +7,4 @@
     document.getElementsByName("removeRequestDate")[0].setAttribute('min', today);
     document.getElementsByName("removeRequestDate")[0].setAttribute('max', maxDate);
 
-    document.getElementsByName("offerUntilDate")[0].setAttribute('min', today);
-    document.getElementsByName("offerUntilDate")[0].setAttribute('max', maxDate);
+
