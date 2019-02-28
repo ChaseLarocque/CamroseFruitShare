@@ -31,11 +31,11 @@ and current offerings for that fruit.
             Hidden Harvests of Camrose
           </h1>
         </div>
-        <div class="col-3">
+        <div class="col-3 logButton">
           <h4>
-            <a href="index.php">Logout</a>
+            <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
           </h4>
-        </div>    
+        </div>   
       </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
@@ -60,7 +60,7 @@ and current offerings for that fruit.
 
       <div class="body container">
         <h1>
-          This is where the community resources will be placed in hopes to help<br>
+          This is where the community resources will be placed in hopes to help
           others connect with environmental resources in the future. 
         </h1>
       </div>

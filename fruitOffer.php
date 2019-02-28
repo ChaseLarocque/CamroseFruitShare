@@ -34,9 +34,9 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </h1>
             </div>
 
-            <div class="col-3">
+            <div class="col-3 logButton">
                 <h4>
-                    <a href="index.php">Logout</a>
+                    <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
                 </h4>
             </div>    
         </div>
