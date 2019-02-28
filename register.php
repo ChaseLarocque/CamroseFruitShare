@@ -63,7 +63,8 @@ This is the page for registering to the website by clicking on 'register' from l
                 
                 <div class = "form-group row">
                   <div class ="col-6 offset-4">
-                    <input type="checkbox" name="ettiquette"> I have read the <a href = "#popup1">Etiquette Guidelines</a>
+                    <input type="checkbox" name="ettiquette" oninvalid="this.setCustomValidity('You Need To Read the Etiquette Guidelines')"
+                           oninput="setCustomValidity('')" required> I have read the <a href = "#popup1">Etiquette Guidelines.</a>
                   </div>
                 </div>
 
