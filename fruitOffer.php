@@ -102,11 +102,8 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </div>
 
                 <div class = "row" style = "margin-bottom: 20px;">
-                    <div class = "col-1"> <!--FOR SPACING-->
-                    </div>
-
                     <div class = "col">
-                        <h5>Either a Phone Number or an E-mail Address Is Required</h5>
+                        <h5>Either an Email Address or a Phone Number is Required</h5>
                     </div>
                 </div>
 
