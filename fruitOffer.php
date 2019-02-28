@@ -17,6 +17,7 @@ It allows them to enter details like what kind of fruit they have and how to con
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+
     <title>Fruit Picker's Offering Page</title>
 </head>
 
