@@ -3,11 +3,9 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-login.php
+register.php
 
-This is the page for logging in to the website by clicking on 'login' from index.php
-It authenticates current users so that they may access their account on userPage.php 
-and directs new users to an account creation page register.php   
+This is the page for registering to the website by clicking on 'register' from login.php  
 -->
 
 <!doctype html>
@@ -21,6 +19,7 @@ and directs new users to an account creation page register.php
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+    <link rel="stylesheet" href="resources/css/register.css">
 
 
 
@@ -32,7 +31,7 @@ and directs new users to an account creation page register.php
     <div class="header row">
       <div class="col">
         <h1 id = "title">
-          Hidden Harvests of Camrose
+        Hidden Harvests of Camrose
        </h1>
       </div>
     </div>
@@ -44,7 +43,7 @@ and directs new users to an account creation page register.php
       <div class="col-8">
 
         <div class="card">
-          <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
+          <div class="card-header text-white" id = "login-head">Register to Hidden Harvests of Camrose</div>
 
             <div class="card-body">
               <form action="userPage.php" method="POST">
@@ -61,17 +60,18 @@ and directs new users to an account creation page register.php
                     <input type="password" id="password" class="form-control" name="password" required>
                   </div>
                 </div>
-                            
-                <div class="col-6 offset-md-4">
-                  <button type="submit" class="btn btn-primary">Login</button>
-                  <a href="#" class="btn btn-link">Forgot Your Password?</a>
+                
+                <div class = "form-group row">
+                  <div class ="col-6 offset-4">
+                    <input type="checkbox" name="ettiquette" oninvalid="this.setCustomValidity('You Need To Read the Etiquette Guidelines')"
+                           oninput="setCustomValidity('')" required> I have read the <a href = "#popup1">Etiquette Guidelines.</a>
+                  </div>
                 </div>
 
-                <div class="form-group row">
-                  <div class="col-6 offset-md-5">
-                    <a href="register.php" class="btn btn-link">Need An Account?</a>
+                <div class="form-group row">            
+                  <div class="col-6 offset-4">
+                    <button type="submit" class="btn btn-primary">Register</button>
                   </div>
-                </div>       
               </form>
             </div>
         </div>
@@ -79,7 +79,23 @@ and directs new users to an account creation page register.php
     </div>
   </div>
 </div>
-
+    
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Etiquette Guidelines</h2>
+        <hr>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            1. Respect Other People</br>
+            2. Respect Other People's Homes/Businesses</br>
+            3. Respect Other People's Communication Wishes</br>
+            4. ......</br>
+            5. ......</br>
+            6. ......</br>
+            7. ......</br>
+        </div>
+    </div>
+</div>
 
 
   <div class="footer">
