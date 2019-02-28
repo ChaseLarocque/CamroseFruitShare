@@ -61,13 +61,14 @@ will be available to all users.
                                     </p>
                                 </div>
                                 <div class="col-6">
-                                    Picture
+                                    <img src="resources/images/sampleAppleTree" class="rounded float-right">
                                 </div>
+                                
                             </div>
-
+                            <br>
                             <div class="row">
                                 <div class="col-6">
-                                    Picture
+                                    <img src="resources/images/sampleRedAppleTree" class="rounded float-left">
                                 </div>
 
                                 <div class="col-6">
