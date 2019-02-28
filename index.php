@@ -35,9 +35,9 @@ will be available to all users.
         	           Hidden Harvests of Camrose
         	     	</h1>
         	    </div>
-        		<div class="col-3">
+        		<div class="col-3 logButton">
         			<h4>
-        				<a href="login.php">Login</a>
+        				<a href="login.php" class="btn btn-dark" role="button">Login</a>
         			</h4>
         		</div>	
           	</div>	
@@ -61,13 +61,14 @@ will be available to all users.
                                     </p>
                                 </div>
                                 <div class="col-6">
-                                    Picture
+                                    <img src="resources/images/sampleAppleTree" class="rounded float-right">
                                 </div>
+                                
                             </div>
-
+                            <br>
                             <div class="row">
                                 <div class="col-6">
-                                    Picture
+                                    <img src="resources/images/sampleRedAppleTree" class="rounded float-left">
                                 </div>
 
                                 <div class="col-6">

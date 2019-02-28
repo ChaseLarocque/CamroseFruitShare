@@ -33,29 +33,32 @@ and contact information for getting a hold of the owners.
                 Hidden Harvests of Camrose
             </h1>
         </div>
-        <div class="col-3">
+        <div class="col-3 logButton">
             <h4>
-                <a href="index.php">Logout</a>
+                <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
             </h4>
         </div>    
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                    <a class="btn btn-primary btn-lg btn-block" href="userPage.php" role="button">User Page</a>
-            </div>
-            <div class="col">
-                <a class="btn btn-primary btn-lg btn-block" href="fruitOffer.php" role="button">Offer Fruit</a>
-            </div>
-            <div class="col">
-                <a class="btn btn-primary btn-lg btn-block disabled" href="fruitSearch.php" role="button">Request Fruit</a>
-            </div>
-            <div class="col">
-                Button 4
-            </div>
-        </div>
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="userPage.php">User Page</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item active">
+                <a class="nav-link onPage disabled" href="fruitSearch.php">Search Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link" href="resourcePage.php">Community Resources</a>
+            </li>
+        </ul>
+    </nav>
 
      <div class="body container">
 

@@ -31,30 +31,32 @@ and current offerings for that fruit.
             Hidden Harvests of Camrose
           </h1>
         </div>
-        <div class="col-3">
+        <div class="col-3 logButton">
           <h4>
-            <a href="index.php">Logout</a>
+            <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
           </h4>
-        </div>    
+        </div>   
       </div>
 
-      <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-        <a>Navigation</a>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Community Resources</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
+                </li>
+                <a>|</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                </li>
+                <a>|</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
+                </li>
+                <a>|</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                </li>
+            </ul>
+        </nav>
 
       <div class="body container">
         <div class = "row">

@@ -89,7 +89,7 @@ This is the page for registering to the website by clicking on 'register' from l
             1. Respect Other People</br>
             2. Respect Other People's Homes/Businesses</br>
             3. Respect Other People's Communication Wishes</br>
-            4. ......</br>
+            4. Pick With Care for the Trees</br>
             5. ......</br>
             6. ......</br>
             7. ......</br>
