@@ -100,7 +100,7 @@ It allows them to enter details like what kind of fruit they have and how to con
 
                     <div class="form-group col-4">
                         <label>Contact Phone Number</label>
-                        <input required type="number" name="fruitNumber" class="form-control">
+                        <input required type="tel" name="fruitNumber" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
                     </div>
                 </div>
 
