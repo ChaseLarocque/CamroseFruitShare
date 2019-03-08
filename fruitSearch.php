@@ -51,11 +51,15 @@ and contact information for getting a hold of the owners.
             </li>
             <a>|</a>
             <li class="nav-item active">
-                <a class="nav-link onPage disabled" href="fruitSearch.php">Search Fruit</a>
+                <a class="nav-link onPage disabled" href="fruitSearch.php">Request Fruit</a>
             </li>
             <a>|</a>
             <li class="nav-item">
                 <a class="nav-link" href="resourcePage.php">Community Resources</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link" href="feedbackForm.php">Feedback</a>
             </li>
         </ul>
     </nav>
@@ -81,6 +85,7 @@ and contact information for getting a hold of the owners.
                     <option value="schuberts">Schubert (Choke Cherries)</option>
                     <option value="gojis">Goji Berries</option>
                 </select>
+                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
             </div>
 
             <div class="form-group col-md-4">
@@ -97,6 +102,7 @@ and contact information for getting a hold of the owners.
                     <option value="schuberts">Schubert (Choke Cherries)</option>
                     <option value="gojis">Goji Berries</option>
                 </select>
+                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
             </div>
 
             <div class="form-group col-md-4">
@@ -113,6 +119,7 @@ and contact information for getting a hold of the owners.
                     <option value="schuberts">Schubert (Choke Cherries)</option>
                     <option value="gojis">Goji Berries</option>
                 </select>
+                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
             </div>
 
             <div class="form-group col-md-4">
