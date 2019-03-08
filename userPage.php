@@ -55,6 +55,10 @@ and current offerings for that fruit.
                 <li class="nav-item">
                     <a class="nav-link" href="resourcePage.php">Community Resources</a>
                 </li>
+                <a>|</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="feedbackForm.php">Feedback</a>
+            </li>
             </ul>
         </nav>
 

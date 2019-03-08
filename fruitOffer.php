@@ -58,6 +58,10 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <li class="nav-item">
                     <a class="nav-link" href="resourcePage.php">Community Resources</a>
                 </li>
+                <a>|</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedbackForm.php">Feedback</a>
+                </li>
             </ul>
         </nav>
 
@@ -83,6 +87,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                             <option value="schuberts">Schubert (Choke Cherries)</option>
                             <option value="gojis">Goji Berries</option>
                         </select>
+                        <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                      </div>
 
                     <div class="form-group col-4">
@@ -113,7 +118,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="row">
                     <div class="form-group col-8">
                         <label>Description</label>
-                        <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300"> </textarea>
+                        <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including ..."></textarea>
                     </div>
                 </div>
 
