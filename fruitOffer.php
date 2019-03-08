@@ -52,7 +52,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
+                    <a class="nav-link" href="fruitSearch.php">Requested Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">

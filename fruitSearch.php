@@ -51,7 +51,7 @@ and contact information for getting a hold of the owners.
             </li>
             <a>|</a>
             <li class="nav-item active">
-                <a class="nav-link onPage disabled" href="fruitSearch.php">Search Fruit</a>
+                <a class="nav-link onPage disabled" href="fruitSearch.php">Request Fruit</a>
             </li>
             <a>|</a>
             <li class="nav-item">
