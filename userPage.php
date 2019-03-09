@@ -49,19 +49,23 @@ and current offerings for that fruit.
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
+                    <a class="nav-link" href="fruitSearch.php">Requested Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
                     <a class="nav-link" href="resourcePage.php">Community Resources</a>
                 </li>
+                <a>|</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="feedbackForm.php">Feedback</a>
+            </li>
             </ul>
         </nav>
 
       <div class="body container">
         <div class = "row">
         <div class = "col-6 columnForUP">
-          <h2 class = "center padding20"> Current Fruit Being Offered </h2>
+          <h2 class = "center padding20"> My Fruit Being Offered </h2>
           <table class="table">
           <thead>
             <tr>
@@ -85,7 +89,7 @@ and current offerings for that fruit.
         </table>
       </div>
         <div class = "col-6 padding30">
-          <h2 class = "center padding20"> Current Fruit Being Requested </h2>
+          <h2 class = "center padding20"> My Requested Fruit </h2>
           <table class="table">
           <thead>
             <tr>
