@@ -41,22 +41,22 @@ This page will be for feedback regarding the website, and where user's can reque
     <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
         <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item">
-                <a class="nav-link" href="userPage.php">User Page</a>
+                <a class="nav-link navBtn" href="userPage.php">User Page</a>
             </li>
             <a>|</a>
             <li class="nav-item">
-                <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
             </li>
             <a>|</a>
             <li class="nav-item active">
-                <a class="nav-link" href="fruitSearch.php">Request Fruit</a>
-            </li>
-            <a>|</a>
-            <li class="nav-item">
-                <a class="nav-link" href="resourcePage.php">Community Resources</a>
-            </li>
-            <a>|</a>
-            <li class="nav-item">
                 <a class="nav-link onPage disabled" href="feedbackForm.php">Feedback</a>
             </li>
         </ul>
@@ -99,7 +99,11 @@ This page will be for feedback regarding the website, and where user's can reque
                 </p>
             </div>
             <div class="col">
-                <h6>Contact Information</h6>
+                <p>
+                    Contact Information<br>
+                    Dr. Greg King, Assistant Professor of Environmental Science<br>
+                    gking@ualberta.ca 
+                </p>
             </div>
         </div>
     </div>

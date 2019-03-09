@@ -45,23 +45,23 @@ and current offerings for that fruit.
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                    <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                    <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                  <a class="nav-link" href="feedbackForm.php">Feedback</a>
+                  <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
                 </li>
                 <a>|</a>
                 <li class = "nav-item">
-                  <a class="nav-link" href="adminPage.php">Admin Settings</a>
+                  <a class="nav-link navBtn" href="adminPage.php">Admin Settings</a>
                 </li>
             </ul>
         </nav>
@@ -137,7 +137,11 @@ and current offerings for that fruit.
             </p>
           </div>
           <div class="col">
-            <p>Contact Information</p>
+            <p>
+              Contact Information<br>
+              Dr. Greg King, Assistant Professor of Environmental Science<br>
+              gking@ualberta.ca 
+            </p>
           </div>
         </div>
       </div>

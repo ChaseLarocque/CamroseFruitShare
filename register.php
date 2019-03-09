@@ -100,19 +100,23 @@ This is the page for registering to the website by clicking on 'register' from l
 
   <div class="footer">
     <div class="row">
-        <div class="col text-left">
-          Photo
-        </div>
-        <div class="col">  
-          <p>
-            Designed February 01,2019<br>
-            Alex Ho, Chase Larocque, Justin Ikenouye.
-          </p>
-        </div>
-        <div class="col text-center">
-            <h6>Contact Information</h6>
-        </div>
+      <div class="col">
+        Photo
       </div>
+      <div class="col">  
+        <p>
+          Designed February 01,2019<br>
+          Alex Ho, Chase Larocque, Justin Ikenouye.
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          Contact Information<br>
+          Dr. Greg King, Assistant Professor of Environmental Science<br>
+          gking@ualberta.ca 
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 </body>
