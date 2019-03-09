@@ -28,15 +28,15 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <!-- FOR SPACING-->
             </div>
 
-            <div class="col-6">
+            <div class="col-6 my-auto">
                 <h1 id = "title">
                     Hidden Harvests of Camrose
                 </h1>
             </div>
 
-            <div class="col-3 logButton">
+            <div class="col-3 logButton my-auto">
                 <h4>
-                    <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
+                    <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                 </h4>
             </div>    
         </div>
@@ -124,7 +124,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <hr>
 
                 <div class="form-group col-md-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
                 </div>
 
             </form>    

@@ -29,7 +29,7 @@ This is the page for registering to the website by clicking on 'register' from l
 <body>
   <div class="main-container">
     <div class="header row">
-      <div class="col">
+      <div class="col my-auto">
         <h1 id = "title">
         Hidden Harvests of Camrose
        </h1>
@@ -70,7 +70,7 @@ This is the page for registering to the website by clicking on 'register' from l
 
                 <div class="form-group row">            
                   <div class="col-6 offset-4">
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button type="submit" class="btn btn-secondary btnGreen">Register</button>
                   </div>
               </form>
             </div>

@@ -33,7 +33,7 @@ and current offerings for that fruit.
         </div>
         <div class="col-3 logButton my-auto">
           <h4>
-            <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
+            <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
           </h4>
         </div>   
       </div>

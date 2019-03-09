@@ -139,5 +139,10 @@ img{
 	height: 300px;
 	width: 500px;
 }
-
+.btnGreen:hover {
+	background-color: green;
+}
+.btnRed:hover{
+	background-color: red;
+}
 

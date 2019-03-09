@@ -30,7 +30,7 @@ and directs new users to an account creation page register.php
 <body>
   <div class="main-container">
     <div class="header row">
-      <div class="col">
+      <div class="col my-auto">
         <h1 id = "title">
           Hidden Harvests of Camrose
        </h1>
@@ -63,7 +63,7 @@ and directs new users to an account creation page register.php
                 </div>
                             
                 <div class="col-6 offset-md-4">
-                  <button type="submit" class="btn btn-primary">Login</button>
+                  <button type="submit" class="btn btn-secondary btnGreen">Login</button>
                   <a href="#" class="btn btn-link">Forgot Your Password?</a>
                 </div>
 
