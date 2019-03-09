@@ -148,4 +148,9 @@ img{
 .btnRed:hover{
 	background-color: red;
 }
+/*Vertical dividers in the navbar*/
+.divider-vertical{
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
 
