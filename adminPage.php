@@ -3,10 +3,10 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-userPage.php
+adminPage.php
 
-This page users navigate to after they have logged in. It contains what fruit they are looking for
-and current offerings for that fruit.
+This page is for the admin when logged in. They will be able to change what fruits are available for either being offered or requested 
+which will work to communicate with the Database.
 -->
 
 <!doctype html>
@@ -26,12 +26,12 @@ and current offerings for that fruit.
     <div class="main-container">
       <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6 my-auto">
+        <div class="col-6">
           <h1 id = "title">
             Hidden Harvests of Camrose
           </h1>
         </div>
-        <div class="col-3 logButton my-auto">
+        <div class="col-3 logButton">
           <h4>
             <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
           </h4>
@@ -40,8 +40,8 @@ and current offerings for that fruit.
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
             <ul class="navbar-nav">
-                <li class="nav-item active ">
-                    <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="userPage.php">User Page</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
@@ -49,7 +49,7 @@ and current offerings for that fruit.
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link" href="fruitSearch.php">Request Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
@@ -61,68 +61,15 @@ and current offerings for that fruit.
                 </li>
                 <a>|</a>
                 <li class = "nav-item">
-                  <a class="nav-link onPage" href="adminPage.php">Admin Settings</a>
+                  <a class="nav-link onPage disabled" href="adminPage.php">Admin Settings</a>
                 </li>
             </ul>
         </nav>
 
       <div class="body container">
-        <div class = "row">
-        <div class = "col-6 columnForUP">
-          <h2 class = "center padding20"> My Fruit Being Offered </h2>
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Fruit</th>
-              <th scope="col">Until This Date</th>
-              <th scope="col">Remove?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Apples</td>
-              <td>03-12-2019</td>
-              <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Choke Cherries</td>
-              <td>03-13-2019</td>
-              <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-        <div class = "col-6 padding30">
-          <h2 class = "center padding20"> My Requested Fruit </h2>
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Fruit</th>
-              <th scope="col">Until This Date</th>
-              <th scope="col">Remove?</th>
-
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pear</td>
-              <td>02-28-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Goji Berries</td>
-              <td>03-28-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Crab Apples</td>
-              <td>03-19-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
+        <h1>
+          This is where the admin settings will be 
+        </h1>
       </div>
 
       <div class="footer">

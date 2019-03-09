@@ -26,9 +26,6 @@
 	border-bottom: 3px solid #000000;
 }
 
-.header a{
-	color: #fff;
-}
 
 .title{
 	text-align: center;
@@ -86,13 +83,6 @@ h6.underline{
 
 #title{
 	 font-size:3vw;
-}
-
-.vertical-align{
-	padding-top: 100px;
-}
-.vertical-align-fruitOS{
-	padding-top :30px;
 }
 .center{
 	text-align: center;
