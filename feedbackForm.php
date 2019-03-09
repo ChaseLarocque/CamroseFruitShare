@@ -43,19 +43,19 @@ This page will be for feedback regarding the website, and where user's can reque
             <li class="nav-item">
                 <a class="nav-link navBtn" href="userPage.php">User Page</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
                 <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
                 <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
                 <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item active">
                 <a class="nav-link onPage disabled" href="feedbackForm.php">Feedback</a>
             </li>
