@@ -65,6 +65,8 @@ It allows them to enter details like what kind of fruit they have and how to con
             </ul>
         </nav>
 
+        <br>
+        
         <div class="body container">
 
             <h2> Offer Fruit </h2>
@@ -132,7 +134,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="form-group col-md-2">
                     <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
                 </div>
-
+                <br>
             </form>    
 
 
