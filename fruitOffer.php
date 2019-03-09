@@ -28,13 +28,13 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <!-- FOR SPACING-->
             </div>
 
-            <div class="col-6 my-auto">
+            <div class="col-6">
                 <h1 id = "title">
                     Hidden Harvests of Camrose
                 </h1>
             </div>
 
-            <div class="col-3 logButton my-auto">
+            <div class="col-3 logButton">
                 <h4>
                     <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
                 </h4>

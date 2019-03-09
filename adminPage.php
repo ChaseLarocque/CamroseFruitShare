@@ -26,12 +26,12 @@ which will work to communicate with the Database.
     <div class="main-container">
       <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6 my-auto">
+        <div class="col-6">
           <h1 id = "title">
             Hidden Harvests of Camrose
           </h1>
         </div>
-        <div class="col-3 logButton my-auto">
+        <div class="col-3 logButton">
           <h4>
             <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
           </h4>
