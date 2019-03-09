@@ -97,7 +97,6 @@ It allows them to enter details like what kind of fruit they have and how to con
                         <label>Contact Email</label>
                         <input required type="email" name="fruitEmail" class="form-control" placeholder="NAME@EMAIL.COM">
                     </div>
-
                     <div class="form-group col-4">
                         <label>Contact Phone Number</label>
                         <input required type="tel" name="fruitNumber" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
