@@ -39,7 +39,7 @@ and current offerings for that fruit.
       </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-fill w-100">
                 <li class="nav-item active ">
                     <a class="nav-link onPage disabled" href="userPage.php">User Page</a>
                 </li>
@@ -61,7 +61,7 @@ and current offerings for that fruit.
                 </li>
                 <a>|</a>
                 <li class = "nav-item">
-                  <a class="nav-link onPage" href="adminPage.php">Admin Settings</a>
+                  <a class="nav-link" href="adminPage.php">Admin Settings</a>
                 </li>
             </ul>
         </nav>

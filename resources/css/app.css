@@ -46,6 +46,9 @@
 	padding-right: 15px;
 	border-top: 3px solid #000000;
 }
+a:hover{
+	background-color: #6c757d;
+}
 .logButton{
 	padding-top: 10px
 }

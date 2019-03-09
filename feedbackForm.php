@@ -39,7 +39,7 @@ This page will be for feedback regarding the website, and where user's can reque
     </div>
 
     <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item">
                 <a class="nav-link" href="userPage.php">User Page</a>
             </li>
