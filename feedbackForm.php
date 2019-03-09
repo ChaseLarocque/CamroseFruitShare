@@ -26,37 +26,37 @@ This page will be for feedback regarding the website, and where user's can reque
    <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-6 my-auto">
             <h1 id = "title">
                 Hidden Harvests of Camrose
             </h1>
         </div>
-        <div class="col-3 logButton">
+        <div class="col-3 logButton my-auto">
             <h4>
-                <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
+                <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
             </h4>
         </div>    
     </div>
 
     <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item">
-                <a class="nav-link" href="userPage.php">User Page</a>
+                <a class="nav-link navBtn" href="userPage.php">User Page</a>
             </li>
             <a>|</a>
             <li class="nav-item">
-                <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
             </li>
             <a>|</a>
             <li class="nav-item active">
-                <a class="nav-link" href="fruitSearch.php">Request Fruit</a>
-            </li>
-            <a>|</a>
-            <li class="nav-item">
-                <a class="nav-link" href="resourcePage.php">Community Resources</a>
-            </li>
-            <a>|</a>
-            <li class="nav-item">
                 <a class="nav-link onPage disabled" href="feedbackForm.php">Feedback</a>
             </li>
         </ul>
@@ -80,7 +80,7 @@ This page will be for feedback regarding the website, and where user's can reque
             <hr>
 
             <div class="form-group col-md-2">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
         </form>    
                    
@@ -99,7 +99,11 @@ This page will be for feedback regarding the website, and where user's can reque
                 </p>
             </div>
             <div class="col">
-                <h6>Contact Information</h6>
+                <p>
+                    Contact Information<br>
+                    Dr. Greg King, Assistant Professor of Environmental Science<br>
+                    gking@ualberta.ca 
+                </p>
             </div>
         </div>
     </div>
