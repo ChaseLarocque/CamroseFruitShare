@@ -28,23 +28,23 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <!-- FOR SPACING-->
             </div>
 
-            <div class="col-6">
+            <div class="col-6 my-auto">
                 <h1 id = "title">
                     Hidden Harvests of Camrose
                 </h1>
             </div>
 
-            <div class="col-3 logButton">
+            <div class="col-3 logButton my-auto">
                 <h4>
-                    <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
+                    <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                 </h4>
             </div>    
         </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-fill w-100">
                 <li class="nav-item">
-                    <a class="nav-link" href="userPage.php">User Page</a>
+                    <a class="nav-link navBtn" href="userPage.php">User Page</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item active">
@@ -52,15 +52,15 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                    <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="feedbackForm.php">Feedback</a>
+                    <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
                 </li>
             </ul>
         </nav>
@@ -72,6 +72,12 @@ It allows them to enter details like what kind of fruit they have and how to con
             <hr>
 
             <form method="post" action="userPage.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+                <div class="row">
+                    <div class="form-group col-8">
+                        <label>Contact Name (Required)</label>
+                        <input required type="text" name="contactName" class="form-control" placeholder = "John">     
+                    </div>
+                </div>
                 <div class = "row">
                     <div class="form-group col-4">
                         <label>Fruit (Required)</label>
@@ -102,7 +108,6 @@ It allows them to enter details like what kind of fruit they have and how to con
                         <label>Contact Email</label>
                         <input required type="email" name="fruitEmail" class="form-control" placeholder="NAME@EMAIL.COM">
                     </div>
-
                     <div class="form-group col-4">
                         <label>Contact Phone Number</label>
                         <input required type="tel" name="fruitNumber" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
@@ -125,7 +130,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <hr>
 
                 <div class="form-group col-md-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
                 </div>
 
             </form>    
@@ -138,15 +143,17 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="col">
                     Photo
                 </div>
-
                 <div class="col">  
                     <p> Designed February 01,2019<br>
                         Alex Ho, Chase Larocque, Justin Ikenouye
                     </p>
                 </div>
-
                 <div class="col">
-                    <h6>Contact Information</h6>
+                    <p>
+                        Contact Information<br>
+                        Dr. Greg King, Assistant Professor of Environmental Science<br>
+                        gking@ualberta.ca 
+                    </p>
                 </div>
             </div>
         </div> <!--FOOTER CONTAINER-->
