@@ -26,41 +26,45 @@ and current offerings for that fruit.
     <div class="main-container">
       <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-6 my-auto">
           <h1 id = "title">
             Hidden Harvests of Camrose
           </h1>
         </div>
-        <div class="col-3">
+        <div class="col-3 logButton my-auto">
           <h4>
-            <a href="index.php">Logout</a>
+            <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
           </h4>
-        </div>    
+        </div>   
       </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-fill w-100">
                 <li class="nav-item">
-                    <a class="nav-link" href="userPage.php">User Page</a>
+                    <a class="nav-link navBtn" href="userPage.php">User Page</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                    <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="fruitSearch.php">Search Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
                 <a>|</a>
                 <li class="nav-item active">
                     <a class="nav-link onPage disabled" href="resourcePage.php">Community Resources</a>
                 </li>
+                <a>|</a>
+                <li class="nav-item">
+                  <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
+            </li>
             </ul>
         </nav>
 
       <div class="body container">
         <h1>
-          This is where the community resources will be placed in hopes to help<br>
+          This is where the community resources will be placed in hopes to help
           others connect with environmental resources in the future. 
         </h1>
       </div>
@@ -77,7 +81,11 @@ and current offerings for that fruit.
             </p>
           </div>
           <div class="col">
-            <p>Contact Information</p>
+            <p>
+              Contact Information<br>
+              Dr. Greg King, Assistant Professor of Environmental Science<br>
+              gking@ualberta.ca 
+            </p>
           </div>
         </div>
       </div>

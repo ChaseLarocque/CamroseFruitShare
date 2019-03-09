@@ -30,14 +30,14 @@ will be available to all users.
         <div class = "main-container">
         	<div class="header row">
         		<div class="col-3"></div>
-        		<div class="col-6">
+        		<div class="col-6 my-auto">
         	    	<h1 id = "title">
         	           Hidden Harvests of Camrose
         	     	</h1>
         	    </div>
-        		<div class="col-3">
+        		<div class="col-3 logButton my-auto">
         			<h4>
-        				<a href="login.php">Login</a>
+        				<a href="login.php" class="btn btn-secondary" role="button">Login</a>
         			</h4>
         		</div>	
           	</div>	
@@ -61,14 +61,14 @@ will be available to all users.
                                     </p>
                                 </div>
                                 <div class="col-6">
-                                    <img src="resources/images/sampleAppleTree" class="rounded float-right">
+                                    <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
                                 </div>
                                 
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="resources/images/sampleRedAppleTree" class="rounded float-left">
+                                    <img src="resources/images/sampleRedAppleTree.jpeg" class="rounded float-left">
                                 </div>
 
                                 <div class="col-6">
@@ -87,7 +87,7 @@ will be available to all users.
 
         	<div class="footer">
             	<div class="row">
-                	<div class="col text-left">
+                	<div class="col">
                   		Photo
                 	</div>
                 	<div class="col">  
@@ -96,8 +96,12 @@ will be available to all users.
                     		Alex Ho, Chase Larocque, Justin Ikenouye.
                   		</p>
                 	</div>
-                	<div class="col text-center">
-                    	<h6>Contact Information</h6>
+                	<div class="col">
+                        <p>
+                          Contact Information<br>
+                          Dr. Greg King, Assistant Professor of Environmental Science<br>
+                          gking@ualberta.ca 
+                        </p>
                 	</div>
                 </div>
           	</div>

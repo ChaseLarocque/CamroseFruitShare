@@ -20,6 +20,7 @@ and contact information for getting a hold of the owners.
 
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+
     <title>Hidden Harvest Requesting Page</title>
 
 </head>
@@ -28,34 +29,38 @@ and contact information for getting a hold of the owners.
    <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-6 my-auto">
             <h1 id = "title">
                 Hidden Harvests of Camrose
             </h1>
         </div>
-        <div class="col-3">
+        <div class="col-3 logButton my-auto">
             <h4>
-                <a href="index.php">Logout</a>
+                <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
             </h4>
         </div>    
     </div>
 
     <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item">
-                <a class="nav-link" href="userPage.php">User Page</a>
+                <a class="nav-link navBtn" href="userPage.php">User Page</a>
             </li>
             <a>|</a>
             <li class="nav-item">
-                <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
             </li>
             <a>|</a>
             <li class="nav-item active">
-                <a class="nav-link onPage disabled" href="fruitSearch.php">Search Fruit</a>
+                <a class="nav-link onPage disabled" href="fruitSearch.php">Request Fruit</a>
             </li>
             <a>|</a>
             <li class="nav-item">
-                <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
+            </li>
+            <a>|</a>
+            <li class="nav-item">
+                <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
             </li>
         </ul>
     </nav>
@@ -81,6 +86,7 @@ and contact information for getting a hold of the owners.
                     <option value="schuberts">Schubert (Choke Cherries)</option>
                     <option value="gojis">Goji Berries</option>
                 </select>
+                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
             </div>
 
             <div class="form-group col-md-4">
@@ -97,6 +103,7 @@ and contact information for getting a hold of the owners.
                     <option value="schuberts">Schubert (Choke Cherries)</option>
                     <option value="gojis">Goji Berries</option>
                 </select>
+                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
             </div>
 
             <div class="form-group col-md-4">
@@ -113,6 +120,7 @@ and contact information for getting a hold of the owners.
                     <option value="schuberts">Schubert (Choke Cherries)</option>
                     <option value="gojis">Goji Berries</option>
                 </select>
+                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
             </div>
 
             <div class="form-group col-md-4">
@@ -125,7 +133,7 @@ and contact information for getting a hold of the owners.
             <hr>
 
             <div class="form-group col-md-2">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
         </form>    
                    
@@ -144,7 +152,11 @@ and contact information for getting a hold of the owners.
                 </p>
             </div>
             <div class="col">
-                <h6>Contact Information</h6>
+                <p>
+                    Contact Information<br>
+                    Dr. Greg King, Assistant Professor of Environmental Science<br>
+                    gking@ualberta.ca 
+                </p>
             </div>
         </div>
     </div>
