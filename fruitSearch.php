@@ -28,12 +28,12 @@ and contact information for getting a hold of the owners.
    <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-6 my-auto">
             <h1 id = "title">
                 Hidden Harvests of Camrose
             </h1>
         </div>
-        <div class="col-3 logButton">
+        <div class="col-3 logButton my-auto">
             <h4>
                 <a href="login.php" class="btn btn-secondary" role="button">Logout</a>
             </h4>

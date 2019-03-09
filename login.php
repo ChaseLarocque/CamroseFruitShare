@@ -30,7 +30,7 @@ and directs new users to an account creation page register.php
 <body>
   <div class="main-container">
     <div class="header row">
-      <div class="col">
+      <div class="col my-auto">
         <h1 id = "title">
           Hidden Harvests of Camrose
        </h1>
