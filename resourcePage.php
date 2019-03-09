@@ -62,6 +62,8 @@ and current offerings for that fruit.
             </ul>
         </nav>
 
+      <br>
+
       <div class="body container">
         <h1>
           This is where the community resources will be placed in hopes to help

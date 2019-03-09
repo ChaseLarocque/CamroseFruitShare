@@ -68,7 +68,7 @@ will be available to all users.
                             <br>
                             <div class="row">
                                 <div class="col-6">
-                                    <img src="resources/images/sampleRedAppleTree.jpeg" class="rounded float-left">
+                                    <img src="resources/images/sampleRedAppleTree.jpg" class="rounded float-left">
                                 </div>
 
                                 <div class="col-6">
@@ -102,10 +102,9 @@ will be available to all users.
                           Dr. Greg King, Assistant Professor of Environmental Science<br>
                           gking@ualberta.ca 
                         </p>
-                	</div>
-                </div>
-          	</div>
-        </div>
+                    </div>
+          	     </div>
+            </div>
     </body>
 
     <!-- Optional JavaScript -->

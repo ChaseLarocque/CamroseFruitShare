@@ -65,6 +65,8 @@ and contact information for getting a hold of the owners.
         </ul>
     </nav>
 
+    <br>
+
      <div class="body container">
 
         <h2> Request Fruit </h2>
@@ -136,8 +138,7 @@ and contact information for getting a hold of the owners.
                 <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
         </form>    
-                   
-          
+        <br>    
     </div>
 
     <div class="footer">
