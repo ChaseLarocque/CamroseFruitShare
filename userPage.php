@@ -24,19 +24,19 @@ and current offerings for that fruit.
 
   <body>
     <div class="main-container">
-      <div class="header row">
-        <div class="col-3"></div>
-        <div class="col-6 my-auto">
-          <h1 id = "title">
-            Hidden Harvests of Camrose
-          </h1>
+        <div class="header row">
+            <div class="col-3"></div>
+            <div class="col-6 my-auto">
+                <h1 id = "title">
+                    Hidden Harvests of Camrose
+                </h1>
+            </div>
+            <div class="col-3 logButton my-auto">
+                <h4>
+                    <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
+                </h4>
+            </div>   
         </div>
-        <div class="col-3 logButton my-auto">
-          <h4>
-            <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
-          </h4>
-        </div>   
-      </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
             <ul class="navbar-nav nav-fill w-100">
@@ -66,85 +66,86 @@ and current offerings for that fruit.
             </ul>
         </nav>
 
-      <div class="body container">
-        <div class = "row">
-        <div class = "col-6 columnForUP">
-          <h2 class = "center padding20"> My Fruit Being Offered </h2>
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Fruit</th>
-              <th scope="col">Until This Date</th>
-              <th scope="col">Remove?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Apples</td>
-              <td>03-12-2019</td>
-              <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Choke Cherries</td>
-              <td>03-13-2019</td>
-              <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-        <div class = "col-6 padding30">
-          <h2 class = "center padding20"> My Requested Fruit </h2>
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Fruit</th>
-              <th scope="col">Until This Date</th>
-              <th scope="col">Remove?</th>
+        <br>
 
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pear</td>
-              <td>02-28-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Goji Berries</td>
-              <td>03-28-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Crab Apples</td>
-              <td>03-19-19</td>
-               <td><button class="btn btn-secondary">Remove</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
-      </div>
-
-      <div class="footer">
-        <div class="row">
-          <div class="col">
-              Photo
-          </div>
-          <div class="col">  
-            <p>
-                Designed February 01,2019<br>
-                by Alex Ho, Chase Larocque, Justin Ikenouye.
-            </p>
-          </div>
-          <div class="col">
-            <p>
-              Contact Information<br>
-              Dr. Greg King, Assistant Professor of Environmental Science<br>
-              gking@ualberta.ca 
-            </p>
-          </div>
+        <div class="body container">
+            <div class = "row">
+                <div class = "col-6 columnForUP">
+                    <h2 class = "center padding20"> My Fruit Being Offered </h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fruit</th>
+                                <th scope="col">Until This Date</th>
+                                <th scope="col">Remove?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apples</td>
+                                <td>03-12-2019</td>
+                                <td><button class="btn btn-secondary">Remove</button></td>
+                            </tr>
+                            <tr>
+                               <td>Choke Cherries</td>
+                                <td>03-13-2019</td>
+                                <td><button class="btn btn-secondary">Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class = "col-6 padding30">
+                    <h2 class = "center padding20"> My Requested Fruit </h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fruit</th>
+                                <th scope="col">Until This Date</th>
+                                <th scope="col">Remove?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pear</td>
+                                <td>02-28-19</td>
+                                <td><button class="btn btn-secondary">Remove</button></td>
+                            </tr>
+                            <tr>
+                                <td>Goji Berries</td>
+                                <td>03-28-19</td>
+                                <td><button class="btn btn-secondary">Remove</button></td>
+                            </tr>
+                            <tr>
+                                <td>Crab Apples</td>
+                                <td>03-19-19</td>
+                                <td><button class="btn btn-secondary">Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="footer">
+            <div class="row">
+                <div class="col">
+                    Photo
+                </div>
+                <div class="col">  
+                    <p>
+                        Designed February 01,2019<br>
+                        by Alex Ho, Chase Larocque, Justin Ikenouye.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Contact Information<br>
+                        Dr. Greg King, Assistant Professor of Environmental Science<br>
+                        gking@ualberta.ca 
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
   </body>
 
