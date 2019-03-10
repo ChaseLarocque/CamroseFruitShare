@@ -46,25 +46,27 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="userPage.php">User Page</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item active">
                     <a class="nav-link onPage disabled" href="fruitOffer.php">Offer Fruit</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
                 </li>
             </ul>
         </nav>
 
+        <br>
+        
         <div class="body container">
 
             <h2> Offer Fruit </h2>
@@ -132,7 +134,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="form-group col-md-2">
                     <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
                 </div>
-
+                <br>
             </form>    
 
 

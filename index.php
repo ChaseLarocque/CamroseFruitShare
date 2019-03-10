@@ -23,6 +23,10 @@ will be available to all users.
         <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
         <link rel="stylesheet" href="resources/css/app.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
         <title>Hidden Harvest of Camrose</title>
     </head>
      
@@ -41,6 +45,8 @@ will be available to all users.
         			</h4>
         		</div>	
           	</div>	
+
+            <br>
 
         	<div class="body container">
         		<div class="row">
@@ -102,10 +108,9 @@ will be available to all users.
                           Dr. Greg King, Assistant Professor of Environmental Science<br>
                           gking@ualberta.ca 
                         </p>
-                	</div>
-                </div>
-          	</div>
-        </div>
+                    </div>
+          	     </div>
+            </div>
     </body>
 
     <!-- Optional JavaScript -->
