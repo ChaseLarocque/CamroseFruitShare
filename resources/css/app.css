@@ -27,9 +27,11 @@
 }
 
 
-.title{
+#title{
 	text-align: center;
 	padding-top: 20px;
+	font-size: 4.0vw;
+	font-family: 'Catamaran', sans-serif;
 }
 
 /* Footer for Pages */
@@ -88,10 +90,6 @@ h6.underline{
 	background-color: rgb(107,132,35,.8);
 }
 
-#title{
-	 font-size:3.0vw;
-	 font-family: 'Catamaran', sans-serif;
-}
 .center{
 	text-align: center;
 }
