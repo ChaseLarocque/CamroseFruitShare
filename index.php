@@ -56,7 +56,7 @@ will be available to all users.
                         <hr>
                         <div id="indexText">   
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
                                     <p>
                                         Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
                                         <br>
@@ -66,18 +66,18 @@ will be available to all users.
                                         <br>
                                     </p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
                                     <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
                                 </div>
                                 
                             </div>
                             <br>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
                                     <img src="resources/images/sampleRedAppleTree.jpeg" class="rounded float-left">
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
                                     <p>
                                         Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br>
                                     </p>
