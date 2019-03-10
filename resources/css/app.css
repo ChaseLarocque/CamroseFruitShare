@@ -123,8 +123,7 @@ body{
     font-weight: 400;
     line-height: 1.6;
     text-align: left;
-    
-    background-color: #f9e2b1;
+    background: linear-gradient(rgb(249,226,177,0.5), rgb(249,226,177,0.5)), url("../images/backgroundPattern");
 }
 
 .body.container{
