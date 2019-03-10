@@ -42,6 +42,8 @@ will be available to all users.
         		</div>	
           	</div>	
 
+            <br>
+
         	<div class="body container">
         		<div class="row">
         			<div class="col">
