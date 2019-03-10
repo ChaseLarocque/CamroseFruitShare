@@ -7,7 +7,12 @@ register.php
 
 This is the page for registering to the website by clicking on 'register' from login.php  
 -->
+<?php
+// Include DB Access
+require_once "DBConnect.php";
+require_once "registerCode.php";
 
+?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -46,32 +51,32 @@ This is the page for registering to the website by clicking on 'register' from l
           <div class="card-header text-white" id = "login-head">Register to Hidden Harvests of Camrose</div>
 
             <div class="card-body">
-              <form action="userPage.php" method="POST">
+
+              <form action="" method="post">
                 <div class="form-group row">
-                  <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                  <div class="col-6">
-                    <input type="email" id="email_address" class="form-control" name="email-address" required autofocus>
-                  </div>
+                  <label class="col-md-4 col-form-label text-md-right">Username</label>
+                  <input type="email" name="username" class="col-6 form-control" value="<?php echo $username; ?>">
+                  <span class="help-block col-6 offset-4"><?php echo $username_err; ?></span>
+                </div>    
+
+                <div class="form-group row">
+                  <label class="col-md-4 col-form-label text-md-right">Password</label>
+                  <input type="password" name="password" class="col-6 form-control" value="<?php echo $password; ?>">
+                  <span class="help-block col-6 offset-4"><?php echo $password_err; ?></span>
                 </div>
 
                 <div class="form-group row">
-                  <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                  <div class="col-6">
-                    <input type="password" id="password" class="form-control" name="password" required>
+                  <div class="col-6 offset-5">
+                  <input type="submit" class="btn btn-secondary btnGreen" value="Register">
                   </div>
                 </div>
                 
-                <div class = "form-group row">
-                  <div class ="col-6 offset-4">
-                    <input type="checkbox" name="ettiquette" oninvalid="this.setCustomValidity('You Need To Read the Etiquette Guidelines')"
-                           oninput="setCustomValidity('')" required> I have read the <a href = "#popup1">Etiquette Guidelines.</a>
-                  </div>
-                </div>
-
-                <div class="form-group row">            
+                <div class="form-group row">
                   <div class="col-6 offset-4">
-                    <button type="submit" class="btn btn-secondary btnGreen">Register</button>
-                  </div>
+                <p>Already have an account? <a href="login.php">Login here</a>.</p>
+              </div>
+            </div>
+
               </form>
             </div>
         </div>

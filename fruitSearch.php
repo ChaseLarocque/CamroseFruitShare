@@ -36,7 +36,7 @@ and contact information for getting a hold of the owners.
         </div>
         <div class="col-3 logButton my-auto">
             <h4>
-                <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
+                <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
             </h4>
         </div>    
     </div>
