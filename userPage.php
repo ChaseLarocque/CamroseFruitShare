@@ -49,7 +49,7 @@ and current offerings for that fruit.
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">
-                    <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">

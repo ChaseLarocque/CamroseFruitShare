@@ -52,7 +52,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">
-                    <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">
