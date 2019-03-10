@@ -45,6 +45,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	border-top: 3px solid #000000;
+	font-family: 'Catamaran', sans-serif;
 }
 /*This is for when the cursor is hovering on one of the nav bar buttons*/
 .navBtn:hover{
@@ -88,7 +89,7 @@ h6.underline{
 }
 
 #title{
-	 font-size:3.7vw;
+	 font-size:3.0vw;
 	 font-family: 'Catamaran', sans-serif;
 }
 .center{
