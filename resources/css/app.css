@@ -23,7 +23,7 @@
 	padding-right: 15px;
 	color: #fff;
 	text-align: center;
-	border-bottom: 3px solid #000000;
+	border-bottom: 2px solid #000000;
 }
 
 
@@ -44,7 +44,7 @@
 	padding-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
-	border-top: 3px solid #000000;
+	border-top: 2px solid #000000;
 	font-family: 'Catamaran', sans-serif;
 }
 /*This is for when the cursor is hovering on one of the nav bar buttons*/
