@@ -162,3 +162,11 @@ img{
 	border-right: 1px solid #808080;
 }
 
+#footerCenter{
+	text-align: center;
+}
+
+#footerRight{
+	text-align: right;
+	padding-right: 30px
+}
