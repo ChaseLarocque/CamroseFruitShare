@@ -23,6 +23,10 @@ will be available to all users.
         <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
         <link rel="stylesheet" href="resources/css/app.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
         <title>Hidden Harvest of Camrose</title>
     </head>
      
