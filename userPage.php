@@ -49,7 +49,7 @@ and current offerings for that fruit.
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">
-                    <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">
@@ -70,7 +70,7 @@ and current offerings for that fruit.
 
         <div class="body container">
             <div class = "row">
-                <div class = "col-6 columnForUP">
+                <div class = "col-sm-12 col-md-6 columnForUP">
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
                     <table class="table">
                         <thead>
@@ -94,7 +94,7 @@ and current offerings for that fruit.
                         </tbody>
                     </table>
                 </div>
-                <div class = "col-6 padding30">
+                <div class = "col-sm-12 col-md-6 padding30">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
                     <table class="table">
                         <thead>
@@ -131,13 +131,13 @@ and current offerings for that fruit.
                 <div class="col">
                     Photo
                 </div>
-                <div class="col">  
+                <div class="col"  id="footerCenter">  
                     <p>
                         Designed February 01,2019<br>
                         by Alex Ho, Chase Larocque, Justin Ikenouye.
                     </p>
                 </div>
-                <div class="col">
+                <div class="col"  id="footerRight">
                     <p>
                         Contact Information<br>
                         Dr. Greg King, Assistant Professor of Environmental Science<br>

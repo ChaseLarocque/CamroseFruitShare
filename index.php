@@ -33,13 +33,13 @@ will be available to all users.
     <body>
         <div class = "main-container">
         	<div class="header row">
-        		<div class="col-3"></div>
-        		<div class="col-6 my-auto">
+        		<div class="col-xs-0 col-sm-2"></div>
+        		<div class="col-xs-12 col-sm-8 my-auto">
         	    	<h1 id = "title">
         	           Hidden Harvests of Camrose
         	     	</h1>
         	    </div>
-        		<div class="col-3 logButton my-auto">
+        		<div class="col-xs-12 col-sm-2 logButton my-auto">
         			<h4>
         				<a href="login.php" class="btn btn-secondary" role="button">Login</a>
         			</h4>
@@ -56,7 +56,7 @@ will be available to all users.
                         <hr>
                         <div id="indexText">   
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-sm-12 col-md-6">
                                     <p>
                                         Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
                                         <br>
@@ -66,18 +66,18 @@ will be available to all users.
                                         <br>
                                     </p>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-sm-12 col-md-6">
                                     <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
                                 </div>
                                 
                             </div>
                             <br>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-sm-12 col-md-6">
                                     <img src="resources/images/sampleRedAppleTree.jpeg" class="rounded float-left">
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-sm-12 col-md-6">
                                     <p>
                                         Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br>
                                     </p>
@@ -96,13 +96,13 @@ will be available to all users.
                 	<div class="col">
                   		Photo
                 	</div>
-                	<div class="col">  
+                	<div class="col" id="footerCenter">  
                 		<p>
                     		Designed February 01,2019<br>
                     		Alex Ho, Chase Larocque, Justin Ikenouye.
                   		</p>
                 	</div>
-                	<div class="col">
+                	<div class="col" id="footerRight">
                         <p>
                           Contact Information<br>
                           Dr. Greg King, Assistant Professor of Environmental Science<br>
