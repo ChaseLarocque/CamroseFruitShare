@@ -84,6 +84,7 @@ This page will be for feedback regarding the website, and where user's can reque
             <div class="form-group col-md-2">
                 <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
+            <br>
         </form>    
                    
           
