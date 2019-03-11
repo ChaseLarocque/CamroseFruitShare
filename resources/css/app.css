@@ -131,7 +131,16 @@ body{
 
 .columnForUP{
 	padding-top: 30px; 
-	border-right: 2px solid #F0F0F0;
+}
+@media(min-width:768px){
+	.columnForUP{
+		border-right: 2px solid #F0F0F0;
+	}
+}
+@media(max-width:767px){
+	.columnForUP{
+		border-bottom: 2px solid #F0F0F0;
+	}
 }
 
 .padding20{

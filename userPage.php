@@ -70,7 +70,7 @@ and current offerings for that fruit.
 
         <div class="body container">
             <div class = "row">
-                <div class = "col-6 columnForUP">
+                <div class = "col-sm-12 col-md-6 columnForUP">
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
                     <table class="table">
                         <thead>
@@ -94,7 +94,7 @@ and current offerings for that fruit.
                         </tbody>
                     </table>
                 </div>
-                <div class = "col-6 padding30">
+                <div class = "col-sm-12 col-md-6 padding30">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
                     <table class="table">
                         <thead>
