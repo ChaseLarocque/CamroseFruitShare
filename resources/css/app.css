@@ -132,6 +132,7 @@ body{
 .columnForUP{
 	padding-top: 30px; 
 }
+/*Puts border vertically between tables when they're beside each other on a md-lg screen and horizontally on xs-s*/
 @media(min-width:768px){
 	.columnForUP{
 		border-right: 2px solid #F0F0F0;
