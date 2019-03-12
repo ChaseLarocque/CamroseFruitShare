@@ -69,6 +69,8 @@ This is the page for registering to the website by clicking on 'register' from l
                   </div>
                 </div>
 
+                <br>
+
                 <div class="form-group row">            
                   <div class="col-sm-12 col-md-8 offset-md-2">
                     <button type="submit" class="btn btn-secondary btnGreen col-12">Register</button>

@@ -48,7 +48,7 @@ and directs new users to an account creation page register.php
 
             <div class="card-body">
               <form action="userPage.php" method="POST">
-                
+
                 <div class="form-group row">
                   <label for="email_address" class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">E-Mail Address</label>
                   <div class="col-sm-12 offset-md-2 col-md-8">
@@ -62,7 +62,9 @@ and directs new users to an account creation page register.php
                     <input type="password" id="password" class="form-control" name="password" required>
                   </div>
                 </div>
-                            
+                
+                <br>
+
                 <div class="form-group row">
                   <div class="col-sm-12 col-md-8 offset-md-2">
                     <button type="submit" class="btn btn-secondary btnGreen col-12">Login</button>
