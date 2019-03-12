@@ -87,13 +87,13 @@ and directs new users to an account creation page register.php
       <div class="col">
         Photo
       </div>
-      <div class="col">  
+      <div class="col"  id="footerCenter">  
         <p>
           Designed February 01,2019<br>
           Alex Ho, Chase Larocque, Justin Ikenouye.
         </p>
       </div>
-      <div class="col">
+      <div class="col"  id="footerRight">
         <p>
           Contact Information<br>
           Dr. Greg King, Assistant Professor of Environmental Science<br>

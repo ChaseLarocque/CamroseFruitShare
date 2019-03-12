@@ -43,24 +43,26 @@ This page will be for feedback regarding the website, and where user's can reque
             <li class="nav-item">
                 <a class="nav-link navBtn" href="userPage.php">User Page</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
                 <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
                 <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
                 <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item active">
                 <a class="nav-link onPage disabled" href="feedbackForm.php">Feedback</a>
             </li>
         </ul>
     </nav>
+
+    <br>
 
      <div class="body container">
 
@@ -82,6 +84,7 @@ This page will be for feedback regarding the website, and where user's can reque
             <div class="form-group col-md-2">
                 <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
+            <br>
         </form>    
                    
           
@@ -92,13 +95,13 @@ This page will be for feedback regarding the website, and where user's can reque
             <div class="col">
                 Photo
             </div>
-            <div class="col">  
+            <div class="col" id="footerCenter">  
                 <p>
                     Designed February 01,2019<br>
                     by Alex Ho, Chase Larocque, Justin Ikenouye.
                 </p>
             </div>
-            <div class="col">
+            <div class="col" id="footerRight">
                 <p>
                     Contact Information<br>
                     Dr. Greg King, Assistant Professor of Environmental Science<br>
