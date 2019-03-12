@@ -48,30 +48,32 @@ and directs new users to an account creation page register.php
 
             <div class="card-body">
               <form action="userPage.php" method="POST">
+                
                 <div class="form-group row">
-                  <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                  <div class="col-6">
+                  <label for="email_address" class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">E-Mail Address</label>
+                  <div class="col-sm-12 offset-md-2 col-md-8">
                     <input type="email" id="email_address" class="form-control" name="email-address" required autofocus>
                   </div>
                 </div>
 
                 <div class="form-group row">
-                  <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                  <div class="col-6">
+                  <label for="password" class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
+                  <div class="col-sm-12 offset-md-2 col-md-8">
                     <input type="password" id="password" class="form-control" name="password" required>
                   </div>
                 </div>
                             
-                <div class="col-6 offset-md-4">
-                  <button type="submit" class="btn btn-secondary btnGreen">Login</button>
-                  <a href="#" class="btn btn-link">Forgot Your Password?</a>
+                <div class="form-group row">
+                  <div class="col-sm-12 col-md-8 offset-md-2">
+                    <button type="submit" class="btn btn-secondary btnGreen col-12">Login</button>
+                  </div>
                 </div>
 
-                <div class="form-group row">
-                  <div class="col-6 offset-md-5">
-                    <a href="register.php" class="btn btn-link">Need An Account?</a>
-                  </div>
-                </div>       
+                <div class="form-group row">             
+                    <a href="#" class="btn btn-link col-sm-12 col-md-4 offset-md-2 text-md-left">Forgot Your Password?</a>
+                    <a href="register.php" class="btn btn-link col-sm-12 col-md-4 text-md-right">Need An Account?</a>
+                </div>     
+
               </form>
             </div>
         </div>

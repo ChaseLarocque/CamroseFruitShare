@@ -47,30 +47,31 @@ This is the page for registering to the website by clicking on 'register' from l
 
             <div class="card-body">
               <form action="userPage.php" method="POST">
+
                 <div class="form-group row">
-                  <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                  <div class="col-6">
+                  <label for="email_address" class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">E-Mail Address</label>
+                  <div class="col-sm-12 offset-md-2 col-md-8">
                     <input type="email" id="email_address" class="form-control" name="email-address" required autofocus>
                   </div>
                 </div>
 
                 <div class="form-group row">
-                  <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                  <div class="col-6">
+                  <label for="password" class="ccol-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
+                  <div class="col-sm-12 offset-md-2 col-md-8">
                     <input type="password" id="password" class="form-control" name="password" required>
                   </div>
                 </div>
                 
                 <div class = "form-group row">
-                  <div class ="col-6 offset-4">
+                  <div class ="col-sm-12 col-md-10 offset-md-2">
                     <input type="checkbox" name="ettiquette" oninvalid="this.setCustomValidity('You Need To Read the Etiquette Guidelines')"
                            oninput="setCustomValidity('')" required> I have read the <a href = "#popup1">Etiquette Guidelines.</a>
                   </div>
                 </div>
 
                 <div class="form-group row">            
-                  <div class="col-6 offset-4">
-                    <button type="submit" class="btn btn-secondary btnGreen">Register</button>
+                  <div class="col-sm-12 col-md-8 offset-md-2">
+                    <button type="submit" class="btn btn-secondary btnGreen col-12">Register</button>
                   </div>
               </form>
             </div>
