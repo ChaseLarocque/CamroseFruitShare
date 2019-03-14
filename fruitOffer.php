@@ -117,7 +117,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </div>
 
                 <div class = "row" style = "margin-bottom: 20px;">
-                    <div class = "col">
+                    <div class = "col-md-8">
                         <h5>Either an Email Address or a Phone Number is Required</h5>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="row">
                     <div class="form-group col-sm-10 col-md-8">
                         <label>Description</label>
-                        <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including ..."></textarea>
+                        <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: Type of Fruit | Time of Day | Special Requests When Picking Fruit"></textarea>
                     </div>
                 </div>
 
