@@ -18,18 +18,20 @@
 	width: 100%;
 	margin: 0;
 	height: 100px;
-	background-color: rgb(157, 95, 56);
+	background-color: #98291a;
 	padding-left: 15px;
 	padding-right: 15px;
 	color: #fff;
 	text-align: center;
-	border-bottom: 3px solid #000000;
+	border-bottom: 2px solid #000000;
 }
 
 
-.title{
+#title{
 	text-align: center;
 	padding-top: 20px;
+	font-size: 3.0vw;
+	font-family: 'Catamaran', sans-serif;
 }
 
 /* Footer for Pages */
@@ -38,13 +40,14 @@
 	bottom: 0;
 	width: 100%;
 	height: 80px; 
-	background-color: rgb(157, 95, 56);
+	background-color: #98291a;
 	text-align: left;
 	color: #fff;
 	padding-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
-	border-top: 3px solid #000000;
+	border-top: 2px solid #000000;
+	font-family: 'Catamaran', sans-serif;
 }
 /*This is for when the cursor is hovering on one of the nav bar buttons*/
 .navBtn:hover{
@@ -87,9 +90,6 @@ h6.underline{
 	background-color: rgb(107,132,35,.8);
 }
 
-#title{
-	 font-size:3vw;
-}
 .center{
 	text-align: center;
 }
@@ -99,6 +99,7 @@ h6.underline{
 	display:block;
 	position: relative;
 	padding-bottom: 100px;
+	font-family: 'Nunito', sans-serif;
 }
 
 td{
@@ -120,12 +121,27 @@ body{
     font-weight: 400;
     line-height: 1.6;
     text-align: left;
-    background-color: rgba(248,248,248);
+    /*Puts slightly transparent color over background pattern image*/
+    background: linear-gradient(rgb(249,226,177,0.5), rgb(249,226,177,0.5)), url("../images/backgroundPattern");
+}
+
+.body.container{
+	background-color: rgba(248,248,248);
 }
 
 .columnForUP{
 	padding-top: 30px; 
-	border-right: 2px solid #F0F0F0;
+}
+/*Puts border vertically between tables when they're beside each other on a md-lg screen and horizontally on xs-s*/
+@media(min-width:768px){
+	.columnForUP{
+		border-right: 2px solid #F0F0F0;
+	}
+}
+@media(max-width:767px){
+	.columnForUP{
+		border-bottom: 2px solid #F0F0F0;
+	}
 }
 
 .padding20{
@@ -139,8 +155,9 @@ body{
 	line-height: 3;
 }
 img{
-	height: 300px;
-	width: 500px;
+	height: 90%;
+	width: 100%;
+	overflow: hidden;
 }
 .btnGreen:hover {
 	background-color: green;
@@ -148,4 +165,17 @@ img{
 .btnRed:hover{
 	background-color: red;
 }
+/*Vertical dividers in the navbar*/
+.divider-vertical{
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
 
+#footerCenter{
+	text-align: center;
+}
+
+#footerRight{
+	text-align: right;
+	padding-right: 20px
+}

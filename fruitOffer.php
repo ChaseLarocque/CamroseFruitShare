@@ -46,25 +46,27 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="userPage.php">User Page</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item active">
                     <a class="nav-link onPage disabled" href="fruitOffer.php">Offer Fruit</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
-                    <a class="nav-link navBtn" href="fruitSearch.php">Requested Fruit</a>
+                    <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
                 </li>
             </ul>
         </nav>
 
+        <br>
+        
         <div class="body container">
 
             <h2> Offer Fruit </h2>
@@ -73,13 +75,13 @@ It allows them to enter details like what kind of fruit they have and how to con
 
             <form method="post" action="userPage.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
                 <div class="row">
-                    <div class="form-group col-8">
+                    <div class="form-group col-sm-10 col-md-8">
                         <label>Contact Name (Required)</label>
                         <input required type="text" name="contactName" class="form-control" placeholder = "John">     
                     </div>
                 </div>
                 <div class = "row">
-                    <div class="form-group col-4">
+                    <div class="form-group col-sm-5 col-md-4">
                         <label>Fruit (Required)</label>
                         <select required id="inputOfferFruit" class="form-control">
                             <option selected disabled hidden>Choose...</option>
@@ -96,7 +98,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                         <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                      </div>
 
-                    <div class="form-group col-4">
+                    <div class="form-group col-sm-5 col-md-4">
                         <label>Offer Until When? (Required) </label>
                         <input required type="date" name="offerUntilDate" class="form-control">
                         <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
@@ -104,11 +106,11 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </div>
 
                 <div class = "row">
-                    <div class="form-group col-4">
+                    <div class="form-group col-sm-5 col-md-4">
                         <label>Contact Email</label>
                         <input required type="email" name="fruitEmail" class="form-control" placeholder="NAME@EMAIL.COM">
                     </div>
-                    <div class="form-group col-4">
+                    <div class="form-group col-sm-5 col-md-4">
                         <label>Contact Phone Number</label>
                         <input required type="tel" name="fruitNumber" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
                     </div>
@@ -121,7 +123,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-8">
+                    <div class="form-group col-sm-10 col-md-8">
                         <label>Description</label>
                         <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including ..."></textarea>
                     </div>
@@ -129,10 +131,10 @@ It allows them to enter details like what kind of fruit they have and how to con
 
                 <hr>
 
-                <div class="form-group col-md-2">
+                <div class="form-group col-2">
                     <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
                 </div>
-
+                <br>
             </form>    
 
 
@@ -143,12 +145,12 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="col">
                     Photo
                 </div>
-                <div class="col">  
+                <div class="col" id="footerCenter">  
                     <p> Designed February 01,2019<br>
                         Alex Ho, Chase Larocque, Justin Ikenouye
                     </p>
                 </div>
-                <div class="col">
+                <div class="col" id="footerRight">
                     <p>
                         Contact Information<br>
                         Dr. Greg King, Assistant Professor of Environmental Science<br>

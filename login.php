@@ -62,6 +62,7 @@ require_once "loginCode.php";
           <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
 
             <div class="card-body">
+
               <form action="" method="post">
                 <div class="form-group row">
                   <label class = "col-md-4 col-form-label text-md-right">Username</label>
@@ -86,7 +87,6 @@ require_once "loginCode.php";
                    <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
                  </div>
                </div>
-               
               </form>
             </div>
         </div>
@@ -100,13 +100,13 @@ require_once "loginCode.php";
       <div class="col">
         Photo
       </div>
-      <div class="col">  
+      <div class="col"  id="footerCenter">  
         <p>
           Designed February 01,2019<br>
           Alex Ho, Chase Larocque, Justin Ikenouye.
         </p>
       </div>
-      <div class="col">
+      <div class="col"  id="footerRight">
         <p>
           Contact Information<br>
           Dr. Greg King, Assistant Professor of Environmental Science<br>
