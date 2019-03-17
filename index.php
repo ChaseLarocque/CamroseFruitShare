@@ -12,6 +12,10 @@ will be available to all users.
 -->
 
 <!doctype html>
+
+<?php
+    require_once "DBConnect.php";
+?>
 <html class="no-js" lang="en" dir="ltr">
 
     <head>
