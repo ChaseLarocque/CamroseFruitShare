@@ -9,5 +9,6 @@ $q = $pdo -> exec($sql);
 	
 //$q->setFetchMode(PDO::FETCH_ASSOC);
 echo $sessionId;
+echo "<br>";
 echo $q;
 ?>
