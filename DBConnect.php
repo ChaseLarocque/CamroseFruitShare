@@ -2,9 +2,9 @@
 //DBConnect.php
 //Contains data to connect to database using PDO
 
-define('DB_SERVER', 'localhost:8889');
+define('DB_SERVER', 'localhost:3306');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'fruitPickers');
  
 /* Attempt to connect to MySQL database */
