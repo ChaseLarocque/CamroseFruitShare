@@ -10,10 +10,10 @@ $contactEmail = $_POST['contactEmail'];
 $contactPhone = $_POST['contactPhone'];
 $description = $_POST['description'];
 
-$sql = "INSERT INTO fruit_offer (userId, contactName, fruitOffName, offerDate, contactEmail, contactPhone, description)
-		VALUES ('$userId', '$contactName', '$fruitOffName', '$offerDate', '$contactEmail', $contactPhone, '$description')";
-$pdo -> exec($sql);
-$pdo = null;
+$sth = $pdo-> prepare("INSERT INTO fruit_offer (userId, contactName, fruitOffName, offerDate, contactEmail, contactPhone, description)
+		VALUES ('$userId', '$contactName', '$fruitOffName', '$offerDate', '$contactEmail', $contactPhone, '$description')");
+$sth -> execute();
+$sth = null;
 header("location: userPage.php")
 
 ?>
