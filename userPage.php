@@ -93,6 +93,7 @@ and current offerings for that fruit.
                             </tr>
                         </tbody>
                     </table>
+                    <a href = "getFruitOffer.php"> Test Offer </a>
                 </div>
                 <div class = "col-sm-12 col-md-6 padding30">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
