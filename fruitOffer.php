@@ -73,7 +73,7 @@ It allows them to enter details like what kind of fruit they have and how to con
             <p>Fill out and submit this form to offer your fruit to other users</p>
             <hr>
 
-            <form method="post" action="userPage.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+            <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
                 <div class="row">
                     <div class="form-group col-sm-10 col-md-8">
                         <label>Contact Name (Required)</label>
@@ -83,7 +83,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class = "row">
                     <div class="form-group col-sm-5 col-md-4">
                         <label>Fruit (Required)</label>
-                        <select required id="inputOfferFruit" class="form-control">
+                        <select required name="fruitOffName" id="inputOfferFruit" class="form-control">
                             <option selected disabled hidden>Choose...</option>
                             <option value="apples">Apples</option>
                             <option value="crabapples">Crab Apples</option>
@@ -100,7 +100,7 @@ It allows them to enter details like what kind of fruit they have and how to con
 
                     <div class="form-group col-sm-5 col-md-4">
                         <label>Offer Until When? (Required) </label>
-                        <input required type="date" name="offerUntilDate" class="form-control">
+                        <input required type="date" name="offerDate" class="form-control">
                         <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                     </div>
                 </div>
@@ -108,16 +108,16 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class = "row">
                     <div class="form-group col-sm-5 col-md-4">
                         <label>Contact Email</label>
-                        <input required type="email" name="fruitEmail" class="form-control" placeholder="NAME@EMAIL.COM">
+                        <input required type="email" name="contactEmail" class="form-control" placeholder="NAME@EMAIL.COM">
                     </div>
                     <div class="form-group col-sm-5 col-md-4">
                         <label>Contact Phone Number</label>
-                        <input required type="tel" name="fruitNumber" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
+                        <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
                     </div>
                 </div>
 
                 <div class = "row" style = "margin-bottom: 20px;">
-                    <div class = "col">
+                    <div class = "col-md-8">
                         <h5>Either an Email Address or a Phone Number is Required</h5>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="row">
                     <div class="form-group col-sm-10 col-md-8">
                         <label>Description</label>
-                        <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including ..."></textarea>
+                        <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: Type of Fruit | Time of Day | Special Requests When Picking Fruit"></textarea>
                     </div>
                 </div>
 
