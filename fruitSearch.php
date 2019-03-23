@@ -74,62 +74,77 @@ and contact information for getting a hold of the owners.
         <hr>
 
         <form method="post" action="userPage.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
-            <div class="form-group col-md-4">
-                <label>Fruit #1 (Required) </label>
-                <select required id="inputSearchFruit1" class="form-control">
-                   <option selected disabled hidden>Choose...</option>
-                    <option value="apples">Apples</option>
-                    <option value="crabapples">Crab Apples</option>
-                    <option value="evans">Evans (Sour Cherries)</option>
-                    <option value="pears">Pears</option>
-                    <option value="saskatoons">Saskatoon Berries</option>
-                    <option value="plums">Plums</option>
-                    <option value="amurs">Amur (Choke Cherries)</option>
-                    <option value="schuberts">Schubert (Choke Cherries)</option>
-                    <option value="gojis">Goji Berries</option>
-                </select>
-                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+            <div class="row">    
+                <div class="form-group col-md-4">
+                    <label>Fruit #1 (Required) </label>
+                    <select required id="inputSearchFruit1" class="form-control">
+                       <option selected disabled hidden>Choose...</option>
+                        <option value="apples">Apples</option>
+                        <option value="crabapples">Crab Apples</option>
+                        <option value="evans">Evans (Sour Cherries)</option>
+                        <option value="pears">Pears</option>
+                        <option value="saskatoons">Saskatoon Berries</option>
+                        <option value="plums">Plums</option>
+                        <option value="amurs">Amur (Choke Cherries)</option>
+                        <option value="schuberts">Schubert (Choke Cherries)</option>
+                        <option value="gojis">Goji Berries</option>
+                    </select>
+                    <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Enter a Date To Remove Request #1 (Required) </label>
+                    <input required type="date" name="removeRequestDate1" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
+            </div>                
+
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Fruit #2</label>
+                    <select  id="inputSearchFruit2" class="form-control">
+                       <option selected disabled hidden>Choose...</option>
+                        <option value="apples">Apples</option>
+                        <option value="crabapples">Crab Apples</option>
+                        <option value="evans">Evans (Sour Cherries)</option>
+                        <option value="pears">Pears</option>
+                        <option value="saskatoons">Saskatoon Berries</option>
+                        <option value="plums">Plums</option>
+                        <option value="amurs">Amur (Choke Cherries)</option>
+                        <option value="schuberts">Schubert (Choke Cherries)</option>
+                        <option value="gojis">Goji Berries</option>
+                    </select>
+                    <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Enter a Date To Remove Request #2 (Required) </label>
+                    <input required type="date" name="removeRequestDate2" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
             </div>
 
-            <div class="form-group col-md-4">
-                <label>Fruit #2</label>
-                <select  id="inputSearchFruit2" class="form-control">
-                   <option selected disabled hidden>Choose...</option>
-                    <option value="apples">Apples</option>
-                    <option value="crabapples">Crab Apples</option>
-                    <option value="evans">Evans (Sour Cherries)</option>
-                    <option value="pears">Pears</option>
-                    <option value="saskatoons">Saskatoon Berries</option>
-                    <option value="plums">Plums</option>
-                    <option value="amurs">Amur (Choke Cherries)</option>
-                    <option value="schuberts">Schubert (Choke Cherries)</option>
-                    <option value="gojis">Goji Berries</option>
-                </select>
-                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
-            </div>
+            <div class="row">        
+                <div class="form-group col-md-4">
+                    <label>Fruit #3</label>
+                    <select  id="inputSearchFruit3" class="form-control">
+                       <option selected disabled hidden>Choose...</option>
+                        <option value="apples">Apples</option>
+                        <option value="crabapples">Crab Apples</option>
+                        <option value="evans">Evans (Sour Cherries)</option>
+                        <option value="pears">Pears</option>
+                        <option value="saskatoons">Saskatoon Berries</option>
+                        <option value="plums">Plums</option>
+                        <option value="amurs">Amur (Choke Cherries)</option>
+                        <option value="schuberts">Schubert (Choke Cherries)</option>
+                        <option value="gojis">Goji Berries</option>
+                    </select>
+                    <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+                </div>
 
-            <div class="form-group col-md-4">
-                <label>Fruit #3</label>
-                <select  id="inputSearchFruit3" class="form-control">
-                   <option selected disabled hidden>Choose...</option>
-                    <option value="apples">Apples</option>
-                    <option value="crabapples">Crab Apples</option>
-                    <option value="evans">Evans (Sour Cherries)</option>
-                    <option value="pears">Pears</option>
-                    <option value="saskatoons">Saskatoon Berries</option>
-                    <option value="plums">Plums</option>
-                    <option value="amurs">Amur (Choke Cherries)</option>
-                    <option value="schuberts">Schubert (Choke Cherries)</option>
-                    <option value="gojis">Goji Berries</option>
-                </select>
-                <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
-            </div>
-
-            <div class="form-group col-md-4">
-                <label>Enter a Date To Remove Request (Required) </label>
-                <input required type="date" name="removeRequestDate" class="form-control">
-                <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
-
+                <div class="form-group col-md-4">
+                    <label>Enter a Date To Remove Request #3 (Required) </label>
+                    <input required type="date" name="removeRequestDate3" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
             </div>
 
             <hr>
@@ -137,7 +152,8 @@ and contact information for getting a hold of the owners.
             <div class="form-group col-md-2">
                 <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
-        </form>    
+        </form>
+        <h6> By Submitting the request, you are subject to receiving emails whenever a new offering is submitted. </h6>    
         <br>    
     </div>
 
