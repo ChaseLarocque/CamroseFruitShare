@@ -73,25 +73,13 @@ and current offerings for that fruit.
                 <div class = "col-sm-12 col-md-6 columnForUP">
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
                     <table class="table">
-                        <thead>
+                        <?php
+                            include 'getFruitOffer.php';
+                            foreach ($result as $x => $y):?>
                             <tr>
-                                <th scope="col">Fruit</th>
-                                <th scope="col">Until This Date</th>
-                                <th scope="col">Remove?</th>
+                                <td><?php echo ($x);?></td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Apples</td>
-                                <td>03-12-2019</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                            <tr>
-                               <td>Choke Cherries</td>
-                                <td>03-13-2019</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                        </tbody>
+                        <?php endforeach; ?>
                     </table>
                     <a href = "getFruitOffer.php"> Test Offer </a>
                 </div>
