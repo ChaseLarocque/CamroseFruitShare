@@ -8,7 +8,7 @@ userPage.php
 This page users navigate to after they have logged in. It contains what fruit they are looking for
 and current offerings for that fruit.
 -->
-
+<?php require 'submissionDisplay.php' ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -70,20 +70,13 @@ and current offerings for that fruit.
 
         <div class="body container">
             <div class = "row">
-                <div class = "col-sm-12 col-md-6 columnForUP">
+                <div class = "col-sm-12 col-md-12 columnForUP">
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
-                    <table class="table">
-                        <?php
-                            include 'getFruitOffer.php';
-                            foreach ($result as $x => $y):?>
-                            <tr>
-                                <td><?php echo ($x);?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </table>
-                    <a href = "getFruitOffer.php"> Test Offer </a>
-                </div>
-                <div class = "col-sm-12 col-md-6 padding30">
+                    <div><?php makeOfferDisplay()?> </div>
+                 </div>
+            </div>
+            <div class = "row">
+                <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
                     <table class="table">
                         <thead>
