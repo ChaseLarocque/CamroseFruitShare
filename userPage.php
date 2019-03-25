@@ -74,7 +74,8 @@ and current offerings for that fruit.
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
                     <div><?php makeOfferDisplay()?> </div>
                  </div>
-            </div>
+            </div><!--ROW CONTAINER-->
+
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
@@ -105,8 +106,9 @@ and current offerings for that fruit.
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
+            </div><!--ROW CONTAINER-->
+
+        </div><!--BODY CONTAINER-->
 
         <div class="footer">
             <div class="row">
@@ -127,8 +129,8 @@ and current offerings for that fruit.
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!--FOOTER CONTAINER-->
+    </div> <!--MAIN CONTAINER-->
   </body>
 
 

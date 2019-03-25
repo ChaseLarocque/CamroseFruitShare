@@ -10,26 +10,26 @@ function makeOfferDisplay(){
 	echo "<table class=table>
 	<thead>
 		<tr>
-		<th > <b>Name</b></th>
-		<th ><b>Fruit Offered</b></th>
-		<th ><b>Offer Until Date</b></th>
-		<th ><b>Contact Email</b></td></th>
-		<th r><b>Contact Phone Number</b></th>
-		<th ><b>Description</b></th>
+		<th ><h4><b>Name</b></h4></th>
+		<th ><h4><b>Fruit Offered</b></h4></th>
+		<th ><h4><b>Offer Until Date</b></h4></th>
+		<th ><h4><b>Contact Email</b></td></h4></th>
+		<th ><h4><b>Contact Phone Number</b></h4></th>
+		<th ><h4><b>Description</b></h4></th>
 		</tr>
-		</thead>";
+	</thead>";
 	//sql statement that will be executed
 	$sql = "SELECT offerId, contactName, fruitOffName, offerDate, contactEmail, contactPhone, description FROM fruit_offer WHERE userId = $sessionId";
 	foreach ($pdo -> query($sql) as $row){
 		echo "<tr>";
-		echo "<td align=center>" . $row['contactName'] ."</td>";
-		echo "<td align=center>" . $row['fruitOffName'] ."</td>";
-		echo "<td align=center>" . $row['offerDate'] ."</td>";
-		echo "<td align=center>" . $row['contactEmail'] ."</td>";
-		echo "<td align=center>" . $row['contactPhone'] ."</td>";
-		echo "<td align=center>" . $row['description'] ."</td>";
+		echo "<td align=center> <h5>" . $row['contactName'] ."</h5></td>";
+		echo "<td align=center><h5>" . $row['fruitOffName'] ."</h5></td>";
+		echo "<td align=center><h5>" . $row['offerDate'] ."</h5></td>";
+		echo "<td align=center><h5>" . $row['contactEmail'] ."</h5></td>";
+		echo "<td align=center><h5>" . $row['contactPhone'] ."</td>";
+		echo "<td align=center><h5>" . $row['description'] ."</h5></td>";
 	}
-	echo "</table";
+	echo "</table>";
 	$sql = null;
 	$pdo = null;
 }
@@ -55,7 +55,7 @@ function makeRequestDisplay(){
 		echo "<td align=center>" . $row['fruitReqName'] ."</td>";
 		echo "<td align=center>" . $row['reqDate'] ."</td>";
 	}
-	echo "</table";
+	echo "</table>";
 	$sql = null;
 	$pdo = null;
 }
