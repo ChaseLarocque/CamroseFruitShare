@@ -73,11 +73,11 @@ and contact information for getting a hold of the owners.
         <p>Fill out and submit this form to request fruit from other users</p>
         <hr>
 
-        <form method="post" action="userPage.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+        <form method="post" action="addFruitRequestTable.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
             <div class="row">    
                 <div class="form-group col-md-4">
                     <label>Fruit #1 (Required) </label>
-                    <select required id="inputSearchFruit1" class="form-control">
+                    <select required name="requestFruit1" class="form-control">
                        <option selected disabled hidden>Choose...</option>
                         <option value="apples">Apples</option>
                         <option value="crabapples">Crab Apples</option>
@@ -93,7 +93,7 @@ and contact information for getting a hold of the owners.
                 </div>
                 <div class="form-group col-md-4">
                     <label>Enter a Date To Remove Request #1 (Required) </label>
-                    <input required type="date" name="removeRequestDate1" class="form-control">
+                    <input required type="date" name="requestDate1" class="form-control">
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
             </div>                
@@ -116,8 +116,8 @@ and contact information for getting a hold of the owners.
                     <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                 </div>
                 <div class="form-group col-md-4">
-                    <label>Enter a Date To Remove Request #2 (Required) </label>
-                    <input required type="date" name="removeRequestDate2" class="form-control">
+                    <label>Enter a Date To Remove Request #2</label>
+                    <input type="date" name="removeRequestDate2" class="form-control">
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
             </div>
@@ -141,8 +141,8 @@ and contact information for getting a hold of the owners.
                 </div>
 
                 <div class="form-group col-md-4">
-                    <label>Enter a Date To Remove Request #3 (Required) </label>
-                    <input required type="date" name="removeRequestDate3" class="form-control">
+                    <label>Enter a Date To Remove Request #3</label>
+                    <input type="date" name="removeRequestDate3" class="form-control">
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
             </div>
