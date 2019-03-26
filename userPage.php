@@ -79,32 +79,7 @@ and current offerings for that fruit.
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Fruit</th>
-                                <th scope="col">Until This Date</th>
-                                <th scope="col">Remove?</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pear</td>
-                                <td>02-28-19</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                            <tr>
-                                <td>Goji Berries</td>
-                                <td>03-28-19</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                            <tr>
-                                <td>Crab Apples</td>
-                                <td>03-19-19</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div><?php makeRequestDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
 
