@@ -78,22 +78,15 @@ and contact information for getting a hold of the owners.
                 <div class="form-group col-md-4">
                     <label>Fruit #1 (Required) </label>
                     <select required name="requestFruit1" class="form-control">
-                       <option selected disabled hidden>Choose...</option>
-                        <option value="apples">Apples</option>
-                        <option value="crabapples">Crab Apples</option>
-                        <option value="evans">Evans (Sour Cherries)</option>
-                        <option value="pears">Pears</option>
-                        <option value="saskatoons">Saskatoon Berries</option>
-                        <option value="plums">Plums</option>
-                        <option value="amurs">Amur (Choke Cherries)</option>
-                        <option value="schuberts">Schubert (Choke Cherries)</option>
-                        <option value="gojis">Goji Berries</option>
+                        <?php
+                            include 'populateDropDown.php';
+                        ?>
                     </select>
                     <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                 </div>
                 <div class="form-group col-md-4">
                     <label>Enter a Date To Remove Request #1 (Required) </label>
-                    <input required type="date" name="requestDate" class="form-control">
+                    <input required type="date" name="requestDate1" class="form-control">
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
             </div>                
@@ -101,23 +94,16 @@ and contact information for getting a hold of the owners.
             <div class="row">
                 <div class="form-group col-md-4">
                     <label>Fruit #2</label>
-                    <select  id="inputSearchFruit2" class="form-control">
-                       <option selected disabled hidden>Choose...</option>
-                        <option value="apples">Apples</option>
-                        <option value="crabapples">Crab Apples</option>
-                        <option value="evans">Evans (Sour Cherries)</option>
-                        <option value="pears">Pears</option>
-                        <option value="saskatoons">Saskatoon Berries</option>
-                        <option value="plums">Plums</option>
-                        <option value="amurs">Amur (Choke Cherries)</option>
-                        <option value="schuberts">Schubert (Choke Cherries)</option>
-                        <option value="gojis">Goji Berries</option>
+                    <select  id="requestFruit2" class="form-control">
+                        <?php
+                            include 'populateDropDown.php';
+                        ?>
                     </select>
                     <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                 </div>
                 <div class="form-group col-md-4">
                     <label>Enter a Date To Remove Request #2</label>
-                    <input type="date" name="requestDate" class="form-control">
+                    <input type="date" name="requestDate2" class="form-control">
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
             </div>
@@ -126,23 +112,16 @@ and contact information for getting a hold of the owners.
                 <div class="form-group col-md-4">
                     <label>Fruit #3</label>
                     <select  id="inputSearchFruit3" class="form-control">
-                       <option selected disabled hidden>Choose...</option>
-                        <option value="apples">Apples</option>
-                        <option value="crabapples">Crab Apples</option>
-                        <option value="evans">Evans (Sour Cherries)</option>
-                        <option value="pears">Pears</option>
-                        <option value="saskatoons">Saskatoon Berries</option>
-                        <option value="plums">Plums</option>
-                        <option value="amurs">Amur (Choke Cherries)</option>
-                        <option value="schuberts">Schubert (Choke Cherries)</option>
-                        <option value="gojis">Goji Berries</option>
+                        <?php
+                            include 'populateDropDown.php';
+                        ?>
                     </select>
                     <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                 </div>
 
                 <div class="form-group col-md-4">
                     <label>Enter a Date To Remove Request #3</label>
-                    <input type="date" name="requestDate" class="form-control">
+                    <input type="date" name="requestDate3" class="form-control">
                     <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                 </div>
             </div>
