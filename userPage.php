@@ -8,7 +8,7 @@ userPage.php
 This page users navigate to after they have logged in. It contains what fruit they are looking for
 and current offerings for that fruit.
 -->
-
+<?php require 'submissionDisplay.php' ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -70,62 +70,20 @@ and current offerings for that fruit.
 
         <div class="body container">
             <div class = "row">
-                <div class = "col-sm-12 col-md-6 columnForUP">
+                <div class = "col-sm-12 col-md-12 columnForUP">
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Fruit</th>
-                                <th scope="col">Until This Date</th>
-                                <th scope="col">Remove?</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Apples</td>
-                                <td>03-12-2019</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                            <tr>
-                               <td>Choke Cherries</td>
-                                <td>03-13-2019</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <a href = "getFruitOffer.php"> Test Offer </a>
-                </div>
-                <div class = "col-sm-12 col-md-6 padding30">
+                    <div><?php makeOfferDisplay()?> </div>
+                 </div>
+            </div><!--ROW CONTAINER-->
+
+            <div class = "row">
+                <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"> My Requested Fruit </h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Fruit</th>
-                                <th scope="col">Until This Date</th>
-                                <th scope="col">Remove?</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pear</td>
-                                <td>02-28-19</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                            <tr>
-                                <td>Goji Berries</td>
-                                <td>03-28-19</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                            <tr>
-                                <td>Crab Apples</td>
-                                <td>03-19-19</td>
-                                <td><button class="btn btn-secondary">Remove</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div><?php makeRequestDisplay()?></div>
                 </div>
-            </div>
-        </div>
+            </div><!--ROW CONTAINER-->
+
+        </div><!--BODY CONTAINER-->
 
         <div class="footer">
             <div class="row">
@@ -146,8 +104,8 @@ and current offerings for that fruit.
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div><!--FOOTER CONTAINER-->
+    </div> <!--MAIN CONTAINER-->
   </body>
 
 
