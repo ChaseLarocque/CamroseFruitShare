@@ -40,38 +40,70 @@ which will work to communicate with the Database.
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
             <ul class="navbar-nav nav-fill w-100">
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link navBtn" href="userPage.php">User Page</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                     <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class="nav-item">
                   <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
                 </li>
-                <a>|</a>
+                <li class="divider-vertical"></li>
                 <li class = "nav-item">
-                  <a class="nav-link onPage disabled" href="adminPage.php">Admin Settings</a>
+                  <a class="nav-link active onPage disabled" href="adminPage.php">Admin Settings</a>
                 </li>
             </ul>
         </nav>
 
-      <div class="body container">
-        <h1>
-          This is where the admin settings will be 
-        </h1>
-      </div>
+      </br>
 
+      <div class="body container">
+      </br>
+        <h2> Admin Settings </h2>
+        <p>Use This Page To Change The Fruit in Drop Down Boxes</p>
+        <hr>
+        <h4> Delete Fruit In Database </h4>
+            <form method="post" action="adminDeleteFruit.php" onsubmit = "alert('Fruit Deleted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+              <div class = "row">
+                <div class="form-group col-8">
+                    <select name="deleteFruitDB" id="deleteFruitDB" class="form-control">
+                        <?php   
+                            include 'populateDropDown.php';
+                        ?>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-secondary btnGreen">Delete Fruit</button>
+              </div>
+            </form>
+              <hr>
+              <hr>
+              <h4> Add Fruit To Database </h4>
+              <form method="post" action="adminAddFruit.php" onsubmit = "alert('Fruit Added!');"> 
+               <div class = "row">
+                  <div class="form-group col-8">
+                    <input type="text" name="addFruitToDB" class="form-control" placeholder = "Add A New Fruit">     
+                  </div>
+                </div>
+              <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-secondary btnGreen">Add New Fruit</button>
+              </div>
+            </form>
+              <hr>
+              <br>
+      </div>
       <div class="footer">
         <div class="row">
           <div class="col">

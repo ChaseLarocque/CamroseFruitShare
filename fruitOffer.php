@@ -70,6 +70,7 @@ It allows them to enter details like what kind of fruit they have and how to con
         <br>
         
         <div class="body container">
+            <br>
 
             <h2> Offer Fruit </h2>
             <p>Fill out and submit this form to offer your fruit to other users</p>

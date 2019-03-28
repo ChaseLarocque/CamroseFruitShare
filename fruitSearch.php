@@ -70,7 +70,7 @@ and contact information for getting a hold of the owners.
      <div class="body container">
 
         <h2> Request Fruit </h2>
-        <p>Fill out and submit this form to request fruit from other users</p>
+            <p>Fill out and submit this form to request fruit from other users</p>
         <hr>
 
         <form method="post" action="addFruitRequestTable.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->

@@ -69,6 +69,7 @@ and current offerings for that fruit.
         <br>
 
         <div class="body container">
+            <br>
             <div class = "row">
                 <div class = "col-sm-12 col-md-12 columnForUP">
                     <h2 class = "center padding20"> My Fruit Being Offered </h2>
