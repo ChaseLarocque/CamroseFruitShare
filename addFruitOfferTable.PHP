@@ -24,5 +24,4 @@ $sql -> execute();
 $sql = null;
 $pdo = null;
 header("location: userPage.php")
-
 ?>

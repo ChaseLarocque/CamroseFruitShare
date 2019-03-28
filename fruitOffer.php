@@ -9,6 +9,8 @@ This page is a form for users to enter an offer for someone to pick their fruit
 It allows them to enter details like what kind of fruit they have and how to contact them.
 -->
 
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -68,6 +70,7 @@ It allows them to enter details like what kind of fruit they have and how to con
         <br>
         
         <div class="body container">
+            <br>
 
             <h2> Offer Fruit </h2>
             <p>Fill out and submit this form to offer your fruit to other users</p>
@@ -84,16 +87,9 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class="form-group col-sm-5 col-md-4">
                         <label>Fruit (Required)</label>
                         <select required name="fruitOffName" id="inputOfferFruit" class="form-control">
-                            <option selected disabled hidden>Choose...</option>
-                            <option value="apples">Apples</option>
-                            <option value="crabapples">Crab Apples</option>
-                            <option value="evans">Evans (Sour Cherries)</option>
-                            <option value="pears">Pears</option>
-                            <option value="saskatoons">Saskatoon Berries</option>
-                            <option value="plums">Plums</option>
-                            <option value="amurs">Amur (Choke Cherries)</option>
-                            <option value="schuberts">Schubert (Choke Cherries)</option>
-                            <option value="gojis">Goji Berries</option>
+                            <?php   
+                                include 'populateDropDown.php';
+                            ?>
                         </select>
                         <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                      </div>
