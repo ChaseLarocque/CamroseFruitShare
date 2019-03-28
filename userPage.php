@@ -8,7 +8,11 @@ userPage.php
 This page users navigate to after they have logged in. It contains what fruit they are looking for
 and current offerings for that fruit.
 -->
-<?php require 'submissionDisplay.php' ?>
+<?php 
+    require 'submissionDisplay.php' 
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 

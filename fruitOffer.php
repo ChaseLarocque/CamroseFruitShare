@@ -12,6 +12,11 @@ It allows them to enter details like what kind of fruit they have and how to con
 
 
 <!doctype html>
+
+<?php
+    include "blockAccessIfNotLoggedIn.php";
+?>
+
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
