@@ -1,4 +1,6 @@
 <?php
+require 'deleteSubmission.php';
+
 	//Start session to get the session (user) id	
 	session_start();
 function makeOfferDisplay(){
@@ -28,7 +30,7 @@ function makeOfferDisplay(){
 		echo "<td align=center><h5>" . $row['contactEmail'] ."</h5></td>";
 		echo "<td align=center><h5>" . $row['contactPhone'] ."</td>";
 		echo "<td align=center><h5>" . $row['description'] ."</h5></td>";
-		echo "<td align=center><button type='button' class='btn btn-secondary btnRed' round value =". $buttonId . " onclick>DELETE</button></td>";
+		echo "<td align=center><button type='button' class='btn btn-secondary btnRed' round onclick = 'deleteOfferSubmission($buttonId)' > DELETE </button></td>";
 	}
 	echo "</table>";
 unset($pdo);
