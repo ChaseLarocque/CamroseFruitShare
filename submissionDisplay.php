@@ -20,6 +20,7 @@ function makeOfferDisplay(){
 	//sql statement that will be executed
 	$sql = "SELECT offerId, contactName, fruitOffName, offerDate, contactEmail, contactPhone, description FROM fruit_offer WHERE userId = $sessionId";
 	foreach ($pdo -> query($sql) as $row){
+		$buttonId = $row['offerId'];
 		echo "<tr>";
 		echo "<td align=center> <h5>" . $row['contactName'] ."</h5></td>";
 		echo "<td align=center><h5>" . $row['fruitOffName'] ."</h5></td>";
@@ -27,6 +28,7 @@ function makeOfferDisplay(){
 		echo "<td align=center><h5>" . $row['contactEmail'] ."</h5></td>";
 		echo "<td align=center><h5>" . $row['contactPhone'] ."</td>";
 		echo "<td align=center><h5>" . $row['description'] ."</h5></td>";
+		echo "<td align=center><button class = button round id =". $buttonId . ">$buttonId</button></td>";
 	}
 	echo "</table>";
 unset($pdo);
