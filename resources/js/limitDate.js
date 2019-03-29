@@ -4,7 +4,13 @@
 
     maxDate = maxDate.toISOString().split('T')[0];
 
-    document.getElementsByName("removeRequestDate")[0].setAttribute('min', today);
-    document.getElementsByName("removeRequestDate")[0].setAttribute('max', maxDate);
+    document.getElementsByName("requestDate1")[0].setAttribute('min', today);
+    document.getElementsByName("requestDate1")[0].setAttribute('max', maxDate);
+
+    document.getElementsByName("requestDate2")[0].setAttribute('min', today);
+    document.getElementsByName("requestDate2")[0].setAttribute('max', maxDate);
+
+    document.getElementsByName("requestDate3")[0].setAttribute('min', today);
+    document.getElementsByName("requestDate3")[0].setAttribute('max', maxDate);
 
 
