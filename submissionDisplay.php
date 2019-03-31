@@ -30,8 +30,8 @@ function makeOfferDisplay(){
 		echo "<td align=center><h5>" . $row['contactEmail'] ."</h5></td>";
 		echo "<td align=center><h5>" . $row['contactPhone'] ."</td>";
 		echo "<td align=center><h5>" . $row['description'] ."</h5></td>";
-		echo "<td align=center><button type='button' class='btn btn-secondary btnRed' round onclick = 'deleteOfferSubmission($buttonId)' > DELETE </button></td>";
-	}
+		echo "<td align=center><button type='button' class='btn btn-secondary btnRed' onclick ='clickConfirm($buttonId)'> $buttonId </button></td>";
+	} //onclick = 'deleteOfferSubmission($buttonId)'
 	echo "</table>";
 unset($pdo);
 unset($sql);
