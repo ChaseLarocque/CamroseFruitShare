@@ -14,6 +14,7 @@ function deleteOffer(id){
     url: 'deleteSubmission.php',
     data: {action: 'deleteOffer', offerId: id},
   });
+  window.location.href=window.location.href;
 }
 
 function confirmRequestDelete(id){
@@ -31,4 +32,5 @@ function deleteRequest(id){
     url: 'deleteSubmission.php',
     data: {action: 'deleteRequest', requestId: id},
   });
+  window.location.href=window.location.href;
 }

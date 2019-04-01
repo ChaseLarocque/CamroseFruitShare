@@ -20,8 +20,6 @@ if($_REQUEST['action'] == 'deleteOffer'){
 	$sql -> execute();
 	$pdo = null;
 	$sql = null;
-	header('Location: '.$_SERVER['PHP_SELF']);
-	die;
 	}
 if($_REQUEST['action'] == 'deleteRequest'){
 	$requestId = $_REQUEST['requestId'];
@@ -32,7 +30,5 @@ if($_REQUEST['action'] == 'deleteRequest'){
 	$sql -> execute();
 	$pdo = null;
 	$sql = null;
-	header('Location: '.$_SERVER['PHP_SELF']);
-	die;
 	}
 ?>
