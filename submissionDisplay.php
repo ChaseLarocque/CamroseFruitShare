@@ -64,5 +64,44 @@ function makeRequestDisplay(){
 unset($pdo);
 unset($sql);
 }
+
+function makeMatchesDisplay(){
+	//Connect to the DB
+	require 'DBConnect.php';
+	//Set session id to the user's session id
+	$sessionId = $_SESSION['id'];	
+	echo "<table class=table>
+	<thead>
+		<tr>
+		<th ><b>Contact Name</b></th>
+		<th ><b>Fruit Matched</b></th>
+		<th ><b>Available Until Date</b></th>
+		<th ><b>Contact Email</b></th>
+		<th ><b>Contact Phone</b></th>
+		<th ><b>Description</b></th>
+		</tr>
+		</thead>";
+	//sql statement that will be executed
+	$sql = "SELECT contactName, fruitOffName, offerDate, contactEmail, contactPhone, description FROM fruit_offer WHERE fruitOffName IN (SELECT requestName FROM fruit_request WHERE userId = $sessionId) AND NOT userId = $sessionId";
+	foreach ($pdo -> query($sql) as $row){
+
+		echo "<tr>";
+		echo "<td align=center>" . $row['contactName'] ."</td>";
+		echo "<td align=center>" . $row['fruitOffName'] ."</td>";
+		echo "<td align=center>" . $row['offerDate'] ."</td>";
+		echo "<td align=center>" . $row['contactEmail'] ."</td>";
+		echo "<td align=center>" . $row['contactPhone'] ."</td>";
+		echo "<td align=center>" . $row['description'] ."</td>";
+		//echo "<td align=center><button type='button' id= '".$buttonId."'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>";
+	}
+	echo "</table>";
+unset($pdo);
+unset($sql);
+}
+
+
+
+
+
 ?>
 <script src="resources/js/deleteButtonFunc.js"></script> 
