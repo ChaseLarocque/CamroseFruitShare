@@ -9,9 +9,9 @@ This page users navigate to after they have logged in. It contains what fruit th
 and current offerings for that fruit.
 -->
 <?php 
-    require 'submissionDisplay.php' 
-?>
 
+    require 'submissionDisplay.php'
+?>
 
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
@@ -76,15 +76,21 @@ and current offerings for that fruit.
             <br>
             <div class = "row">
                 <div class = "col-sm-12 col-md-12 columnForUP">
-                    <h2 class = "center padding20"> My Fruit Being Offered </h2>
+                    <h2 class = "center padding20"><b> My Fruit Being Offered</b> </h2>
                     <div><?php makeOfferDisplay()?> </div>
                  </div>
             </div><!--ROW CONTAINER-->
 
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
-                    <h2 class = "center padding20"> My Requested Fruit </h2>
+                    <h2 class = "center padding20"><b> My Requested Fruit</b> </h2>
                     <div><?php makeRequestDisplay()?></div>
+                </div>
+            </div><!--ROW CONTAINER-->
+            <div class = "row">
+                <div class = "col-sm-12 col-md-12">
+                    <h2 class = "center padding20"><b> My Fruit Matches </b></h2>
+                    <div><?php makeMatchesDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
 
@@ -113,12 +119,11 @@ and current offerings for that fruit.
     </div> <!--MAIN CONTAINER-->
   </body>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!--
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  -->
+
+  
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </html>
