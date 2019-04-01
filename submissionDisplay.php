@@ -3,6 +3,11 @@
 
 	//Start session to get the session (user) id	
 	session_start();
+
+//this here to block access if not logged in
+if(!isset($_SESSION['username'])){
+   header("Location:index.php");
+}//if
 function makeOfferDisplay(){
 	//Connect to the DB
 	require 'DBConnect.php';

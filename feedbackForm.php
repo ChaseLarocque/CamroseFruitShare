@@ -9,6 +9,10 @@ This page will be for feedback regarding the website, and where user's can reque
 -->
 
 <!doctype html>
+
+<?php
+    require 'blockAccessIfNotLoggedIn.php';
+?>
 <html class="no-js" lang="en" dir="ltr">
 
 <head>

@@ -10,6 +10,11 @@ and current offerings for that fruit.
 -->
 
 <!doctype html>
+
+<?php
+    require 'blockAccessIfNotLoggedIn.php';
+?>
+
 <html class="no-js" lang="en" dir="ltr">
 
   <head>
