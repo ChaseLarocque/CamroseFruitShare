@@ -85,6 +85,12 @@ and current offerings for that fruit.
                     <div><?php makeRequestDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
+            <div class = "row">
+                <div class = "col-sm-12 col-md-12">
+                    <h2 class = "center padding20"> My Fruit Matches </h2>
+                    <div><?php makeMatchDisplay()?></div>
+                </div>
+            </div><!--ROW CONTAINER-->
 
         </div><!--BODY CONTAINER-->
 
