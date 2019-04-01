@@ -74,20 +74,20 @@ and current offerings for that fruit.
             <br>
             <div class = "row">
                 <div class = "col-sm-12 col-md-12 columnForUP">
-                    <h2 class = "center padding20"> My Fruit Being Offered </h2>
+                    <h2 class = "center padding20"><b> My Fruit Being Offered</b> </h2>
                     <div><?php makeOfferDisplay()?> </div>
                  </div>
             </div><!--ROW CONTAINER-->
 
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
-                    <h2 class = "center padding20"> My Requested Fruit </h2>
+                    <h2 class = "center padding20"><b> My Requested Fruit</b> </h2>
                     <div><?php makeRequestDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
-                    <h2 class = "center padding20"> My Fruit Matches </h2>
+                    <h2 class = "center padding20"><b> My Fruit Matches </b></h2>
                     <div><?php makeMatchesDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
