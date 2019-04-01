@@ -1,5 +1,5 @@
 
-function confirmButton(id){
+function confirmOfferDelete(id){
       var buttonId = document.getElementById(id);
       console.log(id, buttonId);
       buttonId.innerText = 'CONFIRM';
@@ -12,6 +12,23 @@ function deleteOffer(id){
   $.ajax({
     type: "POST",
     url: 'deleteSubmission.php',
-    data: {doThis: 'deleteOffer', offerId: id},
+    data: {action: 'deleteOffer', offerId: id},
+  });
+}
+
+function confirmRequestDelete(id){
+      var buttonId = document.getElementById(id);
+      console.log(id, buttonId);
+      buttonId.innerText = 'CONFIRM';
+      buttonId.className = 'btn btn-secondary btnRed';
+      buttonId.setAttribute("onclick", 'deleteRequest(id)');
+    }
+
+function deleteRequest(id){
+  console.log(id);
+  $.ajax({
+    type: "POST",
+    url: 'deleteSubmission.php',
+    data: {action: 'deleteRequest', requestId: id},
   });
 }

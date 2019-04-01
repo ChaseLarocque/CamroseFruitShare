@@ -30,7 +30,7 @@ function makeOfferDisplay(){
 		echo "<td align=center><h5>" . $row['contactEmail'] ."</h5></td>";
 		echo "<td align=center><h5>" . $row['contactPhone'] ."</td>";
 		echo "<td align=center><h5>" . $row['description'] ."</h5></td>";
-		echo "<td align=center><button type='button' id= '".$buttonId."'class='btn btn-secondary btnRed' onclick ='confirmButton($buttonId)'> DELETE </button></td>"; // duplicate this an put it in requ8est when complete.
+		echo "<td align=center><button type='button' id= '".$buttonId."'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>"; // duplicate this an put it in requ8est when complete.
 
 	} //onclick = 'deleteOfferSubmission($buttonId)'
 	echo "</table>";
@@ -51,11 +51,14 @@ function makeRequestDisplay(){
 		</tr>
 		</thead>";
 	//sql statement that will be executed
-	$sql = "SELECT requestName, requestDate FROM fruit_request WHERE userId = $sessionId";
+	$sql = "SELECT requestId, requestName, requestDate FROM fruit_request WHERE userId = $sessionId";
 	foreach ($pdo -> query($sql) as $row){
+		$buttonId = $row['requestId'];
+
 		echo "<tr>";
 		echo "<td align=center>" . $row['requestName'] ."</td>";
 		echo "<td align=center>" . $row['requestDate'] ."</td>";
+		echo "<td align=center><button type='button' id= '".$buttonId."'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>";
 	}
 	echo "</table>";
 unset($pdo);

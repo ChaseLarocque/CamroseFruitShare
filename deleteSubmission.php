@@ -10,7 +10,7 @@ function deleteOffer($offerId){
 	$sql = null;
 	header("location: userPage.php");
 }*/
-if($_POST['doThis'] == 'deleteOffer'){
+if($_REQUEST['action'] == 'deleteOffer'){
 	$offerId = $_REQUEST['offerId'];
 
 	require 'DBConnect.php';
@@ -20,8 +20,19 @@ if($_POST['doThis'] == 'deleteOffer'){
 	$sql -> execute();
 	$pdo = null;
 	$sql = null;
-	Header('Location: '.$_SERVER['PHP_SELF']);
-
+	header('Location: '.$_SERVER['PHP_SELF']);
+	die;
 	}
-
+if($_REQUEST['action'] == 'deleteRequest'){
+	$requestId = $_REQUEST['requestId'];
+	require 'DBConnect.php';
+	$sql = $pdo->prepare( "DELETE FROM fruit_request 
+		WHERE  requestId = ?");
+	$sql -> bindParam(1, $requestId, PDO::PARAM_STR, 50);	
+	$sql -> execute();
+	$pdo = null;
+	$sql = null;
+	header('Location: '.$_SERVER['PHP_SELF']);
+	die;
+	}
 ?>
