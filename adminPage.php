@@ -3,10 +3,10 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
 
-userPage.php
+adminPage.php
 
-This page users navigate to after they have logged in. It contains what fruit they are looking for
-and current offerings for that fruit.
+This page is for the admin when logged in. They will be able to change what fruits are available for either being offered or requested 
+which will work to communicate with the Database.
 -->
 
 <!doctype html>
@@ -40,7 +40,7 @@ and current offerings for that fruit.
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
             <ul class="navbar-nav nav-fill w-100">
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link navBtn" href="userPage.php">User Page</a>
                 </li>
                 <li class="divider-vertical"></li>
@@ -52,43 +52,76 @@ and current offerings for that fruit.
                     <a class="nav-link navBtn" href="fruitSearch.php">Request Fruit</a>
                 </li>
                 <li class="divider-vertical"></li>
-                <li class="nav-item active">
-                    <a class="nav-link onPage disabled" href="resourcePage.php">Community Resources</a>
+                <li class="nav-item">
+                    <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
                 </li>
                 <li class="divider-vertical"></li>
                 <li class="nav-item">
                   <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
-            </li>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class = "nav-item">
+                  <a class="nav-link active onPage disabled" href="adminPage.php">Admin Settings</a>
+                </li>
             </ul>
         </nav>
 
-      <br>
+      </br>
 
       <div class="body container">
-        <h1>
-          This is where the community resources will be placed in hopes to help
-          others connect with environmental resources in the future. 
-        </h1>
+      </br>
+        <h2> Admin Settings </h2>
+        <p>Use This Page To Change The Fruit in Drop Down Boxes</p>
+        <hr>
+        <h4> Delete Fruit In Database </h4>
+            <form method="post" action="adminDeleteFruit.php" onsubmit = "alert('Fruit Deleted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+              <div class = "row">
+                <div class="form-group col-8">
+                    <select name="deleteFruitDB" id="deleteFruitDB" class="form-control">
+                        <?php   
+                            include 'populateDropDown.php';
+                        ?>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-secondary btnGreen">Delete Fruit</button>
+              </div>
+            </form>
+              <hr>
+              <hr>
+              <h4> Add Fruit To Database </h4>
+              <form method="post" action="adminAddFruit.php" onsubmit = "alert('Fruit Added!');"> 
+               <div class = "row">
+                  <div class="form-group col-8">
+                    <input type="text" name="addFruitToDB" class="form-control" placeholder = "Add A New Fruit">     
+                  </div>
+                </div>
+              <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-secondary btnGreen">Add New Fruit</button>
+              </div>
+            </form>
+              <hr>
+              <br>
       </div>
-
       <div class="footer">
         <div class="row">
           <div class="col">
               Photo
           </div>
-          <div class="col" id="footerCenter">  
+          <div class="col">  
             <p>
                 Designed February 01,2019<br>
                 by Alex Ho, Chase Larocque, Justin Ikenouye.
             </p>
           </div>
-          <div class="col" id="footerRight">
+          <div class="col">
             <p>
               Contact Information<br>
               Dr. Greg King, Assistant Professor of Environmental Science<br>
               gking@ualberta.ca 
             </p>
-          </div>
+        </div>
         </div>
       </div>
     </div>

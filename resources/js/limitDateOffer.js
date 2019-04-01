@@ -4,5 +4,5 @@
 
     maxDate = maxDate.toISOString().split('T')[0];
 
-    document.getElementsByName("offerUntilDate")[0].setAttribute('min', today);
-    document.getElementsByName("offerUntilDate")[0].setAttribute('max', maxDate);
+    document.getElementsByName("offerDate")[0].setAttribute('min', today);
+    document.getElementsByName("offerDate")[0].setAttribute('max', maxDate);

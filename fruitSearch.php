@@ -20,6 +20,7 @@ and contact information for getting a hold of the owners.
 
     <link rel="stylesheet" href="resources/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="resources/css/app.css">
+
     <title>Hidden Harvest Requesting Page</title>
 
 </head>
@@ -28,108 +29,111 @@ and contact information for getting a hold of the owners.
    <div class="main-container">
     <div class="header row">
         <div class="col-3"></div>
-        <div class="col-6">
+        <div class="col-6 my-auto">
             <h1 id = "title">
                 Hidden Harvests of Camrose
             </h1>
         </div>
-        <div class="col-3">
+        <div class="col-3 logButton my-auto">
             <h4>
-                <a href="index.php">Logout</a>
+                <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
             </h4>
         </div>    
     </div>
 
     <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-fill w-100">
             <li class="nav-item">
-                <a class="nav-link" href="userPage.php">User Page</a>
+                <a class="nav-link navBtn" href="userPage.php">User Page</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
-                <a class="nav-link" href="fruitOffer.php">Offer Fruit</a>
+                <a class="nav-link navBtn" href="fruitOffer.php">Offer Fruit</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item active">
-                <a class="nav-link onPage disabled" href="fruitSearch.php">Search Fruit</a>
+                <a class="nav-link onPage disabled" href="fruitSearch.php">Request Fruit</a>
             </li>
-            <a>|</a>
+            <li class="divider-vertical"></li>
             <li class="nav-item">
-                <a class="nav-link" href="resourcePage.php">Community Resources</a>
+                <a class="nav-link navBtn" href="resourcePage.php">Community Resources</a>
+            </li>
+            <li class="divider-vertical"></li>
+            <li class="nav-item">
+                <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
             </li>
         </ul>
     </nav>
 
+    <br>
+
      <div class="body container">
 
         <h2> Request Fruit </h2>
-        <p>Fill out and submit this form to request fruit from other users</p>
+            <p>Fill out and submit this form to request fruit from other users</p>
         <hr>
 
-        <form method="post" action="userPage.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
-            <div class="form-group col-md-4">
-                <label>Fruit #1 (Required) </label>
-                <select required id="inputSearchFruit1" class="form-control">
-                   <option selected disabled hidden>Choose...</option>
-                    <option value="apples">Apples</option>
-                    <option value="crabapples">Crab Apples</option>
-                    <option value="evans">Evans (Sour Cherries)</option>
-                    <option value="pears">Pears</option>
-                    <option value="saskatoons">Saskatoon Berries</option>
-                    <option value="plums">Plums</option>
-                    <option value="amurs">Amur (Choke Cherries)</option>
-                    <option value="schuberts">Schubert (Choke Cherries)</option>
-                    <option value="gojis">Goji Berries</option>
-                </select>
+        <form method="post" action="addFruitRequestTable.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+            <div class="row">    
+                <div class="form-group col-md-4">
+                    <label>Fruit #1 (Required) </label>
+                    <select required name="requestFruit1" class="form-control">
+                        <?php
+                            include 'populateDropDown.php';
+                        ?>
+                    </select>
+                    <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Enter a Date To Remove Request #1 (Required) </label>
+                    <input required type="date" name="requestDate1" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
+            </div>                
+
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Fruit #2</label>
+                    <select  id="requestFruit2" class="form-control">
+                        <?php
+                            include 'populateDropDown.php';
+                        ?>
+                    </select>
+                    <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Enter a Date To Remove Request #2</label>
+                    <input type="date" name="requestDate2" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
             </div>
 
-            <div class="form-group col-md-4">
-                <label>Fruit #2</label>
-                <select  id="inputSearchFruit2" class="form-control">
-                   <option selected disabled hidden>Choose...</option>
-                    <option value="apples">Apples</option>
-                    <option value="crabapples">Crab Apples</option>
-                    <option value="evans">Evans (Sour Cherries)</option>
-                    <option value="pears">Pears</option>
-                    <option value="saskatoons">Saskatoon Berries</option>
-                    <option value="plums">Plums</option>
-                    <option value="amurs">Amur (Choke Cherries)</option>
-                    <option value="schuberts">Schubert (Choke Cherries)</option>
-                    <option value="gojis">Goji Berries</option>
-                </select>
-            </div>
+            <div class="row">        
+                <div class="form-group col-md-4">
+                    <label>Fruit #3</label>
+                    <select  id="inputSearchFruit3" class="form-control">
+                        <?php
+                            include 'populateDropDown.php';
+                        ?>
+                    </select>
+                    <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
+                </div>
 
-            <div class="form-group col-md-4">
-                <label>Fruit #3</label>
-                <select  id="inputSearchFruit3" class="form-control">
-                   <option selected disabled hidden>Choose...</option>
-                    <option value="apples">Apples</option>
-                    <option value="crabapples">Crab Apples</option>
-                    <option value="evans">Evans (Sour Cherries)</option>
-                    <option value="pears">Pears</option>
-                    <option value="saskatoons">Saskatoon Berries</option>
-                    <option value="plums">Plums</option>
-                    <option value="amurs">Amur (Choke Cherries)</option>
-                    <option value="schuberts">Schubert (Choke Cherries)</option>
-                    <option value="gojis">Goji Berries</option>
-                </select>
-            </div>
-
-            <div class="form-group col-md-4">
-                <label>Enter a Date To Remove Request (Required) </label>
-                <input required type="date" name="removeRequestDate" class="form-control">
-                <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
-
+                <div class="form-group col-md-4">
+                    <label>Enter a Date To Remove Request #3</label>
+                    <input type="date" name="requestDate3" class="form-control">
+                    <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
+                </div>
             </div>
 
             <hr>
 
             <div class="form-group col-md-2">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
-        </form>    
-                   
-          
+        </form>
+        <h6> By Submitting the request, you are subject to receiving emails whenever a new offering is submitted. </h6>    
+        <br>    
     </div>
 
     <div class="footer">
@@ -137,14 +141,18 @@ and contact information for getting a hold of the owners.
             <div class="col">
                 Photo
             </div>
-            <div class="col">  
+            <div class="col" id="footerCenter">  
                 <p>
                     Designed February 01,2019<br>
                     by Alex Ho, Chase Larocque, Justin Ikenouye.
                 </p>
             </div>
-            <div class="col">
-                <h6>Contact Information</h6>
+            <div class="col" id="footerRight">
+                <p>
+                    Contact Information<br>
+                    Dr. Greg King, Assistant Professor of Environmental Science<br>
+                    gking@ualberta.ca 
+                </p>
             </div>
         </div>
     </div>
