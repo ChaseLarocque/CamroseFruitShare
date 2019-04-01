@@ -1,4 +1,5 @@
 <?php 
+
 function deleteOffer($offerId){
 	require 'DBConnect.php';
 	$sql = $pdo->prepare( "DELETE FROM fruit_offer 
