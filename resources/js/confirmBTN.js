@@ -1,10 +1,8 @@
 
-function clickConfirm(id) {
-  var ans = confirm("Confirm Delete?");
-  if (ans == true){
-  	//This is where the php will be called that will delete the row. 
-  
-  }else{
-  	return;
-  }
-}
+function confirmButton(id){
+      var buttonId = document.getElementById(id);
+      console.log(id, buttonId);
+      buttonId.innerText = 'Confirm';
+      buttonId.className = 'btn btn-secondary btnRed';
+      buttonId.setAttribute("onclick", "deleteOffer(id)")
+    }
