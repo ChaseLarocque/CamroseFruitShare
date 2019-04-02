@@ -11,6 +11,11 @@ and contact information for getting a hold of the owners.
 -->
 
 <!doctype html>
+
+<?php
+    require 'blockAccessIfNotLoggedIn.php';
+?>
+
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
