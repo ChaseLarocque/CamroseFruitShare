@@ -99,7 +99,7 @@ and contact information for getting a hold of the owners.
             <div class="row">
                 <div class="form-group col-md-4">
                     <label>Fruit #2</label>
-                    <select  id="requestFruit2" class="form-control">
+                    <select name="requestFruit2" class="form-control">
                         <?php
                             include 'populateDropDown.php';
                         ?>
@@ -116,7 +116,7 @@ and contact information for getting a hold of the owners.
             <div class="row">        
                 <div class="form-group col-md-4">
                     <label>Fruit #3</label>
-                    <select  id="inputSearchFruit3" class="form-control">
+                    <select name="requestFruit3" class="form-control">
                         <?php
                             include 'populateDropDown.php';
                         ?>
