@@ -81,7 +81,6 @@ This page will be for feedback regarding the website, and where user's can reque
                 </div>
             </div>
 
-
             <hr>
 
             <div class="form-group col-md-2">
