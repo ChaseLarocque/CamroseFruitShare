@@ -55,25 +55,25 @@ require_once "registerCode.php";
 
               <form action="" method="post">
                 <div class="form-group row">
-                  <label class="col-md-4 col-form-label text-md-right">Username</label>
-                  <input type="email" name="username" class="col-6 form-control" value="<?php echo $username; ?>">
-                  <span class="help-block col-6 offset-4"><?php echo $username_err; ?></span>
+                  <label class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
+                  <input type="email" name="username" class="col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
+                  <span class="help-block col-12 text-center"><?php echo $username_err; ?></span>
                 </div>    
 
                 <div class="form-group row">
-                  <label class="col-md-4 col-form-label text-md-right">Password</label>
-                  <input type="password" name="password" class="col-6 form-control" value="<?php echo $password; ?>">
-                  <span class="help-block col-6 offset-4"><?php echo $password_err; ?></span>
+                  <label class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
+                  <input type="password" name="password" class="col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $password; ?>">
+                  <span class="help-block col-12 text-center"><?php echo $password_err; ?></span>
                 </div>
 
                 <div class="form-group row">
-                  <div class="col-6 offset-5">
-                  <input type="submit" class="btn btn-secondary btnGreen" value="Register">
+                  <div class="col-md-6 offset-md-3">
+                  <input type="submit" class="btn btn-secondary btnGreen col-sm-12" value="Register">
                   </div>
                 </div>
                 
                 <div class="form-group row">
-                  <div class="col-6 offset-4">
+                  <div class="col-12 text-center">
                 <p>Already have an account? <a href="login.php">Login here</a>.</p>
               </div>
             </div>
