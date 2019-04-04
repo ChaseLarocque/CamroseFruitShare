@@ -6,7 +6,7 @@
 
 	addFruitOfferTable.php
 
-	This php file contains SQL query code that is executed through HTML and will post a fruit offering to the fruit_offer table in the database
+	This php file contains SQL query code that is initialized through HTML executed through PHP and will post a fruit offering to the fruit_offer table in the database
 **/
 
 require 'DBConnect.php'; //require the database - ensuring nothing is executed unless connection to DB is established
