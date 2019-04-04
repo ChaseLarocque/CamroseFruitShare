@@ -1,10 +1,15 @@
 <?php
 
-//require the deletesubmission.php on server side to ensure higher security
-require 'deleteSubmission.php';
-
 //Start session to get the session (user) id	
 session_start();
+
+//this here to block access if not logged in
+if(!isset($_SESSION['username'])){
+   header("Location:index.php");
+}//if
+
+//require the deletesubmission.php on server side to ensure higher security
+require 'deleteSubmission.php';
 
 function makeOfferDisplay(){
 	

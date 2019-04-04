@@ -10,6 +10,11 @@ which will work to communicate with the Database.
 -->
 
 <!doctype html>
+<?php
+  include 'blockAccessToAdminPage.php';
+?>
+
+
 <html class="no-js" lang="en" dir="ltr">
 
   <head>
