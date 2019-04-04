@@ -7,6 +7,9 @@ feedbackForm.php
 
 This page will be for feedback regarding the website, and where user's can request a fruit that's not listed. 
 -->
+<?
+    require once "feedbackMailer.php";
+?>
 
 <!doctype html>
 
@@ -74,14 +77,13 @@ This page will be for feedback regarding the website, and where user's can reque
         <p>Fill Out This Form With Any Feedback You May Have</p>
         <hr>
 
-        <form method="post" action="userPage.php" onsubmit = "alert('Feedback Submitted. Thank-You!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+        <form method="post" action="feedbackMailer.php" onsubmit = "alert('Feedback Submitted. Thank-You!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
             <div class="row">
                 <div class="form-group col-8">
                     <label>Description</label>
-                    <textarea name="fruitDescription" class="form-control" rows="5" maxlength="300" placeholder = "Enter Feedback. This can include any comments or concerns about the website. Also tell us of any fruit not in the list that should be listed!"></textarea>
+                    <textarea name="feedback" class="form-control" rows="5" maxlength="300" placeholder = "Enter Feedback. This can include any comments or concerns about the website. Also tell us of any fruit not in the list that should be listed!"></textarea>
                 </div>
             </div>
-
 
             <hr>
 
