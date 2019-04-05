@@ -31,7 +31,7 @@ This is the page for registering to the website by clicking on 'register' from l
 <title>Login Fruit Pickers</title>
 </head>
 
-<body onload="openPopup()">
+<body >
 <div class="main-container">
 <div class="header row">
 <div class="col my-auto">
@@ -54,7 +54,7 @@ Hidden Harvests of Camrose
             <div class="card-body">
 
 
-              <form action="" method="post">
+              <form action="" method="post" onsubmit="return openPopup()">
                 <div class="form-group row">
                   <label class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
                   <input type="email" name="username" class="col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
