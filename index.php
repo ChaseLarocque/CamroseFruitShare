@@ -83,12 +83,12 @@ will be available to all users.
                                 </div>
 
                                 <div class="col-sm-12 col-md-6">
-                                    <p>
+                                    <h5>
                                         Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br>
-                                    </p>
-                                    <p>
+                                    </h5>
+                                    <h5>
                                         Our sustainable food project is focused on supporting one potential pillar of a more sustainable local food network in Camrose, and we need your help to build connections and grow community. If you are interested, please sign up as a fruit grower/picker. If you have any questions, please send them to Dr. Greg King.
-                                    </p>
+                                    </h5>
                                 </div>
                             </div>
                         </div>
