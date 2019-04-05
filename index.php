@@ -62,14 +62,16 @@ will be available to all users.
                         <div id="indexText">   
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <p>
+                                    <h5>
                                         Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
                                         <br>
-                                    </p>
-                                    <p>
+                                        <br>
+                                        <br>
+                                    </h5>
+                                    <h5>
                                         This website has been designed to connect local fruit tree growers with local fruit pickers in an effort to increase awareness around locally grown food, while connecting people to build community around the theme of urban food.
                                         <br>
-                                    </p>
+                                    </h5>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
                                     <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
