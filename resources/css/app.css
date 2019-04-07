@@ -54,8 +54,8 @@
 	.footer{
 		height: 115px;
 	}
-	.body.container{
-		padding-bottom: 115px
+	.bodyFooterSpacing{
+		height: 40px;
 	}
 }	
 #footerCenter{

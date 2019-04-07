@@ -141,6 +141,9 @@ It allows them to enter details like what kind of fruit they have and how to con
 
         </div><!--BODY CONTAINER-->
 
+        <div class="bodyFooterSpacing"><!--Creates spacing for footer in mobile view (CSS)-->
+        </div>
+
         <div class="footer">
             <div class="row">
                 <div class="col">

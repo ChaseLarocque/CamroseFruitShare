@@ -89,6 +89,9 @@ and current offerings for that fruit.
         <br>
       </div>
 
+      <div class="bodyFooterSpacing"><!--Creates spacing for footer in mobile view (CSS)-->
+      </div>
+
       <div class="footer">
         <div class="row">
           <div class="col">
@@ -97,7 +100,7 @@ and current offerings for that fruit.
           <div class="col" id="footerCenter">  
             <p>
                 Designed February 01,2019<br>
-                by Alex Ho, Chase Larocque, Justin Ikenouye.
+                by Alex Ho, Chase Larocque, Justin Ikenouye
             </p>
           </div>
           <div class="col" id="footerRight">

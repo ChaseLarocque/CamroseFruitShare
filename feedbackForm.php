@@ -91,9 +91,10 @@ This page will be for feedback regarding the website, and where user's can reque
                 <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
             <br>
-        </form>    
-                   
-          
+        </form>          
+    </div>
+
+    <div class="bodyFooterSpacing"><!--Creates spacing for footer in mobile view (CSS)-->
     </div>
 
     <div class="footer">
@@ -104,7 +105,7 @@ This page will be for feedback regarding the website, and where user's can reque
             <div class="col" id="footerCenter">  
                 <p>
                     Designed February 01,2019<br>
-                    by Alex Ho, Chase Larocque, Justin Ikenouye.
+                    by Alex Ho, Chase Larocque, Justin Ikenouye
                 </p>
             </div>
             <div class="col" id="footerRight">
