@@ -26,20 +26,19 @@
 	text-align: center;
 	border-bottom: 2px solid #000000;
 }
-@media (max-width: 768px) { /*Specific width for when text wraps and creates another line*/
+@media (max-width: 707px) { /*Specific width for when text wraps and creates another line*/
 	.header{
-		height: 150px;
+		height: 120px;
+		padding-top: 10px;
 	}
 }
-@media (max-width: 522px) { /*Specific width for when text wraps and creates another line*/
+@media (max-width: 481px) { /*Specific width for when text wraps and creates another line*/
 	.header{
 		height: 175px;
 	}
 }
 
 #title{
-	padding-top: 20px;
-	padding-bottom: 20px;
 	font-family: 'Catamaran', sans-serif;
 }
 
@@ -71,10 +70,17 @@
 	.footer{
 		height: 135px;
 	}
-	.bodyFooterSpacing{
+	.bodyFooterSpacing{ /*Add space between body and footer so they don't overlap */
 		height: 60px;
 	}
 }	
+@media (max-width: 434px) { /*Specific width for when text wraps and creates another line*/
+	.footer{
+		height: 155px;
+	}
+}	
+
+
 #footerCenter{
 	text-align: center;
 }
