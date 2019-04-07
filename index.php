@@ -1,14 +1,13 @@
 <!--
+index.php
+Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
-
 February 01, 2019
-
-index.php is the basic page that will be displayed when the website is called in the browser
 
 
 This is the very first web page that will be displayed when a user is trying to access the
 website. This will display information about the project and have some basic information that
-will be available to all users.
+will be available to all users. It also contains the login button.
 -->
 
 <!doctype html>
@@ -49,7 +48,7 @@ will be available to all users.
         				<a href="login.php" class="btn btn-secondary" role="button">Login</a>
         			</h4>
         		</div>	
-          	</div>	
+          	</div> <!--header row-->
 
             <br>
 
@@ -94,7 +93,9 @@ will be available to all users.
                         </div>
         			</div>
         		</div>
-        	</div>
+        	</div> <!--body container-->
+
+            <div class="bodyFooterSpacing"></div><!--Creates spacing for footer in mobile view (CSS)-->
 
         	<div class="footer">
             	<div class="row">
@@ -104,7 +105,7 @@ will be available to all users.
                 	<div class="col" id="footerCenter">  
                 		<p>
                     		Designed February 01,2019<br>
-                    		Alex Ho, Chase Larocque, Justin Ikenouye.
+                    		Alex Ho, Chase Larocque, Justin Ikenouye
                   		</p>
                 	</div>
                 	<div class="col" id="footerRight">
@@ -114,8 +115,10 @@ will be available to all users.
                           gking@ualberta.ca 
                         </p>
                     </div>
-          	     </div>
-            </div>
+          	    </div>
+            </div> <!--footer-->
+
+        </div> <!--main-container-->
     </body>
 
     <!-- Optional JavaScript -->
