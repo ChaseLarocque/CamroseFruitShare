@@ -70,10 +70,23 @@ and current offerings for that fruit.
       <br>
 
       <div class="body container">
-        <h1>
+        <br>
+
+        <h2>
+          Community Resources
+        </h2>
+        <p>  
           This is where the community resources will be placed in hopes to help
           others connect with environmental resources in the future. 
-        </h1>
+        </p>
+
+        <hr>
+
+        <p>
+          Community Resource #1
+        </p>
+
+        <br>
       </div>
 
       <div class="footer">

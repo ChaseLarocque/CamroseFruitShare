@@ -73,6 +73,7 @@ and contact information for getting a hold of the owners.
     <br>
 
      <div class="body container">
+        <br>
 
         <h2> Request Fruit </h2>
             <p>Fill out and submit this form to request fruit from other users</p>
@@ -137,7 +138,7 @@ and contact information for getting a hold of the owners.
                 <button type="submit" class="btn btn-secondary btnGreen">Submit</button>
             </div>
         </form>
-        <h6> By Submitting the request, you are subject to receiving emails whenever a new offering is submitted. </h6>    
+        <h6> By Submitting the request, you are subject to receiving emails whenever an offering that matches your request is submitted. </h6>    
         <br>    
     </div>
 
