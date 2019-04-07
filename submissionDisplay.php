@@ -1,3 +1,12 @@
+<!--
+submissionDisplay.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose fruit picking website)
+
+This file contains the code that dynamically creates the tables for a user's 
+current fruit being offered, currently requesting, and matched from requested
+on the userPage.php.
+-->
 <?php
 
 //Start session to get the session (user) id	
@@ -36,7 +45,7 @@ function makeOfferDisplay(){
 	//sql statement that will be executed
 	$sql = "SELECT offerId, contactName, fruitOffName, offerDate, contactEmail, contactPhone, description FROM fruit_offer WHERE userId = $sessionId";
 
-	//dynamicalle create a row for each row in DB
+	//dynamically create a row for each row in DB
 	foreach ($pdo -> query($sql) as $row){
 		$buttonId = $row['offerId'];
 		
