@@ -26,7 +26,16 @@
 	text-align: center;
 	border-bottom: 2px solid #000000;
 }
-
+@media (max-width: 768px) { /*Specific width for when text wraps and creates another line*/
+	.header{
+		height: 150px;
+	}
+}
+@media (max-width: 522px) { /*Specific width for when text wraps and creates another line*/
+	.header{
+		height: 175px;
+	}
+}
 
 #title{
 	padding-top: 20px;
@@ -79,13 +88,17 @@ div.footerSpace{
 	padding-top: 10px;
 }
 
-
 /*This is for when the cursor is hovering on one of the nav bar buttons*/
 .navBtn:hover{
 	background-color: #6c757d;
 }
 .logButton{
 	padding-top: 10px;
+}
+@media (max-width: 768px) {
+	.logButton{
+		padding-top: 0px;
+	}
 }
 
 .form-control {
