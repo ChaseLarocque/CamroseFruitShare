@@ -49,7 +49,7 @@
 	border-top: 2px solid #000000;
 	font-family: 'Catamaran', sans-serif;
 }
-@media (max-width: 686px) {
+@media (max-width: 686px) { /*Specific width for when text wraps and creates another line*/
 	.footer{
 		height: 120px;
 	}
@@ -57,7 +57,7 @@
 		height: 40px;
 	}
 }	
-@media (max-width: 492px) {
+@media (max-width: 492px) { /*Specific width for when text wraps and creates another line*/
 	.footer{
 		height: 135px;
 	}
