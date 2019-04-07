@@ -1,4 +1,5 @@
 <!--
+Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
 February 01, 2019
@@ -49,7 +50,7 @@ will be available to all users.
         				<a href="login.php" class="btn btn-secondary" role="button">Login</a>
         			</h4>
         		</div>	
-          	</div>	
+          	</div> <!--header row-->
 
             <br>
 
@@ -94,7 +95,7 @@ will be available to all users.
                         </div>
         			</div>
         		</div>
-        	</div>
+        	</div> <!--body container-->
 
             <div class="bodyFooterSpacing"></div><!--Creates spacing for footer in mobile view (CSS)-->
 
@@ -116,8 +117,10 @@ will be available to all users.
                           gking@ualberta.ca 
                         </p>
                     </div>
-          	     </div>
-            </div>
+          	    </div>
+            </div> <!--footer-->
+
+        </div> <!--main-container-->
     </body>
 
     <!-- Optional JavaScript -->
