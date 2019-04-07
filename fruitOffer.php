@@ -126,7 +126,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <div class="row">
                     <div class="form-group col-sm-10 col-md-8">
                         <label>Description</label>
-                        <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: Type of Fruit | Time of Day | Special Requests When Picking Fruit"></textarea>
+                        <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: The Type of Fruit, What Time of Day to Pick, or Other Special Requests for the Fruit Pickers"></textarea>
                     </div>
                 </div>
 
