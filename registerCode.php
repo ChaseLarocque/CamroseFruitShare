@@ -1,10 +1,18 @@
 
 <?php
-//register.php
-//file contains code to register the user to the database.
-//contains checks to assure user doesn't create a new account if they already have one.
+/*
+registerCode.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+March 9, 2019
 
-//time to remove white space on either side
+
+file contains code to register the user to the database and therefore the website.
+contains checks to assure user doesn't create a new account if they already have one.
+*/
+
+
+//trim to remove white space on either side
 //empty to check if empty 
 
 //initialize variables

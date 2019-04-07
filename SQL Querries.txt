@@ -1,3 +1,12 @@
+/*
+SQL Querries.txt
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+April 4, 2019
+
+Contains all the SQL queries to create the database in phpMyAdmin
+*/
+
 -- phpMyAdmin SQL Dump
 -- version 4.7.4
 -- https://www.phpmyadmin.net/

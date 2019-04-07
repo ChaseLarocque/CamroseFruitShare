@@ -1,7 +1,13 @@
  
 <?php
-//login.php
-//contains code to log the user in, checking the data base for valid information. 
+/*
+login.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+March 9, 2019
+
+contains code to log the user in, checking the data base for valid information. 
+*/
 
 
 // Define variables and initialize with empty values
