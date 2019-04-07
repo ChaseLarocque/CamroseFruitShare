@@ -1,9 +1,9 @@
 <!--
+login.php
+Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
-
 February 01, 2019
 
-login.php
 
 This is the page for logging in to the website by clicking on 'login' from index.php
 It authenticates current users so that they may access their account on userPage.php 
@@ -55,9 +55,9 @@ require_once "loginCode.php";
                         <div class="col-8">
                             <div class="card my-auto">
                                 <div class="card-header text-white" id = "login-head">Login to Hidden Harvests of Camrose</div>
-                                <div class="card-body">
-
+                                <div class="card-body">       
                                     <form action="" method="post">
+
                                         <div class="form-group row">
                                             <label class = "col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
                                             <input type="email" name="username" class="col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
@@ -81,13 +81,14 @@ require_once "loginCode.php";
                                                 <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
                                             </div>
                                        </div>
+
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> <!--Vertical-Align (which contains the login card)-->
+            </div> <!--vertical-align (Contains the login card)-->
 
             <div class="footer">
                 <div class="row">
@@ -97,7 +98,7 @@ require_once "loginCode.php";
                     <div class="col"  id="footerCenter">  
                         <p>
                             Designed February 01,2019<br>
-                            Alex Ho, Chase Larocque, Justin Ikenouye.
+                            Alex Ho, Chase Larocque, Justin Ikenouye
                         </p>
                     </div>
                     <div class="col"  id="footerRight">
@@ -108,9 +109,9 @@ require_once "loginCode.php";
                         </p>
                     </div>
                 </div>
-            </div> <!--Footer-->
+            </div> <!--footer-->
 
-        </div> <!--Main Container-->
+        </div> <!--main-container-->
     </body>
 
 
