@@ -78,8 +78,18 @@
 	.footer{
 		height: 155px;
 	}
+	.bodyFooterSpacing{ /*Add space between body and footer so they don't overlap */
+		height: 80px;
+	}
 }	
-
+@media (max-width: 429px) { /*Specific width for when text wraps and creates another line*/
+	.footer{
+		height: 175px;
+	}
+	.bodyFooterSpacing{ /*Add space between body and footer so they don't overlap */
+		height: 90px;
+	}
+}
 
 #footerCenter{
 	text-align: center;
