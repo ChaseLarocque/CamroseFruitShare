@@ -34,6 +34,10 @@
 	font-family: 'Catamaran', sans-serif;
 }
 
+.bodyFooterSpacing{
+	height: 40px;
+}
+
 /* Footer for Pages */
 .footer {
 	position: absolute;
@@ -53,16 +57,13 @@
 	.footer{
 		height: 120px;
 	}
-	.bodyFooterSpacing{
-		height: 40px;
-	}
 }	
 @media (max-width: 492px) { /*Specific width for when text wraps and creates another line*/
 	.footer{
 		height: 135px;
 	}
 	.bodyFooterSpacing{
-		height: 40px;
+		height: 60px;
 	}
 }	
 #footerCenter{
@@ -77,6 +78,7 @@
 div.footerSpace{
 	padding-top: 10px;
 }
+
 
 /*This is for when the cursor is hovering on one of the nav bar buttons*/
 .navBtn:hover{
