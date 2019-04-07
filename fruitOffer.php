@@ -83,13 +83,13 @@ It allows them to enter details like what kind of fruit they have and how to con
 
             <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
                 <div class="row">
-                    <div class="form-group col-sm-10 col-md-8">
+                    <div class="form-group col-sm-12 col-md-12 col-lg-8">
                         <label>Contact Name (Required)</label>
                         <input required type="text" name="contactName" class="form-control" placeholder = "John">     
                     </div>
                 </div>
                 <div class = "row">
-                    <div class="form-group col-sm-5 col-md-4">
+                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
                         <label>Fruit (Required)</label>
                         <select required name="fruitOffName" id="inputOfferFruit" class="form-control">
                             <?php   
@@ -99,7 +99,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                         <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
                      </div>
 
-                    <div class="form-group col-sm-5 col-md-4">
+                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
                         <label>Offer Until When? (Required) </label>
                         <input required type="date" name="offerDate" class="form-control">
                         <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
@@ -107,24 +107,24 @@ It allows them to enter details like what kind of fruit they have and how to con
                 </div>
 
                 <div class = "row">
-                    <div class="form-group col-sm-5 col-md-4">
+                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
                         <label>Contact Email</label>
                         <input required type="email" name="contactEmail" class="form-control" placeholder="NAME@EMAIL.COM">
                     </div>
-                    <div class="form-group col-sm-5 col-md-4">
+                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
                         <label>Contact Phone Number</label>
                         <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
                     </div>
                 </div>
 
                 <div class = "row" style = "margin-bottom: 20px;">
-                    <div class = "col-md-8">
+                    <div class = "col-12">
                         <h5>Either an Email Address or a Phone Number is Required</h5>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-sm-10 col-md-8">
+                    <div class="form-group col-sm-12 col-md-12 col-lg-8">
                         <label>Description</label>
                         <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: The Type of Fruit, What Time of Day to Pick, or Other Special Requests for the Fruit Pickers"></textarea>
                     </div>
