@@ -1,9 +1,9 @@
 /**
+deleteButtonFunc.js
+Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
-
 March 31, 2019
 
-deleteButtonFunc.js
 
 This JavaScript file holds the different javascript files that
 will be handling the delete and confirm button on the user page display tables.

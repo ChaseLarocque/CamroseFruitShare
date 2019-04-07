@@ -1,15 +1,13 @@
 <!--
+index.php
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
-
 February 01, 2019
-
-index.php is the basic page that will be displayed when the website is called in the browser
 
 
 This is the very first web page that will be displayed when a user is trying to access the
 website. This will display information about the project and have some basic information that
-will be available to all users.
+will be available to all users. It also contains the login button.
 -->
 
 <!doctype html>

@@ -2,6 +2,8 @@
 submissionDisplay.php
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose fruit picking website)
+March 24, 2019
+
 
 This file contains the code that dynamically creates the tables for a user's 
 current fruit being offered, currently requesting, and matched from requested
