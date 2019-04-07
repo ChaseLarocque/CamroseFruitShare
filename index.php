@@ -96,6 +96,8 @@ will be available to all users.
         		</div>
         	</div>
 
+            <div class="bodyFooterSpacing"></div><!--Creates spacing for footer in mobile view (CSS)-->
+
         	<div class="footer">
             	<div class="row">
                 	<div class="col">
