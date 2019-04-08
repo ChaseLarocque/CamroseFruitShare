@@ -10,7 +10,6 @@ and current offerings for what they're looking for.
 -->
 <?php 
 
-    require 'submissionDisplay.php'
     require 'submissionDisplay.php';
 ?>
 
