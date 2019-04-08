@@ -20,9 +20,10 @@ submission.
 **/
 
 function confirmOfferEdit(id){
-  var buttonId = document.getElementById(id); // Grabs the element from the html that has an id == id
+  originalId = id;
+  var buttonId = document.getElementById('edit'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
-  buttonId.setAttribute("onClick", 'editOffer(id)');// Change onClick call new function
+  buttonId.setAttribute("onClick", 'editOffer(originalId)');// Change onClick call new function
 }
 
 

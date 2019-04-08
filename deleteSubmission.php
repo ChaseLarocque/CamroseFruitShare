@@ -12,10 +12,9 @@ the fruit_offer or fruit_request code
 /*------------------------------------------------------------------------------------------*/
 
 require 'DBConnect.php'; //Connect to the DB
-$action = '';
 $action = $_POST['action'];
 
-if($action == 'deleteOffer'){ //Check if action is deleteOffer from ajax
+if($action == 'deleteOffer'){ //Check if action is deleteOffer from ajax  
 
 	$offerId = $_REQUEST['offerId'];
 

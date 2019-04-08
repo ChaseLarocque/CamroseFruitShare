@@ -59,8 +59,8 @@ function makeOfferDisplay(){
 			<td align=center><h5>" . $row['contactEmail'] . "</h5></td>
 			<td align=center><h5>" . $row['contactPhone'] . "</td>
 			<td align=center><h5>" . $row['description'] . "</h5></td>
-			<td align=center><button type='button' id= '" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
-			<td align=center><button type='button' id= '" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> EDIT </button></td>
+			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
+			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> EDIT </button></td>
 		</tr>";
 	}//foreach 
 
