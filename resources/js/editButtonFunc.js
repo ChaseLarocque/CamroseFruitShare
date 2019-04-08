@@ -19,17 +19,12 @@ need to be pressed again in order to confirm deleting the
 submission. 
 **/
 
-function confirmOfferDelete(id){
+function confirmOfferEdit(id){
   var buttonId = document.getElementById(id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
-  buttonId.setAttribute("onClick", 'deleteOffer(id)');// Change onClick call new function
+  buttonId.setAttribute("onClick", 'editOffer(id)');// Change onClick call new function
 }
 
-function confirmRequestDelete(id){
-  var buttonId = document.getElementById(id);
-  buttonId.innerText = 'CONFIRM'; //Change button text
-  buttonId.setAttribute("onClick", 'deleteRequest(id)'); //Change onClick call new function
-}
 
 /**
 Once the Confirm button is clicked on the offer table display or request table display,
@@ -39,23 +34,11 @@ in order to delete submission from the Database.
 Once delete is finished it will refresh the page.
 **/
 
-function deleteOffer(id){// id is the button id which is the offerId on the fruit_offer table in the DB
-  action = 'deleteOffer';
+function editOffer(id){// id is the button id which is the offerId on the fruit_offer table in the DB
+  action = 'editOffer';
   $.ajax({
-    url: 'deleteSubmission.php', //Post to File
+    url: 'editSubmission.php', //Post to File
     type: 'POST', //Request Type
     data: {'action' : action, 'offerId' : id} //Pass data along
   });
-  window.location.href=window.location.href; // Reload page after complete
-}
-
-
-function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
-  action = 'deleteRequest';
-  $.ajax({
-    url: 'deleteSubmission.php', //Post to file
-    type: 'POST', //Request Type
-    data: {'action' : action, 'requestId' : id} //Pass data along
-  });
-  window.location.href=window.location.href; // Reload page after complete
 }

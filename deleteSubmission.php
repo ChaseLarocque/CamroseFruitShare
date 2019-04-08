@@ -13,8 +13,10 @@ the fruit_offer or fruit_request code
 /*------------------------------------------------------------------------------------------*/
 
 require 'DBConnect.php'; //Connect to the DB
+$action = '';
+$action = $_POST['action'];
 
-if($_REQUEST['action'] == 'deleteOffer'){ //Check if action is deleteOffer from ajax
+if($action == 'deleteOffer'){ //Check if action is deleteOffer from ajax
 
 	$offerId = $_REQUEST['offerId'];
 
@@ -27,10 +29,9 @@ if($_REQUEST['action'] == 'deleteOffer'){ //Check if action is deleteOffer from 
 
 	$pdo = null; //Set $pdo & $sql to null (more secure)
 	$sql = null;
-
 	}// if
 
-if($_REQUEST['action'] == 'deleteRequest'){ //Check if action is deleteRequest from ajax
+if($action == 'deleteRequest'){ //Check if action is deleteRequest from ajax
 
 	$requestId = $_REQUEST['requestId'];
 
@@ -43,6 +44,5 @@ if($_REQUEST['action'] == 'deleteRequest'){ //Check if action is deleteRequest f
 
 	$pdo = null; //Set $pdo & $sql to null (more secure)
 	$sql = null;
-
 	}//if
 ?>
