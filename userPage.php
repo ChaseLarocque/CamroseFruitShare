@@ -1,12 +1,12 @@
 <!--
-AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
-
+userPage.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose fruit picking website)
 February 01, 2019
 
-userPage.php
 
-This page users navigate to after they have logged in. It contains what fruit they are looking for
-and current offerings for that fruit.
+This page users navigate to after they have logged in. It contains what fruit they are offering, looking for,
+and current offerings for what they're looking for.
 -->
 <?php 
 
@@ -96,6 +96,9 @@ and current offerings for that fruit.
 
         </div><!--BODY CONTAINER-->
 
+        <div class="bodyFooterSpacing"><!--Creates spacing for footer in mobile view (CSS)-->
+        </div>
+
         <div class="footer">
             <div class="row">
                 <div class="col">
@@ -104,7 +107,7 @@ and current offerings for that fruit.
                 <div class="col"  id="footerCenter">  
                     <p>
                         Designed February 01,2019<br>
-                        by Alex Ho, Chase Larocque, Justin Ikenouye.
+                        by Alex Ho, Chase Larocque, Justin Ikenouye
                     </p>
                 </div>
                 <div class="col"  id="footerRight">

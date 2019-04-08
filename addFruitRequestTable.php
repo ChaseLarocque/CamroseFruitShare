@@ -1,12 +1,11 @@
 <?php
 /**
-	AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+addFruitRequestTable.css
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+March 31, 2019
 
-	March 31, 2019
-
-	addFruitRequestTable.php
-
-	This php file contains SQL query code that is executed through PHP and initialized via HTML and will post a fruit request to the fruit_request table in the database
+This php file contains SQL query code that is executed through PHP and initialized via HTML and will post a fruit request to the fruit_request table in the database
 **/
 
 require 'DBConnect.php'; //require the database - ensuring nothing is executed unless connection to DB is established
