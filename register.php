@@ -5,16 +5,18 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 February 01, 2019
 
 
+
 This is the page for registering an account to the website by clicking on 'register' from login.php  
 -->
 <?php
-// Include DB Access
-require_once "DBConnect.php";
-require_once "registerCode.php";
-
+    // Include DB Access
+    require_once "DBConnect.php";
+    require_once "registerCode.php";
 ?>
 <!doctype html>
+
 <html class="no-js" lang="en" dir="ltr">
+
 
     <head>
         <meta charset="utf-8">
@@ -46,7 +48,7 @@ require_once "registerCode.php";
                             <div class="card">
                                 <div class="card-header text-white" id = "login-head">Register to Hidden Harvests of Camrose</div>
                                 <div class="card-body">
-                                    <form action="" method="post">
+                                    <form action="" method="post" onsubmit="return openPopup()">
 
                                         <div class="form-group row">
                                             <label class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>

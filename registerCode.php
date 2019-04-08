@@ -16,9 +16,10 @@ contains checks to assure user doesn't create a new account if they already have
 //empty to check if empty 
 
 //initialize variables
+
 $username = $password = "";
 $username_err = $password_err ="";
- 
+
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
@@ -68,10 +69,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     // Check input errors before inserting in database
     if(empty($username_err) && empty($password_err)){
-        
+
         // Prepare an insert statement
         $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
-         
         if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
             $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
@@ -81,7 +81,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_username = $username;
             //password_hash to hash/salt
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-            
+
+
             // Attempt to execute the prepared statement
             if($stmt->execute()){
                 // Redirect to login page
