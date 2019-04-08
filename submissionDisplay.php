@@ -152,4 +152,5 @@ function makeMatchesDisplay(){
 }//makeMatchesDisplay()
 
 ?>
-<script src="resources/js/deleteButtonFunc.js"></script> 
+<script src="resources/js/deleteButtonFunc.js"></script>
+<script src="resources/js/editButtonFunc.js"></script> 
