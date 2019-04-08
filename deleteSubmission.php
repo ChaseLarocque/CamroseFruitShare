@@ -43,5 +43,6 @@ if($_REQUEST['action'] == 'deleteRequest'){ //Check if action is deleteRequest f
 	$pdo = null; //Set $pdo & $sql to null (more secure)
 	$sql = null;
 
+
 	}//if
 ?>
