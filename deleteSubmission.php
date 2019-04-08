@@ -1,10 +1,9 @@
 <?php 
 /**
-AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
-
-March 31, 2019
-
 deleteSubmission.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+March 31, 2019
 
 This php file contains the set of code that will execute an SQL query to delete a row from
 the fruit_offer or fruit_request code
