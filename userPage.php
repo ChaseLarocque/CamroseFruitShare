@@ -88,7 +88,7 @@ and current offerings for what they're looking for.
                 </div>
             </div><!--ROW CONTAINER-->
             <div class = "row">
-                <div class = "col-sm-12 col-md-12 w-100">
+                <div class = "col-sm-12 col-md-12 ">
                     <h2 class = "center padding20"><b> My Fruit Matches </b></h2>
                     <div><?php makeMatchesDisplay()?></div>
                 </div>

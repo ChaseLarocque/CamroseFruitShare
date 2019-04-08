@@ -39,7 +39,7 @@ function editOffer(id){// id is the button id which is the offerId on the fruit_
   action = 'editOffer';
   $.ajax({
     url: 'editSubmission.php', //Post to File
-    type: 'POST', //Request Type
+    type: 'GET', //Request Type
     data: {'action' : action, 'offerId' : id} //Pass data along
   });
 }

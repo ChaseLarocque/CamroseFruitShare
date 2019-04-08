@@ -18,10 +18,10 @@ if($action == 'deleteOffer'){ //Check if action is deleteOffer from ajax
 
 	$offerId = $_REQUEST['offerId'];
 
-	$sql = $pdo->prepare( "DELETE FROM fruit_offer 
+	$sql = $pdo -> prepare ( "DELETE FROM fruit_offer 
 		WHERE  offerId = ?"); // Prepare the SQL Query 
 
-	$sql -> bindParam(1, $offerId, PDO::PARAM_STR, 50); // Bind Parameter $offerId to STR(50) (more secure)
+	$sql -> bindParam (1, $offerId, PDO::PARAM_STR, 50); // Bind Parameter $offerId to STR(50) (more secure)
 
 	$sql -> execute();
 
@@ -33,10 +33,10 @@ if($action == 'deleteRequest'){ //Check if action is deleteRequest from ajax
 
 	$requestId = $_REQUEST['requestId'];
 
-	$sql = $pdo->prepare( "DELETE FROM fruit_request 
+	$sql = $pdo -> prepare ( "DELETE FROM fruit_request 
 		WHERE  requestId = ?"); //preparing sql statement to execute
 
-	$sql -> bindParam(1, $requestId, PDO::PARAM_STR, 50); //Bind parameter $requestId to STR(50) (More Secure)
+	$sql -> bindParam (1, $requestId, PDO::PARAM_STR, 50); //Bind parameter $requestId to STR(50) (More Secure)
 
 	$sql -> execute();
 

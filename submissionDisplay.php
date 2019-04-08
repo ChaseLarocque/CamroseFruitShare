@@ -96,7 +96,7 @@ function makeRequestDisplay(){
 		"<tr>
 			<td align=center>" . $row['requestName'] . "</td>
 			<td align=center>" . $row['requestDate'] . "</td>
-			<td align=center><button type='button' id= '" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
+			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
 		</tr>";
 	}//foreach
 
