@@ -116,7 +116,7 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
-	"<table class=table>
+	"<table class = 'table col-sm-12 col-md-12'>
 	<thead>
 		<tr>
 			<th><h4><b>Name</b></h4></th>

@@ -45,6 +45,7 @@ for ($pdo -> query($sql) as $row){
 					"contactPhone => $contactPhone",
 					"description => $description");
 }
+
 echo json_encode($return_arr);
 
 ?>
