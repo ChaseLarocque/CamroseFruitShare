@@ -47,19 +47,22 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
   console.log(id);
   $.ajax({
     url: 'deleteSubmission.php', //Post to File
+    data: {action: 'deleteOffer', offerId: id, //Pass data along
+    success: reloadData()}
     type: 'POST', //Request Type
-    data: {'action' : action, 'offerId' : id} //Pass data along
   });
-  window.location.href=window.location.href; // Reload page after complete
 }
-
 
 function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
   action = 'deleteRequest';
   $.ajax({
     url: 'deleteSubmission.php', //Post to file
+    data: {action: 'deleteRequest', requestId: id, //Pass data along
+    success: reloadData()}
     type: 'POST', //Request Type
-    data: {'action' : action, 'requestId' : id} //Pass data along
   });
-  window.location.href=window.location.href; // Reload page after complete
+}
+
+function reloadData(){
+    window.location.href=window.location.href; // Reload page after complete
 }
