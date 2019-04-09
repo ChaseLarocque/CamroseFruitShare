@@ -40,6 +40,11 @@ function editOffer(id){// id is the button id which is the offerId on the fruit_
   $.ajax({
     url: 'editSubmission.php', //Post to File
     type: 'GET', //Request Type
-    data: {'action' : action, 'offerId' : id} //Pass data along
-  });
-}
+    data: {'offerId' : id}, //Pass data along
+    dataType: 'JSON',
+    success: function(response){
+        var name = response.contactName;
+        console.log(name);
+    }//success
+  });//ajax
+}//editOffer
