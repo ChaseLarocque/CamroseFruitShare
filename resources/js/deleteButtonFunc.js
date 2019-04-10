@@ -23,13 +23,13 @@ function confirmOfferDelete(id){
   var buttonId = document.getElementById(id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
   buttonId.setAttribute("onClick", 'deleteOffer(id)');// Change onClick call new function
-}
+}//confirmOfferDate
 
 function confirmRequestDelete(id){
   var buttonId = document.getElementById(id);
   buttonId.innerText = 'CONFIRM'; //Change button text
   buttonId.setAttribute("onClick", 'deleteRequest(id)'); //Change onClick call new function
-}
+}//confirmRequestDate
 
 /**
 Once the Confirm button is clicked on the offer table display or request table display,
@@ -46,7 +46,7 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
     data: {action: 'deleteOffer', offerId: id, //Pass data along
     success: waitTimer()}
   });
-}
+}//deleteOffer
 
 function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
   $.ajax({
@@ -55,7 +55,7 @@ function deleteRequest(id){ // id is the button id which is the requestId on the
     data: {action: 'deleteRequest', requestId: id, //Pass data along
     success: waitTimer()}
   });
-}
+}//deleteRequest
 
 /**
 This function waits long enough for the SQL querry to finish
@@ -63,11 +63,11 @@ before the window is reloaded
 **/
 function waitTimer(){
    window.setTimeout(reloadData, 200);
-}
+}//waitTimer
 
 /**
 Reload page after SQL querry happens
 **/
 function reloadData(){
     window.location.href=window.location.href; // Reload page after complete
-}
+}//reloadData

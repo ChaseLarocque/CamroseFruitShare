@@ -27,7 +27,7 @@ if($_REQUEST['action'] == 'deleteOffer'){ //Check if action is deleteOffer from 
 	$pdo = null; //Set $pdo & $sql to null (more secure)
 	$sql = null;
 
-	}// if
+}// if
 
 if($_REQUEST['action'] == 'deleteRequest'){ //Check if action is deleteRequest from ajax
 
@@ -44,5 +44,5 @@ if($_REQUEST['action'] == 'deleteRequest'){ //Check if action is deleteRequest f
 	$sql = null;
 
 
-	}//if
+}//if
 ?>

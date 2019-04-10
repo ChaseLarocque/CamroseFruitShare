@@ -8,8 +8,8 @@ February 01, 2019
 This page users navigate to after they have logged in. It contains what fruit they are offering, looking for,
 and current offerings for what they're looking for.
 -->
-<?php 
 
+<?php 
     require 'submissionDisplay.php';
 ?>
 

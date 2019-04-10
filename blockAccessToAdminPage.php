@@ -9,8 +9,9 @@ Blocks regular users from entering the admin page
 */
 
 session_start();
+
 if($_SESSION['username'] != 'chaselarocque@gmail.com'){
    header("Location:index.php");
-}
+}//if
 
 ?> 

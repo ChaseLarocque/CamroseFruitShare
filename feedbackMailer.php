@@ -14,9 +14,9 @@ if($_POST["feedback"]){
 	//FOR ERROR CHECKING. REMOVE WHEN THIS WORKS
 	if($result){
 		echo "SENT";
-	}
+	}//if
 	else{
 		echo "Failed";
-	}
-}
+	}//else
+}//if
 ?>
