@@ -45,28 +45,34 @@ This is the page for registering an account to the website by clicking on 'regis
             <div class="vertical-align">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-sm-8 col-xs-8">
                             <div class="card">
                                 <div class="card-header text-white" id = "login-head">Register to Hidden Harvests of Camrose</div>
                                 <div class="card-body">
                                     <form action="" method="post" onsubmit="return openPopup()">
 
                                         <div class="form-group row">
-                                            <label class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
-                                            <input type="email" name="username" class="col-sm-12 offset-md-2 col-md-8 form-control" 
+                                            <label class="offset-1 col-8 offset-md-2 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
+                                            <input type="email" name="username" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $username; ?>">
-                                            <span class="help-block col-12 text-center"><?php echo $username_err; ?></span>
+                                            <span class="form-text col-12 text-center"><?php echo $username_err; ?></span>
                                         </div>    
 
                                         <div class="form-group row">
-                                            <label class="col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
-                                            <input type="password" name="password" class="col-sm-12 offset-md-2 col-md-8 form-control" 
+                                            <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
+                                            <input type="password" name="password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $password; ?>">
-                                            <span class="help-block col-12 text-center"><?php echo $password_err; ?></span>
+                                            <span class="form-text col-12 text-center"><?php echo $password_err; ?></span>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Confirm Password</label>
+                                            <input type="password" name="confirm_password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
+                                                   value="<?php echo $confirm_password; ?>">
+                                            <span class="form-text col-12 text-center"><?php echo $confirm_password_err; ?></span>
                                         </div>
 
                                         <div class="form-group row">
-                                            <div class="col-md-6 offset-md-3">
+                                            <div class="offset-2 col-8 col-md-6 offset-md-3">
                                                 <input type="submit" class="btn btn-secondary btnGreen col-sm-12" value="Register">
                                             </div>
                                         </div>
@@ -76,7 +82,6 @@ This is the page for registering an account to the website by clicking on 'regis
                                                 <p>Already have an account? <a href="login.php">Login here</a>.</p>
                                             </div>
                                         </div>
-
                                     </form>
                                 </div>
                             </div> 
@@ -84,22 +89,7 @@ This is the page for registering an account to the website by clicking on 'regis
                     </div>
                 </div>
             </div><!--vertical-align(contains register card)-->
-            
-            <div id="popup1" class="overlay">
-                <div class="popup">
-                    <h2>Etiquette Guidelines</h2>
-                    <hr>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
-                        1. Respect Other People<br>
-                        2. Respect Other People's Homes/Businesses<br>
-                        3. Respect Other People's Communication Wishes<br>
-                        4. Pick With Care for the Trees<br>
-                    </div>
-                </div>
-            </div><!--popup1-->
-
-
+            <br>
             <div class="footer">
                 <div class="row">
                     <div class="col">
