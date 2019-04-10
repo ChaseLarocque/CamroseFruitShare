@@ -20,15 +20,18 @@ submission.
 **/
 
 function confirmOfferDelete(id){
-  var buttonId = document.getElementById(id); // Grabs the element from the html that has an id == id
+  originalId = id;
+  var buttonId = document.getElementById('delete'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
-  buttonId.setAttribute("onClick", 'deleteOffer(id)');// Change onClick call new function
+  buttonId.setAttribute("onClick", 'deleteOffer(originalId)');// Change onClick call new function
+  console.log(id);
 }
 
 function confirmRequestDelete(id){
-  var buttonId = document.getElementById(id);
+  originalId = id;
+  var buttonId = document.getElementById('delete'+id);
   buttonId.innerText = 'CONFIRM'; //Change button text
-  buttonId.setAttribute("onClick", 'deleteRequest(id)'); //Change onClick call new function
+  buttonId.setAttribute("onClick", 'deleteRequest(originalId)'); //Change onClick call new function
 }
 
 /**
@@ -40,20 +43,23 @@ Once delete is finished it will refresh the page.
 **/
 
 function deleteOffer(id){// id is the button id which is the offerId on the fruit_offer table in the DB
+  action = 'deleteOffer';
+  console.log(id);
   $.ajax({
-    type: "POST", //Request Type
     url: 'deleteSubmission.php', //Post to File
     data: {action: 'deleteOffer', offerId: id, //Pass data along
     success: waitTimer()}
+    type: 'POST' //Request Type
   });
 }
 
 function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
+  action = 'deleteRequest';
   $.ajax({
-    type: "POST", //Request Type
     url: 'deleteSubmission.php', //Post to file
     data: {action: 'deleteRequest', requestId: id, //Pass data along
     success: waitTimer()}
+    type: 'POST' //Request Type
   });
 }
 
