@@ -20,7 +20,7 @@ if(!isset($_SESSION['username'])){
 }//if
 
 //require the deletesubmission.php on server side to ensure higher security
-require 'deleteSubmission.php';
+//require 'deleteSubmission.php';
 
 function makeOfferDisplay(){
 	
@@ -116,7 +116,7 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
-	"<table class=table>
+	"<table class = 'table col-sm-12 col-md-12'>
 	<thead>
 		<tr>
 			<th><h4><b>Name</b></h4></th>

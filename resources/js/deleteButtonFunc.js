@@ -47,9 +47,9 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
   console.log(id);
   $.ajax({
     url: 'deleteSubmission.php', //Post to File
-    data: {action: 'deleteOffer', offerId: id, //Pass data along
-    success: reloadData()}
-    type: 'POST', //Request Type
+    data: {action: 'deleteOffer', offerId: id}, //Pass data along
+    success: reloadData(),
+    type: 'POST' //Request Type
   });
 }
 
@@ -57,9 +57,9 @@ function deleteRequest(id){ // id is the button id which is the requestId on the
   action = 'deleteRequest';
   $.ajax({
     url: 'deleteSubmission.php', //Post to file
-    data: {action: 'deleteRequest', requestId: id, //Pass data along
-    success: reloadData()}
-    type: 'POST', //Request Type
+    data: {action: 'deleteRequest', requestId: id}, //Pass data along
+    success: reloadData(),
+    type: 'POST' //Request Type
   });
 }
 

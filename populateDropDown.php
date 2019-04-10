@@ -9,7 +9,6 @@ Contains code to fill the fruit dropdown list in fruitSearch.php and fruitOffer.
 */
 
 	include 'DBConnect.php';
-	session_start();
 
 	$sql = $pdo-> prepare("SELECT fruitName FROM fruit");
 	$sql -> execute();

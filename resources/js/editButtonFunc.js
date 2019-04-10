@@ -23,23 +23,14 @@ function confirmOfferEdit(id){
   originalId = id;
   var buttonId = document.getElementById('edit'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
-  buttonId.setAttribute("onClick", 'editOffer(originalId)');// Change onClick call new function
+  buttonId.setAttribute("onClick", "loadEditPage(originalId)");// Change onClick call new function
 }
 
 
 /**
-Once the Confirm button is clicked on the offer table display or request table display,
-these functions will be called to then make an ajax request to the 
-deleteSubmission.php file that will execute server side code 
-in order to delete submission from the Database.
-Once delete is finished it will refresh the page.
+This funciton will simply redirect the page from the userPage to the editSubmissionPage.php file which is a html file
+that looks like offer submission page. 
 **/
-
-function editOffer(id){// id is the button id which is the offerId on the fruit_offer table in the DB
-  action = 'editOffer';
-  $.ajax({
-    url: 'editSubmission.php', //Post to File
-    type: 'GET', //Request Type
-    data: {'action' : action, 'offerId' : id} //Pass data along
-  });
+function loadEditPage(id) {
+  window.location.href = "editSubmissionPage.php?offerId=" + id ;
 }

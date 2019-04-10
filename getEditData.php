@@ -13,15 +13,22 @@ the fruit_offer table in the Database and will be returned to populate the fruit
 
 
 require 'DBConnect.php'; //Connect to the DB
+//userId is pulled from the session as user is logged in
+$userId = $_SESSION['id'];
 
-$offerId = $_REQUEST['offerId'];
+//initialize the array to be sent back
+$return_arr = array();
 
-$sql = $pd -> prepare ("SELECT * FROM fruit_offer WHERE offerId = ?");
+$sql = "SELECT * FROM fruit_offer WHERE offerId = $offerId AND userId = $userId";
 
-$sql -> bindParam(1, $offerId, PDO::PARAM_STR, 50); // Bind Parameter $offerId to STR(50) (more secure)
-
-$sql -> execute();
-
-
+foreach ( $pdo -> query($sql) as $result){
+	
+	$contactName = $result['contactName'];
+	$fruitOffName = $result['fruitOffName'];
+	$offerDate = $result['offerDate'];
+	$contactEmail = $result['contactEmail'];
+	$contactPhone = $result['contactPhone'];
+	$description = $result['description'];
+}
 
 ?>
