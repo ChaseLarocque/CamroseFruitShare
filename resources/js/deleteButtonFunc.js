@@ -62,7 +62,7 @@ This function waits long enough for the SQL querry to finish
 before the window is reloaded
 **/
 function waitTimer(){
-   window.setTimeout(reloadData, 100);
+   window.setTimeout(reloadData, 200);
 }
 
 /**
