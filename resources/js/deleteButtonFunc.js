@@ -23,14 +23,14 @@ function confirmOfferDelete(id){
   buttonId.innerText = 'CONFIRM'; // Change button text
   buttonId.setAttribute("onClick", 'deleteOffer(originalId)');// Change onClick call new function
   console.log(id);
-}
+}//confirmOfferDelete
 
 function confirmRequestDelete(id){
   originalId = id;
   var buttonId = document.getElementById('delete'+id);
   buttonId.innerText = 'CONFIRM'; //Change button text
   buttonId.setAttribute("onClick", 'deleteRequest(originalId)'); //Change onClick call new function
-}
+}//confirmRequestDelete
 
 /**
 Once the Confirm button is clicked on the offer table display or request table display,
@@ -49,7 +49,7 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
     success: waitTimer(),
     type: 'POST' //Request Type
   });
-}
+}//deleteOffer
 
 function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
   action = 'deleteRequest';
@@ -59,7 +59,7 @@ function deleteRequest(id){ // id is the button id which is the requestId on the
     success: waitTimer(),
     type: 'POST' //Request Type
   });
-}
+}//deleteRequest
 
 /**
 This function waits long enough for the SQL querry to finish
