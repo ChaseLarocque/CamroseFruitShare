@@ -13,6 +13,7 @@ This is the page for registering an account to the website by clicking on 'regis
     require_once "DBConnect.php";
     require_once "registerCode.php";
 ?>
+
 <!doctype html>
 
 <html class="no-js" lang="en" dir="ltr">
