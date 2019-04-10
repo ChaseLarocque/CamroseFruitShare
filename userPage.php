@@ -14,7 +14,7 @@ and current offerings for what they're looking for.
 ?>
 
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html name = "home" class="no-js" lang="en" dir="ltr">
 
   <head>
     <meta charset="utf-8">
