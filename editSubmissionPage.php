@@ -55,7 +55,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                     </li>
                     <li class="divider-vertical"></li>
                     <li class="nav-item active">
-                        <a class="nav-link onPage disabled" href="fruitOffer.php">Offer Fruit</a>
+                        <a class="nav-link onPage disabled" href="fruitOffer.php">Edit Offer Fruit</a>
                     </li>
                     <li class="divider-vertical"></li>
                     <li class="nav-item">
@@ -77,7 +77,7 @@ It allows them to enter details like what kind of fruit they have and how to con
             <div class="body container">
                 <br>
 
-                <h2> Offer Fruit </h2>
+                <h2> Edit Offered Fruit </h2>
                 <p>Fill out and submit this form to offer your fruit to other users</p>
                 <hr>
 
