@@ -47,8 +47,8 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
   console.log(id);
   $.ajax({
     url: 'deleteSubmission.php', //Post to File
-    data: {action: 'deleteOffer', offerId: id}, //Pass data along
-    success: reloadData(),
+    data: {action: 'deleteOffer', offerId: id, //Pass data along
+    success: waitTimer()}
     type: 'POST' //Request Type
   });
 }
@@ -57,12 +57,23 @@ function deleteRequest(id){ // id is the button id which is the requestId on the
   action = 'deleteRequest';
   $.ajax({
     url: 'deleteSubmission.php', //Post to file
-    data: {action: 'deleteRequest', requestId: id}, //Pass data along
-    success: reloadData(),
+    data: {action: 'deleteRequest', requestId: id, //Pass data along
+    success: waitTimer()}
     type: 'POST' //Request Type
   });
 }
 
+/**
+This function waits long enough for the SQL querry to finish
+before the window is reloaded
+**/
+function waitTimer(){
+   window.setTimeout(reloadData, 200);
+}
+
+/**
+Reload page after SQL querry happens
+**/
 function reloadData(){
     window.location.href=window.location.href; // Reload page after complete
 }

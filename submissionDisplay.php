@@ -19,9 +19,6 @@ if(!isset($_SESSION['username'])){
    header("Location:index.php");
 }//if
 
-//require the deletesubmission.php on server side to ensure higher security
-//require 'deleteSubmission.php';
-
 function makeOfferDisplay(){
 	
 	//Connect to the DB
