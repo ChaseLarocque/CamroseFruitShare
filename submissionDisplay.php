@@ -20,7 +20,7 @@ if(!isset($_SESSION['username'])){
 }//if
 
 //require the deletesubmission.php on server side to ensure higher security
-require 'deleteSubmission.php';
+//require 'deleteSubmission.php'; Don't Include This?
 
 function makeOfferDisplay(){
 	

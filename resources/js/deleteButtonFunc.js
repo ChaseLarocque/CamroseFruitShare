@@ -44,7 +44,7 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
     type: "POST", //Request Type
     url: 'deleteSubmission.php', //Post to File
     data: {action: 'deleteOffer', offerId: id, //Pass data along
-    success: reloadData()}
+    success: waitTimer()}
   });
 }
 
@@ -53,10 +53,21 @@ function deleteRequest(id){ // id is the button id which is the requestId on the
     type: "POST", //Request Type
     url: 'deleteSubmission.php', //Post to file
     data: {action: 'deleteRequest', requestId: id, //Pass data along
-    success: reloadData()}
+    success: waitTimer()}
   });
 }
 
+/**
+This function waits long enough for the SQL querry to finish
+before the window is reloaded
+**/
+function waitTimer(){
+   window.setTimeout(reloadData, 100);
+}
+
+/**
+Reload page after SQL querry happens
+**/
 function reloadData(){
     window.location.href=window.location.href; // Reload page after complete
 }
