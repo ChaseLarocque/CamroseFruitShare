@@ -55,20 +55,20 @@ This is the page for registering an account to the website by clicking on 'regis
                                             <label class="offset-1 col-8 offset-md-2 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
                                             <input type="email" name="username" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $username; ?>">
-                                            <span class="form-text col-12 text-center"><?php echo $username_err; ?></span>
+                                            <span class="text-danger col-12 text-center"><?php echo $username_err; ?></span>
                                         </div>    
 
                                         <div class="form-group row">
                                             <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
                                             <input type="password" name="password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $password; ?>">
-                                            <span class="form-text col-12 text-center"><?php echo $password_err; ?></span>
+                                            <span class="text-danger col-12 text-center"><?php echo $password_err; ?></span>
                                         </div>
                                         <div class="form-group row">
                                             <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Confirm Password</label>
                                             <input type="password" name="confirm_password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $confirm_password; ?>">
-                                            <span class="form-text col-12 text-center"><?php echo $confirm_password_err; ?></span>
+                                            <span class="text-danger col-12 text-center"><?php echo $confirm_password_err; ?></span>
                                         </div>
 
                                         <div class="form-group row">
