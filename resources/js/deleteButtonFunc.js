@@ -3,8 +3,6 @@ deleteButtonFunc.js
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 March 31, 2019
-
-
 This JavaScript file holds the different javascript files that
 will be handling the delete and confirm button on the user page display tables.
 **/
@@ -25,14 +23,14 @@ function confirmOfferDelete(id){
   buttonId.innerText = 'CONFIRM'; // Change button text
   buttonId.setAttribute("onClick", 'deleteOffer(originalId)');// Change onClick call new function
   console.log(id);
-}
+}//confirmOfferDelete
 
 function confirmRequestDelete(id){
   originalId = id;
   var buttonId = document.getElementById('delete'+id);
   buttonId.innerText = 'CONFIRM'; //Change button text
   buttonId.setAttribute("onClick", 'deleteRequest(originalId)'); //Change onClick call new function
-}
+}//confirmRequestDelete
 
 /**
 Once the Confirm button is clicked on the offer table display or request table display,
@@ -48,21 +46,32 @@ function deleteOffer(id){// id is the button id which is the offerId on the frui
   $.ajax({
     url: 'deleteSubmission.php', //Post to File
     data: {action: 'deleteOffer', offerId: id}, //Pass data along
-    success: reloadData(),
+    success: waitTimer(),
     type: 'POST' //Request Type
   });
-}
+}//deleteOffer
 
 function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
   action = 'deleteRequest';
   $.ajax({
     url: 'deleteSubmission.php', //Post to file
     data: {action: 'deleteRequest', requestId: id}, //Pass data along
-    success: reloadData(),
+    success: waitTimer(),
     type: 'POST' //Request Type
   });
-}
+}//deleteRequest
 
+/**
+This function waits long enough for the SQL querry to finish
+before the window is reloaded
+**/
+function waitTimer(){
+   window.setTimeout(reloadData, 200);
+}//waitTimer
+
+/**
+Reload page after SQL querry happens
+**/
 function reloadData(){
     window.location.href=window.location.href; // Reload page after complete
-}
+}//reloadData

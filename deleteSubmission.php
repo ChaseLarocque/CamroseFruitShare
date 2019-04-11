@@ -27,7 +27,8 @@ if($action == 'deleteOffer'){ //Check if action is deleteOffer from ajax
 
 	$pdo = null; //Set $pdo & $sql to null (more secure)
 	$sql = null;
-	}// if
+
+}// if
 
 if($action == 'deleteRequest'){ //Check if action is deleteRequest from ajax
 
@@ -43,6 +44,6 @@ if($action == 'deleteRequest'){ //Check if action is deleteRequest from ajax
 	$pdo = null; //Set $pdo & $sql to null (more secure)
 	$sql = null;
 
-  
-	}//if
+}//if
+
 ?>

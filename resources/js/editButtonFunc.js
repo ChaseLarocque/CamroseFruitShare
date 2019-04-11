@@ -24,7 +24,7 @@ function confirmOfferEdit(id){
   var buttonId = document.getElementById('edit'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
   buttonId.setAttribute("onClick", "loadEditPage(originalId)");// Change onClick call new function
-}
+}//confirmOfferEdit
 
 
 /**
@@ -33,4 +33,4 @@ that looks like offer submission page.
 **/
 function loadEditPage(id) {
   window.location.href = "editSubmissionPage.php?offerId=" + id ;
-}
+}//loadEditPage

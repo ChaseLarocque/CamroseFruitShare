@@ -7,7 +7,7 @@ February 01, 2019
 This page is for users to submit feedback regarding the website and where users can request a fruit that's not listed. 
 -->
 <?
-    require once "feedbackMailer.php";
+    require "feedbackMailer.php";
 ?>
 
 <!doctype html>
