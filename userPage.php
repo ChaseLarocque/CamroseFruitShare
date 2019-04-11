@@ -11,10 +11,12 @@ and current offerings for what they're looking for.
 
 <?php 
     require 'submissionDisplay.php';
+    require 'enableAdminPageButton.php'
 ?>
 
 <!doctype html>
 <html name = "home" class="no-js" lang="en" dir="ltr">
+
 
   <head>
     <meta charset="utf-8">
@@ -39,7 +41,10 @@ and current offerings for what they're looking for.
                 <h4>
                     <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                 </h4>
-            </div>   
+                <h4>
+                    <a href="changePasswordPage.php" class="btn btn-secondary btnRed" role="button">Change Password</a>
+                </h4>
+            </div>
         </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
@@ -63,10 +68,7 @@ and current offerings for what they're looking for.
                 <li class="nav-item">
                   <a class="nav-link navBtn" href="feedbackForm.php">Feedback</a>
                 </li>
-                <li class="divider-vertical"></li>
-                <li class = "nav-item">
-                  <a class="nav-link navBtn" href="adminPage.php">Admin Settings</a>
-                </li>
+                <?php enableAdminPage()?>
             </ul>
         </nav>
 
@@ -125,7 +127,8 @@ and current offerings for what they're looking for.
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  
+  <script src="resources/js/enableAdminPageButton.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
