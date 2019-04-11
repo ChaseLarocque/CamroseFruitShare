@@ -39,7 +39,10 @@ and current offerings for what they're looking for.
                 <h4>
                     <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                 </h4>
-            </div>   
+                <h4>
+                    <a href="changePasswordPage.php" class="btn btn-secondary btnRed" role="button">Change Password</a>
+                </h4>
+            </div>
         </div>
 
         <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
