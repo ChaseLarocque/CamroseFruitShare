@@ -91,7 +91,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Fruit (Required)</label>
-                            <select required name="fruitOffName" class="form-control" >
+                            <select required id = "fruitOfferVal" name="fruitOffName" class="form-control" >
                                 <?php   
                                     include 'populateDropDown.php';
                                 ?>
@@ -177,5 +177,9 @@ It allows them to enter details like what kind of fruit they have and how to con
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="resources/js/require1of2.js"></script> 
-    <script src="resources/js/limitDateOffer.js"></script> 
+    <script src="resources/js/limitDateOffer.js"></script>
+    <script type="text/javascript">
+    var selectFruit = "<?php echo $fruitOffName; ?>";
+    </script>
+    <script src="resources/js/editDropDownSelect.js"></script> 
 </html>
