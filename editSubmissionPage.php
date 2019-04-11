@@ -81,7 +81,8 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <p>Fill out and submit this form to offer your fruit to other users</p>
                 <hr>
 
-                <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Edited!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+                <form method="post" action="editFruitOfferTable.php" onsubmit = "alert('Offering Edited!');">
+                    <input type="hidden" name="offerId" value=<?php echo $offerId?>>
                     <div class="row"> 
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Contact Name (Required)</label>
