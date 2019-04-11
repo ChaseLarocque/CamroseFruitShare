@@ -82,5 +82,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }//if
     // Close connection
     unset($pdo);
-}
+}//if
 ?>
