@@ -12,5 +12,6 @@ session_start();
 
 if(isset($_SESSION["loggedin"])){
     header("location: userPage.php");
-}
+}//if
+
 ?>

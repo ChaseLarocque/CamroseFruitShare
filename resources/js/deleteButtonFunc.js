@@ -3,8 +3,6 @@ deleteButtonFunc.js
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 March 31, 2019
-
-
 This JavaScript file holds the different javascript files that
 will be handling the delete and confirm button on the user page display tables.
 **/
@@ -20,16 +18,19 @@ submission.
 **/
 
 function confirmOfferDelete(id){
-  var buttonId = document.getElementById(id); // Grabs the element from the html that has an id == id
+  originalId = id;
+  var buttonId = document.getElementById('delete'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
-  buttonId.setAttribute("onClick", 'deleteOffer(id)');// Change onClick call new function
-}
+  buttonId.setAttribute("onClick", 'deleteOffer(originalId)');// Change onClick call new function
+  console.log(id);
+}//confirmOfferDelete
 
 function confirmRequestDelete(id){
-  var buttonId = document.getElementById(id);
+  originalId = id;
+  var buttonId = document.getElementById('delete'+id);
   buttonId.innerText = 'CONFIRM'; //Change button text
-  buttonId.setAttribute("onClick", 'deleteRequest(id)'); //Change onClick call new function
-}
+  buttonId.setAttribute("onClick", 'deleteRequest(originalId)'); //Change onClick call new function
+}//confirmRequestDelete
 
 /**
 Once the Confirm button is clicked on the offer table display or request table display,
@@ -40,20 +41,37 @@ Once delete is finished it will refresh the page.
 **/
 
 function deleteOffer(id){// id is the button id which is the offerId on the fruit_offer table in the DB
+  action = 'deleteOffer';
+  console.log(id);
   $.ajax({
-    type: "POST", //Request Type
     url: 'deleteSubmission.php', //Post to File
-    data: {action: 'deleteOffer', offerId: id} //Pass data along
+    data: {action: 'deleteOffer', offerId: id}, //Pass data along
+    success: waitTimer(),
+    type: 'POST' //Request Type
   });
-  window.location.href=window.location.href; // Reload page after complete
-}
-
+}//deleteOffer
 
 function deleteRequest(id){ // id is the button id which is the requestId on the fruit_request table in the DB
+  action = 'deleteRequest';
   $.ajax({
-    type: "POST", //Request Type
     url: 'deleteSubmission.php', //Post to file
-    data: {action: 'deleteRequest', requestId: id} //Pass data along
+    data: {action: 'deleteRequest', requestId: id}, //Pass data along
+    success: waitTimer(),
+    type: 'POST' //Request Type
   });
-  window.location.href=window.location.href; // Reload page after complete
-}
+}//deleteRequest
+
+/**
+This function waits long enough for the SQL querry to finish
+before the window is reloaded
+**/
+function waitTimer(){
+   window.setTimeout(reloadData, 200);
+}//waitTimer
+
+/**
+Reload page after SQL querry happens
+**/
+function reloadData(){
+    window.location.href=window.location.href; // Reload page after complete
+}//reloadData

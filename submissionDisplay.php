@@ -19,9 +19,6 @@ if(!isset($_SESSION['username'])){
    header("Location:index.php");
 }//if
 
-//require the deletesubmission.php on server side to ensure higher security
-require 'deleteSubmission.php';
-
 function makeOfferDisplay(){
 	
 	//Connect to the DB
@@ -35,12 +32,12 @@ function makeOfferDisplay(){
 	"<table class=table>
 	<thead>
 		<tr>
-		<th ><h4><b>Name</b></h4></th>
-		<th ><h4><b>Fruit Offered</b></h4></th>
-		<th ><h4><b>Offer Until Date</b></h4></th>
-		<th ><h4><b>Contact Email</b></td></h4></th>
-		<th ><h4><b>Contact Phone Number</b></h4></th>
-		<th ><h4><b>Description</b></h4></th>
+			<th ><h4><b>Name</b></h4></th>
+			<th ><h4><b>Fruit Offered</b></h4></th>
+			<th ><h4><b>Offer Until Date</b></h4></th>
+			<th ><h4><b>Contact Email</b></td></h4></th>
+			<th ><h4><b>Contact Phone Number</b></h4></th>
+			<th ><h4><b>Description</b></h4></th>
 		</tr>
 	</thead>";
 
@@ -59,7 +56,8 @@ function makeOfferDisplay(){
 			<td align=center><h5>" . $row['contactEmail'] . "</h5></td>
 			<td align=center><h5>" . $row['contactPhone'] . "</td>
 			<td align=center><h5>" . $row['description'] . "</h5></td>
-			<td align=center><button type='button' id= '" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
+			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
+			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> EDIT </button></td>
 		</tr>";
 	}//foreach 
 
@@ -81,8 +79,8 @@ function makeRequestDisplay(){
 	"<table class=table>
 	<thead>
 		<tr>
-			<th ><b>Fruit Requested</b></th>
-			<th ><b>Request Until Date</b></th>
+			<th><h4><b>Fruit Requested</b></h4></th>
+			<th><h4><b>Request Until Date</b></h4></th>
 		</tr>
 	</thead>";
 
@@ -95,7 +93,7 @@ function makeRequestDisplay(){
 		"<tr>
 			<td align=center>" . $row['requestName'] . "</td>
 			<td align=center>" . $row['requestDate'] . "</td>
-			<td align=center><button type='button' id= '" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
+			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
 		</tr>";
 	}//foreach
 
@@ -115,15 +113,15 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
-	"<table class=table>
+	"<table class = 'table col-sm-12 col-md-12'>
 	<thead>
 		<tr>
-			<th ><b>Contact Name</b></th>
-			<th ><b>Fruit Matched</b></th>
-			<th ><b>Available Until Date</b></th>
-			<th ><b>Contact Email</b></th>
-			<th ><b>Contact Phone</b></th>
-			<th ><b>Description</b></th>
+			<th><h4><b>Name</b></h4></th>
+			<th><h4><b>Fruit Matched</b></h4></th>
+			<th><h4><b>Offered Until Date</b></h4></th>
+			<th><h4><h4><b>Contact Email</b></h4></th>
+			<th><h4><b>Contact Phone Number</b></h4></th>
+			<th><h4><b>Description</b></h4></th>
 		</tr>
 	</thead>";
 
@@ -151,4 +149,5 @@ function makeMatchesDisplay(){
 }//makeMatchesDisplay()
 
 ?>
-<script src="resources/js/deleteButtonFunc.js"></script> 
+<script src="resources/js/deleteButtonFunc.js"></script>
+<script src="resources/js/editButtonFunc.js"></script> 

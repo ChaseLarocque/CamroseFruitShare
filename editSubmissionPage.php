@@ -12,7 +12,9 @@ It allows them to enter details like what kind of fruit they have and how to con
 <!doctype html>
 
 <?php
-    include "blockAccessIfNotLoggedIn.php";
+    require "blockAccessIfNotLoggedIn.php";
+    $offerId = $_GET['offerId'];
+    require "getEditData.php";
 ?>
 
 <html class="no-js" lang="en" dir="ltr">
@@ -53,7 +55,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                     </li>
                     <li class="divider-vertical"></li>
                     <li class="nav-item active">
-                        <a class="nav-link onPage disabled" href="fruitOffer.php">Offer Fruit</a>
+                        <a class="nav-link onPage disabled" href="fruitOffer.php">Edit Offer Fruit</a>
                     </li>
                     <li class="divider-vertical"></li>
                     <li class="nav-item">
@@ -75,21 +77,22 @@ It allows them to enter details like what kind of fruit they have and how to con
             <div class="body container">
                 <br>
 
-                <h2> Offer Fruit </h2>
+                <h2> Edit Offered Fruit </h2>
                 <p>Fill out and submit this form to offer your fruit to other users</p>
                 <hr>
 
-                <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
-                    <div class="row">
+                <form method="post" action="editFruitOfferTable.php" onsubmit = "alert('Offering Edited!');">
+                    <input type="hidden" name="offerId" value=<?php echo $offerId?>>
+                    <div class="row"> 
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Contact Name (Required)</label>
-                            <input required type="text" name="contactName" class="form-control" placeholder = "John">     
+                            <input required type="text" name="contactName" class="form-control" placeholder = "John" value = <?php echo $contactName;?>>     
                         </div>
                     </div>
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Fruit (Required)</label>
-                            <select required name="fruitOffName" class="form-control">
+                            <select required id = "fruitOfferVal" name="fruitOffName" class="form-control" >
                                 <?php   
                                     include 'populateDropDown.php';
                                 ?>
@@ -99,7 +102,7 @@ It allows them to enter details like what kind of fruit they have and how to con
 
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Offer Until When? (Required) </label>
-                            <input required type="date" name="offerDate" class="form-control">
+                            <input required type="date" name="offerDate" class="form-control" value = <?php echo $offerDate;?>>
                             <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                         </div>
                     </div>
@@ -107,11 +110,11 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Contact Email</label>
-                            <input required type="email" name="contactEmail" class="form-control" placeholder="NAME@EMAIL.COM">
+                            <input required type="email" name="contactEmail" class="form-control" placeholder="NAME@EMAIL.COM" value = <?php echo $contactEmail;?>>
                         </div>
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Contact Phone Number</label>
-                            <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
+                            <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234" value = <?php echo $contactPhone;?>>
                         </div>
                     </div>
 
@@ -124,7 +127,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class="row">
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Description</label>
-                            <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: The Type of Fruit, What Time of Day to Pick, or Other Special Requests for the Fruit Pickers"></textarea>
+                            <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: The Type of Fruit, What Time of Day to Pick, or Other Special Requests for the Fruit Pickers"><?php echo $description;?></textarea>
                         </div>
                     </div>
 
@@ -169,11 +172,13 @@ It allows them to enter details like what kind of fruit they have and how to con
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="resources/js/require1of2.js"></script> 
-    <script src="resources/js/limitDateOffer.js"></script> 
+    <script src="resources/js/limitDateOffer.js"></script>
+    <script type="text/javascript">
+    var selectFruit = "<?php echo $fruitOffName; ?>";
+    </script>
+    <script src="resources/js/editDropDownSelect.js"></script> 
 </html>

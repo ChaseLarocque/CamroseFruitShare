@@ -1,6 +1,6 @@
 <?php
 /**
-addFruitRequestTable.css
+addFruitRequestTable.php
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 March 31, 2019
@@ -44,7 +44,7 @@ if($_POST['requestFruit2'] != NULL && $_POST['requestDate2'] != NULL){
 	$sql->bindParam(3, $requestDate, PDO::PARAM_STR, 10);
 	$sql -> execute();
 	$sql = null;
-}
+}//if
 
 if($_POST['requestFruit3'] != NULL && $_POST['requestDate3'] != NULL){
 	$requestName = $_POST['requestFruit3'];
@@ -58,7 +58,7 @@ if($_POST['requestFruit3'] != NULL && $_POST['requestDate3'] != NULL){
 	$sql->bindParam(3, $requestDate, PDO::PARAM_STR, 10);
 	$sql -> execute();
 	$sql = null;
-}
+}//if
 
 
 //nullify $sql and $pdo to erase code from memory

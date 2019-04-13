@@ -14,11 +14,11 @@ and directs new users to an account creation page register.php
 // Initialize the session
 session_start();
  
-// Check if the user is already logged in, if yes then redirect him to welcome page
+// Check if the user is already logged in, if yes then redirect him to userPage
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: userPage.php");
     exit;
-}
+}//if
  
 // Include config file
 require_once "DBConnect.php";
@@ -59,19 +59,19 @@ require_once "loginCode.php";
                                     <form action="" method="post">
 
                                         <div class="form-group row">
-                                            <label class = "col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
-                                            <input type="email" name="username" class="col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
-                                            <span class="help-block col-12 text-center"><?php echo $username_err; ?></span>
+                                            <label class = "offset-1 col-8 col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
+                                            <input type="email" name="username" class="offset-1 col-10 col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
+                                            <span class="text-danger col-12 text-center"><?php echo $username_err; ?></span>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class = "col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
-                                            <input type="password" name="password" class="col-sm-12 offset-md-2 col-md-8 form-control">
-                                            <span class="help-block col-12 text-center"><?php echo $password_err; ?></span>
+                                            <label class = "offset-1 col-8 col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
+                                            <input type="password" name="password" class="offset-1 col-10 col-sm-12 offset-md-2 col-md-8 form-control">
+                                            <span class="text-danger col-12 text-center"><?php echo $password_err; ?></span>
                                         </div>
 
                                         <div class="form-group row">
-                                            <div class="col-md-6 offset-md-3">
+                                            <div class="offset-2 col-8 col-md-6 offset-md-3">
                                                 <input type="submit" class="btn btn-secondary btnGreen col-sm-12" value="Login">
                                             </div>
                                         </div>
