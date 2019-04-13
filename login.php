@@ -60,13 +60,13 @@ require_once "loginCode.php";
 
                                         <div class="form-group row">
                                             <label class = "offset-1 col-8 col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
-                                            <input type="email" name="username" class="offset-1 col-10 col-sm-12 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
+                                            <input type="email" name="username" class="offset-1 col-10 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
                                             <span class="text-danger col-12 text-center"><?php echo $username_err; ?></span>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class = "offset-1 col-8 col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
-                                            <input type="password" name="password" class="offset-1 col-10 col-sm-12 offset-md-2 col-md-8 form-control">
+                                            <input type="password" name="password" class="offset-1 col-10 offset-md-2 col-md-8 form-control">
                                             <span class="text-danger col-12 text-center"><?php echo $password_err; ?></span>
                                         </div>
 
@@ -89,6 +89,9 @@ require_once "loginCode.php";
                     </div>
                 </div>
             </div> <!--vertical-align (Contains the login card)-->
+
+            <div class="bodyFooterSpacing"><!--Creates spacing for footer in mobile view (CSS)-->
+            </div>
 
             <div class="footer">
                 <div class="row">
