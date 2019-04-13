@@ -4,19 +4,33 @@ Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose fruit picking website)
 March 23, 2019
 
-Contains code to mail the feedback from feedbackFrom.php to Greg (Or whoever is specified in mail())
+Contains code to mail the feedback from feedbackFrom.php to Greg (Or whoever is specified in setTo())
+Currently set to mail using the outgoing ualberta smtp (Simple Mail Transport Protocol) server
+Uses SwiftMailer https://swiftmailer.symfony.com/docs/introduction.html
 -->
-<?php
-if($_POST["feedback"]){
-	$msg = wordwrap($_POST["feedback"],70); //wrap text to fit in email
-	$result = mail('jikenouy@ualberta.ca', 'Feedback Form', $msg, 'From: feedback@csl.augustana.ualberta.ca');
 
-	//FOR ERROR CHECKING. REMOVE WHEN THIS WORKS
-	if($result){
-		echo "SENT";
-	}//if
-	else{
-		echo "Failed";
-	}//else
-}//if
+<?php
+require_once 'resources/swiftMailer/vendor/autoload.php';
+
+if($_POST["feedback"]){
+	$msg = $_POST["feedback"];
+
+	// Create the transport. 25 is a well know port number for smtp
+	$transport = new Swift_SmtpTransport('smtp.ualberta.ca', 25);
+
+	// Create the Mailer using the created Transport
+	$mailer = new Swift_Mailer($transport);
+
+	// Create a message
+	$message = (new Swift_Message('Website Feedback'))
+	  ->setFrom(['feedback@hiddenharvests.ca' => 'Hidden Havests of Camrose Feedback'])
+	  ->setTo(['jikenouy@ualberta.ca' => 'Greg King'])
+	  ->setBody($msg)
+	  ;
+
+	// Send the message
+	$result = $mailer->send($message);
+
+	echo($result);
+}
 ?>
