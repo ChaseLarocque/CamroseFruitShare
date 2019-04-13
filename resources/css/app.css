@@ -22,8 +22,9 @@ that are being used on multiple pages.
 .header {
 	width: 100%;
 	margin: 0;
-	height: 100px;
 	
+	padding-top: 15px;
+	padding-bottom: 15px;
 	background-color: #98291a;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -31,17 +32,19 @@ that are being used on multiple pages.
 	text-align: center;
 	border-bottom: 2px solid #000000;
 }
-@media (max-width: 707px) { /*Specific width for when text wraps and creates another line*/
+/*
+@media (max-width: 707px) { /*Specific width for when text wraps and creates another line
 	.header{
 		height: 120px;
 		padding-top: 10px;
 	}
 }
-@media (max-width: 481px) { /*Specific width for when text wraps and creates another line*/
+@media (max-width: 481px) { /*Specific width for when text wraps and creates another line
 	.header{
 		height: 175px;
 	}
 }
+*/
 
 #title{
 	font-family: 'Catamaran', sans-serif;
