@@ -29,22 +29,18 @@ It allows them to enter details like what kind of fruit they have and how to con
     <body>
         <div class="main-container">
             <div class="header row">
-                <div class="col-3">
-                    <!-- FOR SPACING-->
-                </div>
-
-                <div class="col-6 my-auto">
+                <div class="col-sm-0 col-md-2"></div>
+                <div class="col-sm-12 col-md-8 my-auto">
                     <h1 id = "title">
                         Hidden Harvests of Camrose
                     </h1>
                 </div>
-
-                <div class="col-3 logButton my-auto">
+                <div class="col-sm-12 col-md-2 logButton my-auto">
                     <h4>
-                        <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
+                        <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                     </h4>
                 </div>    
-            </div>
+            </div><!--header row-->
 
             <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
                 <ul class="navbar-nav nav-fill w-100">

@@ -38,7 +38,7 @@ This page is for users to submit feedback regarding the website and where users 
                 </div>
                 <div class="col-sm-12 col-md-2 logButton my-auto">
                     <h4>
-                        <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
+                        <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                     </h4>
                 </div>    
             </div><!--header row-->
