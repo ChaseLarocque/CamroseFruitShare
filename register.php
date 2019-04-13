@@ -53,20 +53,20 @@ This is the page for registering an account to the website by clicking on 'regis
 
                                         <div class="form-group row">
                                             <label class="offset-1 col-8 offset-md-2 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
-                                            <input type="email" name="username" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
+                                            <input type="email" name="username" class="offset-1 col-10 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $username; ?>">
                                             <span class="text-danger col-12 text-center"><?php echo $username_err; ?></span>
                                         </div>    
 
                                         <div class="form-group row">
                                             <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
-                                            <input type="password" name="password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
+                                            <input type="password" name="password" class="offset-1 col-10  offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $password; ?>">
                                             <span class="text-danger col-12 text-center"><?php echo $password_err; ?></span>
                                         </div>
                                         <div class="form-group row">
                                             <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Confirm Password</label>
-                                            <input type="password" name="confirm_password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
+                                            <input type="password" name="confirm_password" class="offset-1 col-10 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $confirm_password; ?>">
                                             <span class="text-danger col-12 text-center"><?php echo $confirm_password_err; ?></span>
                                         </div>
@@ -89,7 +89,10 @@ This is the page for registering an account to the website by clicking on 'regis
                     </div>
                 </div>
             </div><!--vertical-align(contains register card)-->
-            <br>
+            
+            <div class="bodyFooterSpacing"><!--Creates spacing for footer in mobile view (CSS)-->
+            </div>
+
             <div class="footer">
                 <div class="row">
                     <div class="col">
@@ -113,12 +116,5 @@ This is the page for registering an account to the website by clicking on 'regis
 
         </div><!--maincontainer-->
     </body>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="resources/js/openPopupOnRegister.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </html>

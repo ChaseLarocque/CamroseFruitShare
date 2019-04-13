@@ -29,22 +29,18 @@ It allows them to enter details like what kind of fruit they have and how to con
     <body>
         <div class="main-container">
             <div class="header row">
-                <div class="col-3">
-                    <!-- FOR SPACING-->
-                </div>
-
-                <div class="col-6 my-auto">
+                <div class="col-sm-0 col-md-2"></div>
+                <div class="col-sm-12 col-md-8 my-auto">
                     <h1 id = "title">
                         Hidden Harvests of Camrose
                     </h1>
                 </div>
-
-                <div class="col-3 logButton my-auto">
+                <div class="col-sm-12 col-md-2 logButton my-auto">
                     <h4>
-                        <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
+                        <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                     </h4>
                 </div>    
-            </div>
+            </div><!--header row-->
 
             <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
                 <ul class="navbar-nav nav-fill w-100">
@@ -79,7 +75,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <p>Fill out and submit this form to offer your fruit to other users</p>
                 <hr>
 
-                <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Submitted!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+                <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Submitted!');">
                     <div class="row">
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Contact Name (Required)</label>
@@ -164,16 +160,11 @@ It allows them to enter details like what kind of fruit they have and how to con
         </div> <!--MAIN CONTAINER-->
     </body>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
     <script src="resources/js/require1of2.js"></script> 
     <script src="resources/js/limitDateOffer.js"></script> 
 </html>
