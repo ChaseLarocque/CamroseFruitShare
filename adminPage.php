@@ -29,17 +29,17 @@ which will work to communicate with the Database.
     <body>
         <div class="main-container">
             <div class="header row">
-                <div class="col-3"></div>
-                <div class="col-6 my-auto">
+                <div class="col-sm-0 col-md-2"></div>
+                <div class="col-sm-12 col-md-8 my-auto">
                     <h1 id = "title">
                         Hidden Harvests of Camrose
                     </h1>
                 </div>
-                <div class="col-3 logButton my-auto">
+                <div class="col-sm-12 col-md-2 logButton my-auto">
                     <h4>
                         <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                     </h4>
-                </div>   
+                </div>    
             </div><!--header row-->
 
             <nav class="navbar navbar-expand-sm navbar-light navSet font-weight-bolder">
@@ -135,13 +135,4 @@ which will work to communicate with the Database.
 
         </div><!--main-container-->
   </body>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!--
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  -->
 </html>
