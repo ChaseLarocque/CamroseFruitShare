@@ -41,7 +41,6 @@ This is the page for registering an account to the website by clicking on 'regis
                 </div>
             </div><!--header row-->
 
-
             <div class="vertical-align">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -49,8 +48,7 @@ This is the page for registering an account to the website by clicking on 'regis
                             <div class="card">
                                 <div class="card-header text-white" id = "login-head">Register to Hidden Harvests of Camrose</div>
                                 <div class="card-body">
-                                    <form action="" method="post" onsubmit="return openPopup()">
-
+                                    <form action="" method="post">
                                         <div class="form-group row">
                                             <label class="offset-1 col-8 offset-md-2 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
                                             <input type="email" name="username" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
@@ -73,10 +71,9 @@ This is the page for registering an account to the website by clicking on 'regis
 
                                         <div class="form-group row">
                                             <div class="offset-2 col-8 col-md-6 offset-md-3">
-                                                <input type="submit" class="btn btn-secondary btnGreen col-sm-12" value="Register">
+                                                <input type="submit" class="btn btn-secondary btnGreen col-sm-12" value="Register" id="registerButton">
                                             </div>
                                         </div>
-                                        
                                         <div class="form-group row">
                                             <div class="col-12 text-center">
                                                 <p>Already have an account? <a href="login.php">Login here</a>.</p>
@@ -90,6 +87,8 @@ This is the page for registering an account to the website by clicking on 'regis
                 </div>
             </div><!--vertical-align(contains register card)-->
             <br>
+            
+
             <div class="footer">
                 <div class="row">
                     <div class="col">
@@ -114,10 +113,8 @@ This is the page for registering an account to the website by clicking on 'regis
         </div><!--maincontainer-->
     </body>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="resources/js/openPopupOnRegister.js"></script> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
