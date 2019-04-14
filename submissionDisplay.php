@@ -57,7 +57,7 @@ function makeOfferDisplay(){
 			<td align=center><h5>" . $row['contactPhone'] . "</td>
 			<td align=center><h5>" . $row['description'] . "</h5></td>
 			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
-			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> EDIT </button></td>
+			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> UPDATE </button></td>
 		</tr>";
 	}//foreach 
 
@@ -94,6 +94,7 @@ function makeRequestDisplay(){
 			<td align=center>" . $row['requestName'] . "</td>
 			<td align=center>" . $row['requestDate'] . "</td>
 			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
+			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestEdit($buttonId)'> EXTEND DATE </button></td>
 		</tr>";
 	}//foreach
 

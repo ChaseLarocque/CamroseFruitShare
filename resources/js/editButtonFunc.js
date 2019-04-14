@@ -23,14 +23,24 @@ function confirmOfferEdit(id){
   originalId = id;
   var buttonId = document.getElementById('edit'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
-  buttonId.setAttribute("onClick", "loadEditPage(originalId)");// Change onClick call new function
+  buttonId.setAttribute("onClick", "loadEditOfferPage(originalId)");// Change onClick call new function
 }//confirmOfferEdit
 
+function confirmRequestEdit(id){
+  originalId = id;
+  var buttonId = document.getElementById('edit'+id); // Grabs the element from the html that has an id == id
+  buttonId.innerText = 'CONFIRM'; // Change button text
+  buttonId.setAttribute("onClick", "loadEditRequestPage(originalId)");// Change onClick call new function
+}//confirmOfferEdit
 
 /**
 This funciton will simply redirect the page from the userPage to the editSubmissionPage.php file which is a html file
 that looks like offer submission page. 
 **/
-function loadEditPage(id) {
-  window.location.href = "editSubmissionPage.php?offerId=" + id ;
+function loadEditOfferPage(id) {
+  window.location.href = "editOfferPage.php?offerId=" + id ;
+}//loadEditPage
+
+function loadEditRequestPage(id) {
+  window.location.href = "editRequestPage.php?requestId=" + id ;
 }//loadEditPage
