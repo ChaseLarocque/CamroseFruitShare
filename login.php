@@ -59,7 +59,7 @@ require_once "loginCode.php";
                                     <form action="" method="post">
 
                                         <div class="form-group row">
-                                            <label class = "offset-1 col-8 col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Username</label>
+                                            <label class = "offset-1 col-8 col-sm-12 offset-md-2 col-md-10 col-form-label text-md-left">Email</label>
                                             <input type="email" name="username" class="offset-1 col-10 offset-md-2 col-md-8 form-control" value="<?php echo $username; ?>">
                                             <span class="text-danger col-12 text-center"><?php echo $username_err; ?></span>
                                         </div>
