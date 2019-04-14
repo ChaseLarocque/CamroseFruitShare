@@ -1,3 +1,12 @@
+<!--
+enableAdminPageButton.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+February 01, 2019
+
+This page creates a button to navigate to the admin page if the account logged in is the admin account
+-->
+
 <?php
 
 function enableAdminPage(){
