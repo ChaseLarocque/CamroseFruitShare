@@ -14,7 +14,7 @@ It allows them to enter details like what kind of fruit they have and how to con
 <?php
     require "blockAccessIfNotLoggedIn.php";
     $offerId = $_GET['offerId'];
-    require "getEditData.php";
+    require "getEditOfferData.php";
 ?>
 
 <html class="no-js" lang="en" dir="ltr">
@@ -92,7 +92,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Fruit (Required)</label>
-                            <select required id = "fruitOfferVal" name="fruitOffName" class="form-control" >
+                            <select required id = "fruitVal" name="fruitOffName" class="form-control" >
                                 <?php   
                                     include 'populateDropDown.php';
                                 ?>

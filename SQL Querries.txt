@@ -164,10 +164,11 @@ COMMIT;
 
 
 
-CREATE EVENT [IF NOT EXIST] deleteExpiredSubmissions
-  ON SCHEDULE 
-      EVERY 1 DAY
-      STARTS '2019-04-13 00:00:01' ON COMPLETION PRESERVE ENABLE
+CREATE EVENT IF NOT EXISTS delete_expired_submission
+  ON SCHEDULE
+    EVERY 1 DAY
     DO
-      DELETE FROM fruit_offer, fruit_request
-        WHERE offerDate OR requestDate < CURDATE
+      DELETE FROM fruit_offer
+        WHERE offerDate < CURRENT_DATE;
+      DELETE FROM fruit_request
+        WHERE requestDate < CURRENT_DATE;  
