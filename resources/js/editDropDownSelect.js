@@ -31,4 +31,4 @@ function setSelectedFruitOffer(s, fruitName){
 		}
 	}
 }
-setSelectedFruitOffer(document.getElementById("fruitOfferVal"),selectFruit); //call setSelectedFruitOffer() function with proper variables.
+setSelectedFruitOffer(document.getElementById("fruitVal"),selectFruit); //call setSelectedFruitOffer() function with proper variables.
