@@ -22,8 +22,9 @@ function confirmOfferDelete(id){
   var buttonId = document.getElementById('delete'+id); // Grabs the element from the html that has an id == id
   buttonId.innerText = 'CONFIRM'; // Change button text
   buttonId.setAttribute("onClick", 'deleteOffer(originalId)');// Change onClick call new function
-  console.log(id);
+
 }//confirmOfferDelete
+
 
 function confirmRequestDelete(id){
   originalId = id;
@@ -42,7 +43,6 @@ Once delete is finished it will refresh the page.
 
 function deleteOffer(id){// id is the button id which is the offerId on the fruit_offer table in the DB
   action = 'deleteOffer';
-  console.log(id);
   $.ajax({
     url: 'deleteSubmission.php', //Post to File
     data: {action: 'deleteOffer', offerId: id}, //Pass data along
