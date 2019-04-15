@@ -81,7 +81,8 @@ It allows them to enter details like what kind of fruit they have and how to con
                 <p>Fill out and submit this form to offer your fruit to other users</p>
                 <hr>
 
-                <form method="post" action="addFruitOfferTable.php" onsubmit = "alert('Offering Edited!');"> <!--In future, we'll need to update this with a php scripts that redirects to userPage -->
+                <form method="post" action="editFruitOfferTable.php" onsubmit = "alert('Offering Edited!');">
+                    <input type="hidden" name="offerId" value=<?php echo $offerId?>>
                     <div class="row"> 
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Contact Name (Required)</label>
@@ -91,7 +92,7 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Fruit (Required)</label>
-                            <select required name="fruitOffName" class="form-control" >
+                            <select required id = "fruitOfferVal" name="fruitOffName" class="form-control" >
                                 <?php   
                                     include 'populateDropDown.php';
                                 ?>
@@ -171,11 +172,13 @@ It allows them to enter details like what kind of fruit they have and how to con
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="resources/js/require1of2.js"></script> 
-    <script src="resources/js/limitDateOffer.js"></script> 
+    <script src="resources/js/limitDateOffer.js"></script>
+    <script type="text/javascript">
+    var selectFruit = "<?php echo $fruitOffName; ?>";
+    </script>
+    <script src="resources/js/editDropDownSelect.js"></script> 
 </html>

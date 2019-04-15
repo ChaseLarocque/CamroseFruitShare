@@ -32,13 +32,13 @@ and current offerings for what they're looking for.
   <body>
     <div class="main-container">
         <div class="header row">
-            <div class="col-3"></div>
-            <div class="col-6 my-auto">
+            <div class="col-sm-0 col-md-2"></div>
+            <div class="col-sm-12 col-md-8 my-auto">
                 <h1 id = "title">
                     Hidden Harvests of Camrose
                 </h1>
             </div>
-            <div class="col-3 logButton my-auto">
+            <div class="col-sm-12 col-md-2 logButton my-auto">
                 <h4>
                     <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                 </h4>
