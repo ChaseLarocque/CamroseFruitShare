@@ -73,7 +73,7 @@ will be available to all users. It also contains the login button.
                                     </h5>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
-                                    <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
+                                    <img src="resources/images/photo1.jpg" class="rounded float-right">
                                 </div>
                                 
                             </div>

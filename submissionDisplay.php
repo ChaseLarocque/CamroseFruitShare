@@ -29,7 +29,7 @@ function makeOfferDisplay(){
 
 	//echo - creates the display from server side
 	echo 
-	"<table class=table>
+	"<table class = table table-striped w-auto>
 	<thead>
 		<tr>
 			<th ><h4><b>Name</b></h4></th>
@@ -76,7 +76,7 @@ function makeRequestDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo 
-	"<table class=table>
+	"<table class = table table-striped w-auto>
 	<thead>
 		<tr>
 			<th><h4><b>Fruit Requested</b></h4></th>
@@ -114,7 +114,7 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
-	"<table class = 'table col-sm-12 col-md-12'>
+	"<table class = 'table table-striped w-auto>
 	<thead>
 		<tr>
 			<th><h4><b>Name</b></h4></th>
