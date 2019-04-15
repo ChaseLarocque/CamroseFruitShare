@@ -36,7 +36,7 @@ This page will contain environmentally friendly community resources to connect u
                 </div>
                 <div class="col-sm-12 col-md-2 logButton my-auto">
                     <h4>
-                        <a href="login.php" class="btn btn-secondary btnRed" role="button">Logout</a>
+                        <a href="logout.php" class="btn btn-secondary btnRed" role="button">Logout</a>
                     </h4>
                 </div>    
             </div><!--header row-->
@@ -73,14 +73,42 @@ This page will contain environmentally friendly community resources to connect u
                   Community Resources
                 </h2>
                 <p>  
-                  Connect with these other environmentally friendly resources in our community!
+                  Connect with these other environmentally friendly resources!
                 </p>
                 <hr>
 
-                <p>
-                  Community Resource #1
-                </p>
+                <h5> Other fruit picking websites </h5>
+                <ul>
+                    <li>
+                        <a href="https://operationfruitrescue.org/">
+                            Operation Fruit Rescue Edmonton
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.fruitsofsherbrooke.ca/">
+                            Fruits of Sherbrooke 
+                        </a>
+                    </li>
+                </ul>
 
+                <h5> Resources for fruit pickers </h5>
+                <ul>
+                    <li>
+                        <a href="http://www.leevalley.com/us/garden/page.aspx?p=10165&cat=2,2120,33277&ap=1">
+                            LeeValley: Suggestions for gear
+                        </a>
+           
+                    </li>
+                </ul>
+
+                <h5> Resources for fruit tree owners </h5>
+                <ul>
+                    <li>
+                        <a href="https://operationfruitrescue.org/fruit-harvesting-tree-maintenance-canning-resources/how-do-i-know-when-my-fruit-is-ready/">
+                            Operation Fruit Rescue: Is my fruit ready to pick?
+                        </a>
+                    </li>
+                </ul>
                 <br>
             </div><!--body container-->
 

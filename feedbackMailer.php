@@ -33,4 +33,7 @@ if($_POST["feedback"]){
 
 	echo($result);
 }
+
+//reload the feedback page
+header("location: feedbackForm.php");
 ?>

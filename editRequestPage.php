@@ -1,16 +1,18 @@
 <!--
-fruitSearch.php
+editRequestPage.php
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 February 01, 2019
 
-This page is where users go to submit a request for what fruit they want and for how long.
+This page is where users go to udpate a request for what fruit they want and for how long.
 -->
 
 <!doctype html>
 
 <?php
-    require 'blockAccessIfNotLoggedIn.php';
+    require "blockAccessIfNotLoggedIn.php";
+    $requestId = $_GET['requestId'];
+    require "getEditRequestData.php";
 ?>
 
 <html class="no-js" lang="en" dir="ltr">
@@ -76,12 +78,12 @@ This page is where users go to submit a request for what fruit they want and for
                     <p>Fill out and submit this form to request fruit from other users</p>
                 <hr>
 
-                <form method="post" action="addFruitRequestTable.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');">
-                    
+                <form method="post" action="editFruitRequestTable.php" onsubmit = "alert('Request Submitted! You Will Be Notified Of Any Potential Offerings!');">
+                    <input type="hidden" name="requestId" value=<?php echo $requestId?>>                    
                     <div class="row">    
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                            <label>Fruit #1 (Required) </label>
-                            <select required name="requestFruit1" class="form-control">
+                            <label>Fruit Request to Update (Required) </label>
+                            <select required id = "fruitVal" name="requestFruit" class="form-control">
                                 <?php
                                     include 'populateDropDown.php';
                                 ?>
@@ -91,45 +93,10 @@ This page is where users go to submit a request for what fruit they want and for
 
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Enter a Date To Remove Request #1 (Required) </label>
-                            <input required type="date" name="requestDate1" class="form-control">
+                            <input required type="date" name="requestDate" class="form-control" value = <?php echo $requestDate;?>>
                             <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                         </div>
                     </div>                
-
-                    <div class="row">
-                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                            <label>Fruit #2</label>
-                            <select name="requestFruit2" class="form-control">
-                                <?php
-                                    include 'populateDropDown.php';
-                                ?>
-                            </select>
-                            <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
-                        </div>
-                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                            <label>Enter a Date To Remove Request #2</label>
-                            <input type="date" name="requestDate2" class="form-control">
-                            <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
-                        </div>
-                    </div>
-
-                    <div class="row">        
-                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                            <label>Fruit #3</label>
-                            <select name="requestFruit3" class="form-control">
-                                <?php
-                                    include 'populateDropDown.php';
-                                ?>
-                            </select>
-                            <small id="fruitHelp" class="form-text text-muted">Don't See Your Fruit? Contact Us Using the Feedback Page!</small>
-                        </div>
-
-                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                            <label>Enter a Date To Remove Request #3</label>
-                            <input type="date" name="requestDate3" class="form-control">
-                            <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
-                        </div>
-                    </div>
 
                     <hr>
 
@@ -139,7 +106,7 @@ This page is where users go to submit a request for what fruit they want and for
 
                 </form>
 
-                <h6> By submitting the request, you are subject to receiving emails whenever an offering that matches your request is submitted. </h6>  
+                <h6> By Submitting the request, you are subject to receiving emails whenever an offering that matches your request is submitted. </h6>  
 
                 <br>    
             </div><!--body container-->
@@ -172,4 +139,7 @@ This page is where users go to submit a request for what fruit they want and for
 
     <script src="resources/js/limitDate.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"> var selectFruit = "<?php echo $requestName; ?>";</script>
+    <script src="resources/js/editDropDownSelect.js"></script> 
+
 </html>
