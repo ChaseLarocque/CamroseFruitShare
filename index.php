@@ -80,7 +80,7 @@ will be available to all users. It also contains the login button.
                             <br>
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <img src="resources/images/sampleRedAppleTree.jpeg" class="rounded float-left">
+                                    <img src="resources/images/photo2.jpg" class="rounded float-left">
                                 </div>
 
                                 <div class="col-sm-12 col-md-6">
