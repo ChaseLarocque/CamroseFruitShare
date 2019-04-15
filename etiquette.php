@@ -11,13 +11,12 @@ This is the page for registering an account to the website by clicking on 'regis
 <?php
     // Include DB Access
     require_once "DBConnect.php";
+    require "updateUserTableEtiquetteSelect.php";
 ?>
 
 <!doctype html>
 
 <html class="no-js" lang="en" dir="ltr">
-
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,7 +68,6 @@ This is the page for registering an account to the website by clicking on 'regis
                                 <h4 class="modal-title">Etiquette</h4>
                             </div>
                             <div class="modal-body">
-
                                 <h5>Please Read The Ettiquette List and Click <b>"I Agree"<b><h5>
 
                                 <h6>1. Introduce yourself.<h6>
@@ -82,15 +80,30 @@ This is the page for registering an account to the website by clicking on 'regis
                                     <h6>- Determining the quality of the fruit. If you are unsure, please refer to the fruit health guide for diseases and other issues.<h6>
                                     <br>
                                    <h6> No need to pick all of the fruit. Pick what you can, safely, in the time allotted.<h6>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" onclick="location.href='login.php';" value="I Agree" class = "btn btn-secondary btnGreen" />
-                            </div>
+                                    <hr>
+
+                                <form method="post" action = "">
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="liabilityCheck" required>
+                                            <label class="form-check-label" for="liabilityCheck"><b>I Understand I Am Responsible For My Own Safety/Property While Allowing Someone To Pick My Fruit and While Picking Another Individual's Fruit<b></label>
+                                        </div>
+                                </div>
+                                    <div class="modal-footer">
+                                        <p>Clicking "I Do Not Agree" Will Prohibit You From Accessing Any Site Features Until You Agree To The Etiquette<p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" onclick="location.href='index.php';" value="I Do Not Agree" class = "btn btn-secondary btnRed"/>
+                                        <input type="submit" value="I Agree" class = "btn btn-secondary btnGreen" />
+                                    </div>
+
+                                </form> 
                         </div>
       
                     </div>
                 </div>
             </div>
+        
 
         </div><!--maincontainer-->
     </body>
