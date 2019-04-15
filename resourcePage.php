@@ -77,26 +77,38 @@ This page will contain environmentally friendly community resources to connect u
                 </p>
                 <hr>
 
-                <a href="https://operationfruitrescue.org/">
-                    Operation Fruit Rescue Edmonton
-                </a>
-                <br>
+                <h5> Other fruit picking websites </h5>
+                <ul>
+                    <li>
+                        <a href="https://operationfruitrescue.org/">
+                            Operation Fruit Rescue Edmonton
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.fruitsofsherbrooke.ca/">
+                            Fruits of Sherbrooke 
+                        </a>
+                    </li>
+                </ul>
 
-                <a href="https://www.fruitsofsherbrooke.ca/">
-                    Fruits of Sherbrooke 
-                </a>
-                <br>
+                <h5> Resources for fruit pickers </h5>
+                <ul>
+                    <li>
+                        <a href="http://www.leevalley.com/us/garden/page.aspx?p=10165&cat=2,2120,33277&ap=1">
+                            LeeValley: Suggestions for gear
+                        </a>
+           
+                    </li>
+                </ul>
 
-                <a href="http://www.leevalley.com/us/garden/page.aspx?p=10165&cat=2,2120,33277&ap=1">
-                    LeeValley: Suggestions for gear, etc.
-                </a>
-                <br>
-
-                <a href="https://operationfruitrescue.org/fruit-harvesting-tree-maintenance-canning-resources/how-do-i-know-when-my-fruit-is-ready/">
-                    Operation Fruit Rescue: Is my fruit ready to pick?
-                </a>
-
-                <br>
+                <h5> Resources for fruit tree owners </h5>
+                <ul>
+                    <li>
+                        <a href="https://operationfruitrescue.org/fruit-harvesting-tree-maintenance-canning-resources/how-do-i-know-when-my-fruit-is-ready/">
+                            Operation Fruit Rescue: Is my fruit ready to pick?
+                        </a>
+                    </li>
+                </ul>
                 <br>
             </div><!--body container-->
 
