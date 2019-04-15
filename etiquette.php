@@ -11,7 +11,7 @@ This is the page for registering an account to the website by clicking on 'regis
 <?php
     // Include DB Access
     require_once "DBConnect.php";
-    require "updateUserTableEtiquetteSelect.php";
+    require "updateUserTableEtiquette.php";
 ?>
 
 <!doctype html>
