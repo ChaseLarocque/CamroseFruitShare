@@ -1,17 +1,17 @@
 <!--
-register.php
+etiquette.php
 Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 February 01, 2019
 
 
 
-This is the page for registering an account to the website by clicking on 'register' from login.php  
+This page is for displaying the etiquette of the website  
 -->
 <?php
     // Include DB Access
     require_once "DBConnect.php";
-    require "updateUserTableEtiquetteSelect.php";
+    require "updateUserTableWithEtiquette.php";
 ?>
 
 <!doctype html>

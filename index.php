@@ -61,19 +61,19 @@ will be available to all users. It also contains the login button.
                         <div id="indexText">   
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <h5>
+                                    <h4>
                                         Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
                                         <br>
                                         <br>
                                         <br>
-                                    </h5>
-                                    <h5>
+                                    </h4>
+                                    <h4>
                                         This website has been designed to connect local fruit tree growers with local fruit pickers in an effort to increase awareness around locally grown food, while connecting people to build community around the theme of urban food.
                                         <br>
-                                    </h5>
+                                    </h4>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
-                                    <img src="resources/images/photo1.jpg" class="rounded float-right">
+                                    <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
                                 </div>
                                 
                             </div>
