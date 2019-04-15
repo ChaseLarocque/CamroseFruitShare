@@ -1,3 +1,14 @@
+<!--
+updateUserTableWithEtiquette.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+February 01, 2019
+
+
+This file is for updating the entry in the user table when the user agrees to the etiquette
+-->
+
+
 <?php
 
 if($_SERVER["REQUEST_METHOD"] === "POST"){
