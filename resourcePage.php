@@ -73,14 +73,30 @@ This page will contain environmentally friendly community resources to connect u
                   Community Resources
                 </h2>
                 <p>  
-                  Connect with these other environmentally friendly resources in our community!
+                  Connect with these other environmentally friendly resources!
                 </p>
                 <hr>
 
-                <p>
-                  Community Resource #1
-                </p>
+                <a href="https://operationfruitrescue.org/">
+                    Operation Fruit Rescue Edmonton
+                </a>
+                <br>
 
+                <a href="https://www.fruitsofsherbrooke.ca/">
+                    Fruits of Sherbrooke 
+                </a>
+                <br>
+
+                <a href="http://www.leevalley.com/us/garden/page.aspx?p=10165&cat=2,2120,33277&ap=1">
+                    LeeValley: Suggestions for gear, etc.
+                </a>
+                <br>
+
+                <a href="https://operationfruitrescue.org/fruit-harvesting-tree-maintenance-canning-resources/how-do-i-know-when-my-fruit-is-ready/">
+                    Operation Fruit Rescue: Is my fruit ready to pick?
+                </a>
+
+                <br>
                 <br>
             </div><!--body container-->
 
