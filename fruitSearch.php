@@ -139,7 +139,7 @@ This page is where users go to submit a request for what fruit they want and for
 
                 </form>
 
-                <h6> By Submitting the request, you are subject to receiving emails whenever an offering that matches your request is submitted. </h6>  
+                <h6> By submitting the request, you are subject to receiving emails whenever an offering that matches your request is submitted. </h6>  
 
                 <br>    
             </div><!--body container-->
