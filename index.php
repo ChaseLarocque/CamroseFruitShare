@@ -72,24 +72,22 @@ will be available to all users. It also contains the login button.
                                         <br>
                                     </h4>
                                 </div>
+            
                                 <div class="col-sm-12 col-md-6">
                                     <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
                                 </div>
-                                
                             </div>
-                            <br>
+                            
                             <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <img src="resources/images/sampleRedAppleTree.jpeg" class="rounded float-left">
-                                </div>
-
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col">
                                     <h5>
                                         Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br>
                                     </h5>
+                                    <br>
                                     <h5>
-                                        Our sustainable food project is focused on supporting one potential pillar of a more sustainable local food network in Camrose, and we need your help to build connections and grow community. If you are interested, please sign up as a fruit grower/picker. If you have any questions, please send them to Dr. Greg King.
+                                        Our sustainable food project is focused on supporting one potential pillar of a more sustainable local food network in Camrose, and we need your help to build connections and grow community. If you are interested, please sign up as a fruit grower/picker by clicking the login button in the top right. If you have any questions, please send them to Dr. Greg King.
                                     </h5>
+                                    <br>
                                 </div>
                             </div>
                         </div>

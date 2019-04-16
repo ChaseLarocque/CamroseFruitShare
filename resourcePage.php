@@ -73,7 +73,7 @@ This page will contain environmentally friendly community resources to connect u
                   Community Resources
                 </h2>
                 <p>  
-                  Connect with these other environmentally friendly resources!
+                  Connect with these other environmentally friendly resources by clicking on the blue names!
                 </p>
                 <hr>
 

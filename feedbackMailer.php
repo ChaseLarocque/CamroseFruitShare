@@ -24,14 +24,12 @@ if($_POST["feedback"]){
 	// Create a message
 	$message = (new Swift_Message('Website Feedback'))
 	  ->setFrom(['feedback@hiddenharvests.ca' => 'Hidden Havests of Camrose Feedback'])
-	  ->setTo(['jikenouy@ualberta.ca' => 'Greg King'])
+	  ->setTo(['jikenouy@ualberta.ca'])
 	  ->setBody($msg)
 	  ;
 
 	// Send the message
-	$result = $mailer->send($message);
-
-	echo($result);
+	$mailer->send($message);
 }
 
 //reload the feedback page
