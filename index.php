@@ -79,7 +79,13 @@ will be available to all users. It also contains the login button.
                             </div>
                             
                             <div class="row">
-                                <div class="col">
+
+                                <div class="col-sm-12 col-md-6">
+                                    <img src="resources/images/photo2.jpg" class="rounded float-left">
+                                </div>
+
+                                <div class="col-sm-12 col-md-6">
+
                                     <h5>
                                         Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br>
                                     </h5>

@@ -80,20 +80,20 @@ and current offerings for what they're looking for.
             <div class = "row">
                 <div class = "col-sm-12 col-md-12 columnForUP">
                     <h2 class = "center padding20"><b> My Fruit Being Offered</b> </h2>
-                    <div><?php makeOfferDisplay()?> </div>
+                    <div class = table-responsive-lg><?php makeOfferDisplay()?> </div>
                  </div>
             </div><!--ROW CONTAINER-->
 
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"><b> My Requested Fruit</b> </h2>
-                    <div class><?php makeRequestDisplay()?></div>
+                    <div class = table-responsive-lg><?php makeRequestDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
             <div class = "row">
-                <div class = "col-sm-12 col-md-12 ">
+                <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"><b> My Fruit Matches </b></h2>
-                    <div><?php makeMatchesDisplay()?></div>
+                    <div class = table-responsive-lg><?php makeMatchesDisplay()?></div>
                 </div>
             </div><!--ROW CONTAINER-->
 

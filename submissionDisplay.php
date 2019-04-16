@@ -29,7 +29,7 @@ function makeOfferDisplay(){
 
 	//echo - creates the display from server side
 	echo 
-	"<table class = table table-striped w-auto>
+	"<table class = 'table'>
 	<thead>
 		<tr>
 			<th ><h4><b>Name</b></h4></th>
@@ -38,6 +38,8 @@ function makeOfferDisplay(){
 			<th ><h4><b>Contact Email</b></td></h4></th>
 			<th ><h4><b>Contact Phone Number</b></h4></th>
 			<th ><h4><b>Description</b></h4></th>
+			<th></th>
+			<th></th>
 		</tr>
 	</thead>";
 
@@ -48,17 +50,20 @@ function makeOfferDisplay(){
 	foreach ($pdo -> query($sql) as $row){
 		$buttonId = $row['offerId'];
 		
-		echo 
-		"<tr>
-			<td align=center><h5>" . $row['contactName'] . "</h5></td>
-			<td align=center><h5>" . $row['fruitOffName'] . "</h5></td>
-			<td align=center><h5>" . $row['offerDate'] . "</h5></td>
-			<td align=center><h5>" . $row['contactEmail'] . "</h5></td>
-			<td align=center><h5>" . $row['contactPhone'] . "</td>
-			<td align=center><h5>" . $row['description'] . "</h5></td>
-			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
-			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> UPDATE </button></td>
-		</tr>";
+		echo
+		"<tbody> 
+			<tr>
+				<td align=center><h5>" . $row['contactName'] . "</h5></td>
+				<td align=center><h5>" . $row['fruitOffName'] . "</h5></td>
+				<td align=center><h5>" . $row['offerDate'] . "</h5></td>
+				<td align=center><h5>" . $row['contactEmail'] . "</h5></td>
+				<td align=center><h5>" . $row['contactPhone'] . "</td>
+				<td align=center><h5>" . $row['description'] . "</h5></td>
+				<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferDelete($buttonId)'> DELETE </button></td>
+				<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmOfferEdit($buttonId)'> UPDATE </button></td>
+			</tr>
+		</tbody>";
+
 	}//foreach 
 
 	echo "</table>";
@@ -76,11 +81,13 @@ function makeRequestDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo 
-	"<table class = table table-striped w-auto>
+	"<table class = 'table'>
 	<thead>
 		<tr>
 			<th><h4><b>Fruit Requested</b></h4></th>
 			<th><h4><b>Request Until Date</b></h4></th>
+			<th></th>
+			<th></th>
 		</tr>
 	</thead>";
 
@@ -90,12 +97,14 @@ function makeRequestDisplay(){
 		$buttonId = $row['requestId'];
 
 		echo 
-		"<tr>
-			<td align=center>" . $row['requestName'] . "</td>
-			<td align=center>" . $row['requestDate'] . "</td>
-			<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
-			<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestEdit($buttonId)'> EXTEND DATE </button></td>
-		</tr>";
+		"<tbody>
+			<tr>
+				<td align=center>" . $row['requestName'] . "</td>
+				<td align=center>" . $row['requestDate'] . "</td>
+				<td align=center><button type='button' id= 'delete" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestDelete($buttonId)'> DELETE </button></td>
+				<td align=center><button type='button' id= 'edit" . $buttonId . "'class='btn btn-secondary btnRed' onclick ='confirmRequestEdit($buttonId)'> EXTEND DATE </button></td>
+			</tr>
+		</tbody>";
 	}//foreach
 
 	echo "</table>";
@@ -114,7 +123,7 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
-	"<table class = 'table table-striped w-auto>
+	"<table class = 'table'>
 	<thead>
 		<tr>
 			<th><h4><b>Name</b></h4></th>
@@ -133,14 +142,16 @@ function makeMatchesDisplay(){
 	foreach ($pdo -> query($sql) as $row){
 
 		echo 
-		"<tr>
-			<td align=center>" . $row['contactName'] .	"</td>
-			<td align=center>" . $row['fruitOffName'] . "</td>
-			<td align=center>" . $row['offerDate'] . "</td>
-			<td align=center>" . $row['contactEmail'] . "</td>
-			<td align=center>" . $row['contactPhone'] . "</td>
-			<td align=center>" . $row['description'] . "</td>
-		</tr>";
+		"<tbody>
+			<tr>
+				<td align=center>" . $row['contactName'] .	"</td>
+				<td align=center>" . $row['fruitOffName'] . "</td>
+				<td align=center>" . $row['offerDate'] . "</td>
+				<td align=center>" . $row['contactEmail'] . "</td>
+				<td align=center>" . $row['contactPhone'] . "</td>
+				<td align=center>" . $row['description'] . "</td>
+			</tr>
+		</tbody>";
 	}//foreach
 
 	echo "</table>";
