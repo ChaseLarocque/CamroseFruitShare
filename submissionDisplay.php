@@ -113,7 +113,6 @@ function makeRequestDisplay(){
 	unset($sql);
 }//makeRequestDisplay()
 
-
 function makeMatchesDisplay(){
 
 	//Connect to the DB
@@ -123,6 +122,7 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
+
 	"<table class = 'table'>
 	<thead>
 		<tr>
