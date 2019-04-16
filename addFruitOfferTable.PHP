@@ -12,6 +12,7 @@ require 'DBConnect.php'; //require the database - ensuring nothing is executed u
 
 session_start();
 
+
 //userId is pulled from the session as user is logged in
 $userId = $_SESSION['id'];
 
@@ -43,6 +44,7 @@ $sql -> execute();
 $sql = null;
 $pdo = null;
 
+$_SESSION['fruit'] = $fruitOffName;
 //redirect to the userPage
-header("location: userPage.php")
+header("location: offerMatchMailer.php")
 ?>
