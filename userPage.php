@@ -11,7 +11,8 @@ and current offerings for what they're looking for.
 
 <?php 
     require 'submissionDisplay.php';
-    require 'enableAdminPageButton.php'
+    require 'enableAdminPageButton.php';
+    require 'blockAccessIfNotLoggedIn.php';
 ?>
 
 <!doctype html>

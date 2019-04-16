@@ -11,7 +11,6 @@ file contains code to register the user to the database and therefore the websit
 contains checks to assure user doesn't create a new account if they already have one.
 */
 
-
 //trim to remove white space on either side
 //empty to check if empty 
 
@@ -97,7 +96,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if($stmt->execute()){
                 // Redirect to login page
-                header("location: ettiquette.php");
+                session_start();
+    
+                $userNameCheck = $_POST['username'];
+
+                $_SESSION['userNameCheck'] = $userNameCheck;
+
+                header("location: etiquette.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }//else
