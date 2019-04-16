@@ -79,7 +79,7 @@ This page is for users to submit feedback regarding the website and where users 
                 <form method="post" action="feedbackMailer.php" onsubmit = "alert('Feedback Submitted. Thank-You!');">
                     <div class="row">
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
-                            <textarea name="feedback" class="form-control" rows="5" maxlength="300" placeholder = "This can include any comments or concerns about the website. Also tell us of any fruit not in the list that should be listed!"></textarea>
+                            <textarea name="feedback" class="form-control" rows="5" maxlength="300" placeholder = "Let us know of any questions, concerns or comments you have about the site! If you think a new fruit should be added to the offer and request pages, let us know!"></textarea>
                         </div>
                     </div>
 

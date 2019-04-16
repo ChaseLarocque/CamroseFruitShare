@@ -103,11 +103,11 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Contact Email</label>
-                            <input required type="email" name="contactEmail" class="form-control" placeholder="NAME@EMAIL.COM">
+                            <input required type="email" name="contactEmail" class="form-control" placeholder="exampleName@example.com">
                         </div>
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Contact Phone Number</label>
-                            <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234">
+                            <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="(780)-555-5555">
                         </div>
                     </div>
 
@@ -121,10 +121,9 @@ It allows them to enter details like what kind of fruit they have and how to con
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Description</label>
                             <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: 
-                                The Type of Fruit
-                                What Time of Day to Pick
-                                OR
-                                Other Special Requests for the Fruit Pickers"></textarea>
+                            ~Specific Fruit Details
+                            ~What Time of Day to Pick
+                            ~Other Special Requests for the Fruit Pickers"></textarea>
                         </div>
                     </div>
 
