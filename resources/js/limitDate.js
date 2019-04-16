@@ -1,16 +1,22 @@
-    var today = new Date().toISOString().split('T')[0];
-    var maxDate = new Date();
-    maxDate.setDate((maxDate.getDate()) + 30);
+/*
+limitDate.js
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 
-    maxDate = maxDate.toISOString().split('T')[0];
+Used in fruitSearch.php to limit the search date to today - 30 days from now
+*/
 
-    document.getElementsByName("requestDate1")[0].setAttribute('min', today);
-    document.getElementsByName("requestDate1")[0].setAttribute('max', maxDate);
+var today = new Date().toISOString().split('T')[0];
+var maxDate = new Date();
+maxDate.setDate((maxDate.getDate()) + 30);
 
-    document.getElementsByName("requestDate2")[0].setAttribute('min', today);
-    document.getElementsByName("requestDate2")[0].setAttribute('max', maxDate);
+maxDate = maxDate.toISOString().split('T')[0];
 
-    document.getElementsByName("requestDate3")[0].setAttribute('min', today);
-    document.getElementsByName("requestDate3")[0].setAttribute('max', maxDate);
+document.getElementsByName("requestDate1")[0].setAttribute('min', today);
+document.getElementsByName("requestDate1")[0].setAttribute('max', maxDate);
 
+document.getElementsByName("requestDate2")[0].setAttribute('min', today);
+document.getElementsByName("requestDate2")[0].setAttribute('max', maxDate);
 
+document.getElementsByName("requestDate3")[0].setAttribute('min', today);
+document.getElementsByName("requestDate3")[0].setAttribute('max', maxDate);

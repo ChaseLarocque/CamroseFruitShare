@@ -1,7 +1,13 @@
  
 <?php
-//login.php
-//contains code to log the user in, checking the data base for valid information. 
+/*
+login.php
+Alex Ho, Chase Larocque, Justin Ikenouye
+AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
+March 9, 2019
+
+contains code to log the user in, checking the data base for valid information. 
+*/
 
 
 // Define variables and initialize with empty values
@@ -30,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, username, password FROM users WHERE username = :username";
+        $sql = "SELECT id, username, password, agreed_to_etiquette FROM users WHERE username = :username";
         
         if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
@@ -46,18 +52,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     if($row = $stmt->fetch()){
                         $id = $row["id"];
                         $username = $row["username"];
+                        $agreed_to_etiquette = $row["agreed_to_etiquette"];
                         $hashed_password = $row["password"];
+
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
-                            
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;                            
-                            
+                            $_SESSION["username"] = $username;
+                            $_SESSION['agreed_to_etiquette'] = $agreed_to_etiquette;                        
                             // Redirect user to user page
-                            header("location: userPage.php");
+                            if($agreed_to_etiquette == 1){
+                                header("location: userPage.php");
+                            }else{
+                                header("location: etiquette.php");
+                            }
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -76,5 +87,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }//if
     // Close connection
     unset($pdo);
-}
+}//if
 ?>
