@@ -8,14 +8,13 @@ March 31, 2019
 This php file contains SQL query code that is initialized through HTML executed through PHP and will post a fruit offering to the fruit_offer table in the database
 **/
 
-require 'DBConnect.php'; //require the database - ensuring nothing is executed unless connection to DB is established
 require_once 'resources/swiftMailer/vendor/autoload.php';
 
 session_start();
 
 //userId is pulled from the session as user is logged in
-$userId = $_SESSION['id'];
-$newFruitOffered = $_POST['fruitOffName'];
+$sessionId = $_SESSION['id'];
+$newFruitOffered = $_SESSION['fruit'];
 
 $sql = $pdo-> prepare("SELECT userName,id from users WHERE id IN (SELECT userid FROM fruit_request WHERE $newFruitOffered = requestName) AND NOT userId = $sessionId");
 $sql -> execute();
