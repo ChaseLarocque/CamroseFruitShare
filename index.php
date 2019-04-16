@@ -45,7 +45,7 @@ will be available to all users. It also contains the login button.
         	    </div>
         		<div class="col-xs-12 col-sm-2 logButton my-auto">
         			<h4>
-        				<a href="login.php" class="btn btn-secondary" role="button">Login</a>
+        				<a href="login.php" class="btn btn-secondary" role="button">Login/Register</a>
         			</h4>
         		</div>	
           	</div> <!--header row-->
