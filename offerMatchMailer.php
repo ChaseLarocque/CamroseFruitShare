@@ -5,9 +5,11 @@ Alex Ho, Chase Larocque, Justin Ikenouye
 AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 March 31, 2019
 
-This php file contains SQL query code that is initialized through HTML executed through PHP and will post a fruit offering to the fruit_offer table in the database
+This php file contains SQL query code that is initialized through HTML executed through PHP and will send an email using swiftmailer to any 
+users with fruit requests matching an offering's fruit. 
 **/
 
+require 'DBConnect.php'; //Need this for the pdo
 require_once 'resources/swiftMailer/vendor/autoload.php';
 
 session_start();
@@ -16,10 +18,13 @@ session_start();
 $sessionId = $_SESSION['id'];
 $newFruitOffered = $_SESSION['fruit'];
 
-$sql = $pdo-> prepare("SELECT userName,id from users WHERE id IN (SELECT userid FROM fruit_request WHERE $newFruitOffered = requestName) AND NOT userId = $sessionId");
+$sql = $pdo -> prepare("SELECT username, id FROM users WHERE id in (SELECT userid FROM fruit_request WHERE requestName = ?)");
+
+$sql->bindParam(1, $newFruitOffered, PDO::PARAM_STR, 50);
+
 $sql -> execute();
 
-foreach($pdo-> query($sql) as $row){
+while($row = $sql->fetch(PDO::FETCH_ASSOC)){
 	$username = $row['username'];
 
 	$msg = "You have a fruit match on Hidden Harvests of Camrose!";
@@ -33,7 +38,7 @@ foreach($pdo-> query($sql) as $row){
 	// Create a message
 	$message = (new Swift_Message('Fruit Match!'))
 	  ->setFrom(['no-reply@hiddenharvests.ca' => 'Hidden Havests of Camrose Feedback'])
-	  ->setTo($userName)
+	  ->setTo($username)
 	  ->setBody($msg)
 	  ;
 

@@ -44,8 +44,7 @@ $sql -> execute();
 $sql = null;
 $pdo = null;
 
-$fruitOffered = $_POST['fruitOffName'];
-$_SESSION['fruit'] = $fruitOffered;
+$_SESSION['fruit'] = $fruitOffName;
 //redirect to the userPage
 header("location: offerMatchMailer.php")
 ?>
