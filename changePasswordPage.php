@@ -10,7 +10,7 @@ This page is for changing your password
 -->
 <?php
     // Include DB Access
-    require"DBConnect.php";
+    require "DBConnect.php";
     require "changePassword.php";
 ?>
 
