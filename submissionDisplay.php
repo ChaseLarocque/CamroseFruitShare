@@ -104,7 +104,6 @@ function makeRequestDisplay(){
 	unset($sql);
 }//makeRequestDisplay()
 
-
 function makeMatchesDisplay(){
 
 	//Connect to the DB
@@ -114,7 +113,7 @@ function makeMatchesDisplay(){
 	$sessionId = $_SESSION['id'];	
 	
 	echo
-	"<table class = 'table table-striped w-auto>
+	"<table class = table table-striped w-auto>
 	<thead>
 		<tr>
 			<th><h4><b>Name</b></h4></th>

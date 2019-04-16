@@ -87,13 +87,14 @@ and current offerings for what they're looking for.
             <div class = "row">
                 <div class = "col-sm-12 col-md-12">
                     <h2 class = "center padding20"><b> My Requested Fruit</b> </h2>
-                    <div class><?php makeRequestDisplay()?></div>
+                    <div><?php makeRequestDisplay()?> </div>
                 </div>
             </div><!--ROW CONTAINER-->
             <div class = "row">
                 <div class = "col-sm-12 col-md-12 ">
-                    <h2 class = "center padding20"><b> My Fruit Matches </b></h2>
-                    <div><?php makeMatchesDisplay()?></div>
+                    <h2 class = "center padding20"><b> My Fruit Matches </b> </h2>
+                    <h5 class = "center padding20">If You're Requesting Fruit, Matches Will Show Up Here!</h5>
+                    <div><?php makeMatchesDisplay()?> </div>
                 </div>
             </div><!--ROW CONTAINER-->
 
