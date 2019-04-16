@@ -5,6 +5,7 @@ $new_password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+    session_start();
  
     // Validate new password
     if(empty(trim($_POST["new_password"]))){
@@ -31,19 +32,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $sql = "UPDATE users SET password = :password WHERE id = :id";
         
         if($stmt = $pdo->prepare($sql)){
+            $param_id = $_SESSION["id"];
+            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+
+
             // Bind variables to the prepared statement as parameters
             $stmt->bindParam(":password", $param_password, PDO::PARAM_STR);
             $stmt->bindParam(":id", $param_id, PDO::PARAM_INT);
             
-            // Set parameters
-            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
-            $param_id = $_SESSION["id"];
-            
             // Attempt to execute the prepared statement
             if($stmt->execute()){
                 // Password updated successfully. Destroy the session, and redirect to login page
-                session_destroy();
-                header("location: login.php");
+                header("location: userPage.php");
                 exit();
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
