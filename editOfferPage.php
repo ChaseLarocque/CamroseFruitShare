@@ -110,11 +110,11 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class = "row">
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Contact Email</label>
-                            <input required type="email" name="contactEmail" class="form-control" placeholder="NAME@EMAIL.COM" value = <?php echo $contactEmail;?>>
+                            <input required type="email" name="contactEmail" class="form-control" placeholder="example@example.com" value = <?php echo $contactEmail;?>>
                         </div>
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Contact Phone Number</label>
-                            <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="123-123-1234" value = <?php echo $contactPhone;?>>
+                            <input required type="tel" name="contactPhone" minlength="10" maxlength="12" class="form-control" placeholder="(780)-555-5555" value = <?php echo $contactPhone;?>>
                         </div>
                     </div>
 
@@ -127,7 +127,10 @@ It allows them to enter details like what kind of fruit they have and how to con
                     <div class="row">
                         <div class="form-group col-sm-12 col-md-12 col-lg-8">
                             <label>Description</label>
-                            <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: The Type of Fruit, What Time of Day to Pick, or Other Special Requests for the Fruit Pickers"><?php echo $description;?></textarea>
+                            <textarea name="description" class="form-control" rows="5" maxlength="300" placeholder = "Enter Any Additional Information Including: 
+                            ~Specific Fruit Details
+                            ~What Time of Day to Pick
+                            ~Other Special Requests for the Fruit Pickers"><?php echo $description;?></textarea>
                         </div>
                     </div>
 

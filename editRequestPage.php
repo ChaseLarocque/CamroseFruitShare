@@ -93,7 +93,7 @@ This page is where users go to udpate a request for what fruit they want and for
 
                         <div class="form-group col-sm-12 col-md-6 col-lg-4">
                             <label>Enter a Date To Remove Request #1 (Required) </label>
-                            <input required type="date" name="requestDate" class="form-control" value = <?php echo $requestDate;?>>
+                            <input required type="date" name="requestDate1" class="form-control" value = <?php echo $requestDate;?>>
                             <small id="dateHelp" class="form-text text-muted">Select a Date Between Today - 30 Days From Now</small>
                         </div>
                     </div>                
