@@ -7,11 +7,14 @@ March 27, 2019
 
 Used in all pages for when a regular user is logged in to block those who are not logged in
 */
-
-session_start();
+if(!isset($_SESSION)){ 
+    session_start(); 
+} 
 
 if(!isset($_SESSION['username'])){
-   header("Location:index.php");
-}//if
+   header("Location:login.php");
 
+}else if($_SESSION['agreed_to_etiquette'] == 0){
+	header("Location: etiquette.php");
+}
 ?> 
