@@ -18,7 +18,7 @@ $userId = $_SESSION['id'];
 //variables initialized through the form from the editSubmissionPage.php and connecting the variable to be put into the database
 $requestId = $_POST['requestId'];
 $newRequestFruit = $_POST['requestFruit'];
-$newRequestDate = $_POST['requestDate1'];
+$newRequestDate = $_POST['requestDate'];
 
 //SQL querry to be executed
 $sql = $pdo-> prepare("UPDATE fruit_request 
