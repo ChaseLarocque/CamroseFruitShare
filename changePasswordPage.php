@@ -51,7 +51,7 @@ This page is for changing your password
                                 <div class="card-body">
                                     <form action="" method="post">
                                         <div class="form-group row">
-                                            <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">Password</label>
+                                            <label class="offset-1 col-8 offset-sm-1 col-sm-10 offset-md-2 col-md-10 col-form-label text-md-left">New Password</label>
                                             <input type="password" name="new_password" class="offset-1 col-10 offset-sm-2 col-sm-8 offset-md-2 col-md-8 form-control" 
                                                    value="<?php echo $new_password; ?>">
                                             <span class="text-danger col-12 text-center"><?php echo $new_password_err; ?></span>

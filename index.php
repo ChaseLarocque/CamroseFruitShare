@@ -45,7 +45,7 @@ will be available to all users. It also contains the login button.
         	    </div>
         		<div class="col-xs-12 col-sm-2 logButton my-auto">
         			<h4>
-        				<a href="login.php" class="btn btn-secondary" role="button">Login</a>
+        				<a href="login.php" class="btn btn-secondary" role="button">Login/Register</a>
         			</h4>
         		</div>	
           	</div> <!--header row-->
@@ -61,36 +61,28 @@ will be available to all users. It also contains the login button.
                         <div id="indexText">   
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
-                                    <h4>
+                                    <h5  style="line-height: 30px">
                                         Money may not grow on trees, but fruit absolutely does and you may have some in your own backyard!
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </h4>
-                                    <h4>
+                                    </h5>
+                                    <br>
+                                    <h5 style="line-height: 30px">
                                         This website has been designed to connect local fruit tree growers with local fruit pickers in an effort to increase awareness around locally grown food, while connecting people to build community around the theme of urban food.
                                         <br>
-                                    </h4>
+                                    </h5>
                                 </div>
             
                                 <div class="col-sm-12 col-md-6">
-                                    <img src="resources/images/sampleAppleTree.jpg" class="rounded float-right">
+                                    <img src="resources/images/photo1.jpg" class="rounded float-right">
                                 </div>
                             </div>
                             
                             <div class="row">
-
-                                <div class="col-sm-12 col-md-6">
-                                    <img src="resources/images/photo2.jpg" class="rounded float-left">
-                                </div>
-
-                                <div class="col-sm-12 col-md-6">
-
-                                    <h5>
+                                <div class="col">
+                                    <h5 style="line-height: 30px">
                                         Do you have a fruit tree that you don’t have the time or the energy to harvest? Are there more berries than you can handle? Do you want to share your fruit tree with members of your community? If the answer is yes, Camrose Hidden Harvest can help! By signing up on this website and indicating availability and type of fruit, pickers in the local community can indicate their interest and can contact you to arrange fruit picking.<br>
                                     </h5>
                                     <br>
-                                    <h5>
+                                    <h5 style="line-height: 30px">
                                         Our sustainable food project is focused on supporting one potential pillar of a more sustainable local food network in Camrose, and we need your help to build connections and grow community. If you are interested, please sign up as a fruit grower/picker by clicking the login button in the top right. If you have any questions, please send them to Dr. Greg King.
                                     </h5>
                                     <br>
