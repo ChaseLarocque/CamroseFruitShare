@@ -5,8 +5,8 @@ AUCSC401 - Hidden Harvests of Camrose (Camrose Fruit picking website)
 February 01, 2019
 
 
-This page is a form for users to enter an offer for someone to pick their fruit
-It allows them to enter details like what kind of fruit they have and how to contact them.
+This page is a form for users to edit an offer for someone to pick their fruit
+It allows them to edit all pre submitted details like what kind of fruit they have and how to contact them.
 -->
 
 <!doctype html>
