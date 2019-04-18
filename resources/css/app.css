@@ -148,7 +148,7 @@ body{
     line-height: 1.6;
     text-align: left;
     /*Puts slightly transparent color over background pattern image*/
-    background: linear-gradient(rgb(249,226,177,0.5), rgb(249,226,177,0.5)), url("../images/backgroundPattern");
+    background: rgb(249,226,177);
 }
 
 .body.container{
